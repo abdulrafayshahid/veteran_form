@@ -13,6 +13,8 @@
 
 
 <body>
+<div class="full-form">
+    <form action="backend/function.php" method="post">
 
 <div id="questionnaire">
     <div class="container">
@@ -20,7 +22,6 @@
             <img src="./assets/images/logo.png" alt="Logo">
         </div>
         <h3 class="text-center"> <i>LSSMN RURAL AGING ACTION NETWORK (RAAN)PROGRAM</i></h3>
-        <form>
             <h6 class="mt-5 text-center">CONNECTING OLDER ADULTS, CAREGIVERS AND THEIR FAMILIES WITH THE RIGHT RESOURCES
                 RIGHT AT HOME
             </h6>
@@ -349,7 +350,7 @@
         </div>
     </div>
 
-        </form>
+    
     </div>
 </div>
 
@@ -359,7 +360,7 @@
             <img src="./assets/images/logo.png" alt="Logo">
         </div>
         <h2 class="heading"> <i>Profile Information</i></h2>
-        <form>
+      
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="fullname">Full Legal Name-Last:</label>
@@ -653,7 +654,7 @@
                 </div>
             </div>
             <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
-        </form>
+   
     </div>
 
     <div class="container custom-container">
@@ -710,7 +711,7 @@
             </div>
         </div>
 
-        <form>
+
 
             <div class="row">
                 <div class="col-md-4 mt-3 form-group ">
@@ -1149,7 +1150,7 @@
 
 
             <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
-        </form>
+      
     </div>
 
 
@@ -1322,7 +1323,7 @@
             <img src="./assets/images/logo.png" alt="Logo">
         </div>
         <h2 class="heading"> <i>HOMELESS VERIFICATION / SELF VERIFICATION</i></h2>
-        <form>
+ 
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="applicantname">Applicant Name:</label>
@@ -1419,14 +1420,14 @@
 
                     
             </div>
-        </form>
+  
     </div>
     <div class="container">
         <div class="logo">
             <img src="./assets/images/logo.png" alt="Logo">
         </div>
         <h3 class="text-center mb-3">Participant Agreement and Right to Terminate</h3>
-        <form>
+     
             <div class="col-md-12">
                 <p>As a participant within the Veterans Inc. Program, | understand that participation is completely voluntary for me
                     and/or my household.</p>
@@ -1493,14 +1494,14 @@
                     </div>
 
             </div>
-        </form>
+     
     </div>
     <div class="container">
         <div class="logo">
             <img src="./assets/images/logo.png" alt="Logo">
         </div>
         <h2 class="heading"> <i>Individual Employnment Plan </i></h2>
-        <form>
+
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="fullname">Client Name</label>
@@ -1650,7 +1651,7 @@
             </div>
 
             <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
-        </form>
+     
     </div>
  
 </div>
@@ -1661,7 +1662,7 @@
             <img src="./assets/images/logo.png" alt="Logo">
         </div>
         <h2 class="heading"> <i>Purchase Request Form</i></h2>
-        <form>
+    
             <div class="row">
                 <div class="col-md-12 mt-3 form-group ">
                     <label>Purchase Request Form:</label><br>
@@ -1743,7 +1744,7 @@
 
 
             <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
-        </form>
+     
 
         <p>Email Completed form to <a href="mailto:purchasing@veteransinc.org"
                 class="email_purchasing">purchasing@veteransinc.org</a>. All requests will be processed <br> weekly on
@@ -1754,7 +1755,7 @@
         <div class="logo">
             <img src="./assets/images/logo.png" alt="Logo">
         </div>
-        <form>
+   
 
             <div class="form-row mt-5">
 
@@ -1780,7 +1781,7 @@
 
 
             <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
-        </form>
+       
 
 
     </div>
@@ -1792,7 +1793,7 @@
             <img src="./assets/images/logo.png" alt="Logo">
         </div>
         <h2 class="heading"> <i>Serving Veterans aud Thr Familiy Across America</i></h2>
-        <form>
+     
 
             <h4 class="mt-5 text-center">Employment Verification</h4>
             <div class="form-row mt-5">
@@ -1870,7 +1871,7 @@
 
 
             <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
-        </form>
+       
 
 
     </div>
@@ -1880,7 +1881,7 @@
             <img src="./assets/images/logo.png" alt="Logo">
         </div>
         <h2 class="heading"> <i>Serving Veterans aud Thr Familiy Across America</i></h2>
-        <form>
+        
 
             <h4 class="mt-5 text-center"><u>AJC Enrollnment Form</u></h4>
             <div class="form-row mt-5">
@@ -1937,7 +1938,7 @@
 
 
             <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
-        </form>
+     
 
 
     </div>
@@ -1949,7 +1950,7 @@
         </div>
 
         <h2 class="report_heading"> <i>Extra Data for report</i></h2>
-        <form>
+     
 
             <h4 class="veterans_client">Client name: <input type="text" id="field"></h4>
             <h4 class="veterans_client">Client enrolled in job center? 
@@ -2168,7 +2169,7 @@
             </div>
 
           
-        </form>
+      
     </div>
 
     </div>
@@ -2177,7 +2178,8 @@
 
      <!-- seventh page ends  -->
 
-     
+    </form>
+</div>
 
    <!-- Bootstrap JS -->
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
