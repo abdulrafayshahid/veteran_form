@@ -1667,23 +1667,23 @@
                 <div class="col-md-12 mt-3 form-group ">
                     <label>Purchase Request Form:</label><br>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <input class="form-check-input" name="purchase_request[]" type="checkbox" id="male" value="Check Request">
                         <label class="form-check-label" for="male">Check Request</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <input class="form-check-input" name="purchase_request[]" type="checkbox" id="female" value="URGENT* Needed within 24 Hours">
                         <label class="form-check-label" for="female">URGENT* Needed within 24 Hours</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <input class="form-check-input" name="purchase_request[]" type="checkbox" id="female" value="Petty Cash Reques">
                         <label class="form-check-label" for="female">Petty Cash Reques</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <input class="form-check-input" name="purchase_request[]" type="checkbox" id="female" value="Hand Deliver to:">
                         <label class="form-check-label" for="female">Hand Deliver to:</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <input class="form-check-input" name="purchase_request[]" type="checkbox" id="female" value="Credit Card Purchase Request">
                         <label class="form-check-label" for="female">Credit Card Purchase Request</label>
                     </div>
                 </div>
@@ -1692,52 +1692,52 @@
             <h5 class=" text-center">Please complete the following:</h5>
             <div class="form-row mt-5">
                 <div class="form-group col-md-6">
-                    <label for="fullname">Amout</label>
-                    <input type="number" id="fullname" class="form-control" placeholder="Enter Your Amout">
+                    <label for="fullname">Amount</label>
+                    <input type="number" id="fullname" name="amount" class="form-control" placeholder="Enter Your Amout">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Vendor Name</label>
-                    <input type="text" id="lastname" class="form-control" placeholder="Enter Vendor Name">
+                    <input type="text" id="lastname" name="vendor_name" class="form-control" placeholder="Enter Vendor Name">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Address</label>
-                    <input type="text" id="lastname" class="form-control" placeholder="Enter Address">
+                    <input type="text" id="lastname" name="address" class="form-control" placeholder="Enter Address">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Description of purchase/items/services</label>
-                    <input type="text" id="lastname" class="form-control"
+                    <input type="text" id="lastname" name="description_purchases" class="form-control"
                         placeholder="Enter Description of purchase/items/services">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Name of the Grant or Program</label>
-                    <input type="text" id="lastname" class="form-control"
+                    <input type="text" id="lastname" name="name_grant_program" class="form-control"
                         placeholder="Enter Name of the Grant or Program">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Requester Name</label>
-                    <input type="text" id="lastname" class="form-control" placeholder="Enter Requester Name">
+                    <input type="text" id="lastname" name="requester_name" class="form-control" placeholder="Enter Requester Name">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">ApproverName:</label>
-                    <input type="text" id="lastname" class="form-control" placeholder="Enter ApproverName:">
+                    <input type="text" id="lastname" name="approver_name" class="form-control" placeholder="Enter ApproverName:">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Date of Request</label>
-                    <input type="number" id="lastname" class="form-control" placeholder="Enter Date of Request">
+                    <input type="number" id="lastname" name="date_request" class="form-control" placeholder="Enter Date of Request">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Date of Approval</label>
-                    <input type="number" id="lastname" class="form-control" placeholder="Enter Date of Approval ">
+                    <input type="number" id="lastname" name="date_approval" class="form-control" placeholder="Enter Date of Approval ">
                 </div>
                 <div class="col-md-6">
 
                 </div>
                 <div class="form-group col-md-6">
-                    <input type="text" id="fullname" class="form-control custom-input" placeholder="">
+                    <input type="text" id="fullname" name="requester_signature" class="form-control custom-input" placeholder="">
                     <label for="fullname mt-5">Requester Signature :</label>
                 </div>
                 <div class="form-group col-md-6">
-                    <input type="text" id="fullname" class="form-control custom-input" placeholder="">
+                    <input type="text" id="fullname" name="approver_signature" class="form-control custom-input" placeholder="">
                     <label for="fullname mt-5">Approver Signature :</label>
                 </div>
             </div>
@@ -1761,20 +1761,20 @@
 
                 <div class="form-group col-md-12">
                     <label for="lastname">Acknowledge</label>
-                    <textarea class="text-area-individual" name="" id=""
+                    <textarea class="text-area-individual" name="acknowledge" id=""
                         placeholder="| have received the following goods"></textarea>
                 </div>
 
                 <div class="form-group col-md-4 mt-3">
-                    <input type="text" id="fullname" class="form-control custom-input" placeholder="">
+                    <input type="text" id="fullname" name="veterans_name" class="form-control custom-input" placeholder="">
                     <label for="fullname mt-5">Veterans Name:</label>
                 </div>
                 <div class="form-group col-md-4 mt-3">
-                    <input type="text" id="fullname" class="form-control custom-input" placeholder="">
+                    <input type="text" id="fullname" name="veterans_signature" class="form-control custom-input" placeholder="">
                     <label for="fullname mt-5">Veterans Signature :</label>
                 </div>
                 <div class="form-group col-md-4 mt-3">
-                    <input type="number" id="fullname" class="form-control custom-input" placeholder="">
+                    <input type="number" id="fullname" name="date" class="form-control custom-input" placeholder="">
                     <label for="fullname mt-5">Date :</label>
                 </div>
             </div>
@@ -1799,81 +1799,76 @@
             <div class="form-row mt-5">
                 <div class="form-group col-md-6">
                     <label for="fullname">Name</label>
-                    <input type="number" id="fullname" class="form-control" placeholder="Enter Your Name">
+                    <input type="number" id="fullname" name="ev_name" class="form-control" placeholder="Enter Your Name">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Social Security Number</label>
-                    <input type="number" id="lastname" class="form-control" placeholder="Enter Social Security Number">
+                    <input type="number" id="lastname" name="ev_ss_number" class="form-control" placeholder="Enter Social Security Number">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Address</label>
-                    <input type="text" id="lastname" class="form-control" placeholder="Enter Address">
+                    <input type="text" id="lastname" name="ev_address" class="form-control" placeholder="Enter Address">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Phone Number</label>
-                    <input type="number" id="lastname" class="form-control" placeholder="Enter Phone Number">
+                    <input type="number" id="lastname" name="ev_phone_number" class="form-control" placeholder="Enter Phone Number">
                 </div>
 
                 <h4 class="mt-5 mb-5 text-center col-md-12">Employment Verification</h4>
 
                 <div class="form-group col-md-6">
                     <label for="fullname">Name of Employer</label>
-                    <input type="text" id="fullname" class="form-control" placeholder="Enter Your Name">
+                    <input type="text" id="fullname" name="ev_employer_name" class="form-control" placeholder="Enter Your Name">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="fullname">Start Date</label>
-                    <input type="number" id="fullname" class="form-control" placeholder="Enter Start Date">
+                    <input type="number" id="fullname" name="ev_start_date" class="form-control" placeholder="Enter Start Date">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="fullname">Address</label>
-                    <input type="text" id="fullname" class="form-control" placeholder="Enter Address">
+                    <input type="text" id="fullname" name="ev_date" class="form-control" placeholder="Enter Address">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="fullname">Phone Number</label>
-                    <input type="number" id="fullname" class="form-control" placeholder="Enter Phone Number">
+                    <input type="number" id="fullname" name="ev_phone_number_2" class="form-control" placeholder="Enter Phone Number">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="fullname">Contact Person</label>
-                    <input type="number" id="fullname" class="form-control" placeholder="Enter Contact Person">
+                    <input type="number" id="fullname" name="ev_contact_person" class="form-control" placeholder="Enter Contact Person">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="fullname"> Title</label>
-                    <input type="text" id="fullname" class="form-control" placeholder="Enter Title ">
+                    <label for="fullname">Title</label>
+                    <input type="text" id="fullname" name="ev_title" class="form-control" placeholder="Enter Title ">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="fullname"> Client's Job Title</label>
-                    <input type="text" id="fullname" class="form-control" placeholder="Enter Client's Job Title">
+                    <input type="text" id="fullname" name="ev_clients_job_title" class="form-control" placeholder="Enter Client's Job Title">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="fullname"> HRS per week</label>
-                    <input type="text" id="fullname" class="form-control" placeholder="Enter HRS per week">
+                    <input type="text" id="fullname" name="ev_hrs_week" class="form-control" placeholder="Enter HRS per week">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="fullname"> Wage</label>
-                    <input type="text" id="fullname" class="form-control" placeholder="Enter Wage">
+                    <input type="text" id="fullname" name="ev_wage" class="form-control" placeholder="Enter Wage">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="fullname"> Veterans Inc. Provided: Tools, Uniform, Supplies</label>
-                    <input type="text" id="fullname" class="form-control"
+                    <input type="text" id="fullname" name="ev_veterans_provided" class="form-control"
                         placeholder="Enter Veterans Inc. Provided: Tools, Uniform, Supplies">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="fullname"> Date Placement Confirmed</label>
-                    <input type="number" id="fullname" class="form-control"
+                    <input type="number" id="fullname" name="ev_date_placement" class="form-control"
                         placeholder="Enter  Date Placement Confirmed">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="fullname"> Submitted By</label>
-                    <input type="number" id="fullname" class="form-control" placeholder="Enter  Submited By">
+                    <input type="number" id="fullname" name="ev_submitted_by" class="form-control" placeholder="Enter  Submited By">
                 </div>
-
             </div>
 
-
             <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
-       
-
-
     </div>
 
     <div class="container">
@@ -1887,49 +1882,49 @@
             <div class="form-row mt-5">
                 <div class="form-group col-md-6">
                     <label for="fullname">Veterant Name</label>
-                    <input type="text" id="fullname" class="form-control" placeholder="Enter Your Name">
+                    <input type="text" id="fullname" name="ajc_veterans_name" class="form-control" placeholder="Enter Your Name">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Veteran Address</label>
-                    <input type="text" id="lastname" class="form-control" placeholder="Enter Veteran Address">
+                    <input type="text" id="lastname" name="ajc_veterans_address" class="form-control" placeholder="Enter Veteran Address">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="dob">Date of Birth:</label>
-                    <input type="date" id="dob" class="form-control">
+                    <input type="date" id="dob" name="ajc_dob" class="form-control">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="dob">Date of Service:</label>
-                    <input type="date" id="dob" class="form-control">
+                    <input type="date" id="dob" name="ajc_dos" class="form-control">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Email</label>
-                    <input type="text" id="lastname" class="form-control" placeholder="Enter Email">
+                    <input type="text" id="lastname" name="ajc_email" class="form-control" placeholder="Enter Email">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Phone Number</label>
-                    <input type="number" id="lastname" class="form-control" placeholder="Enter Phone Number">
+                    <input type="number" id="lastname" name="ajc_phone_number" class="form-control" placeholder="Enter Phone Number">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Client</label>
-                    <input type="text" id="lastname" class="form-control"
+                    <input type="text" id="lastname" name="ajc_client" class="form-control"
                         placeholder="Enter Client Only or Client with Family">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">DVOP Name</label>
-                    <input type="text" id="lastname" class="form-control" placeholder="Enter DVOP Name">
+                    <input type="text" id="lastname" name="ajc_dvop_name" class="form-control" placeholder="Enter DVOP Name">
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="lastname">DVOP Telephone #:</label>
-                    <input type="number" id="lastname" class="form-control" placeholder="Enter DVOP Telephone #:">
+                    <input type="number" id="lastname" name="ajc_telephone" class="form-control" placeholder="Enter DVOP Telephone #:">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">Date Of Enrollnment:</label>
-                    <input type="date" id="lastname" class="form-control" placeholder="Enter Date Of Enrollnment:">
+                    <input type="date" id="lastname" name="ajc_doe" class="form-control" placeholder="Enter Date Of Enrollnment:">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastname">JobSeeker ID Number:</label>
-                    <input type="number" id="lastname" class="form-control" placeholder="Enter JobSeeker ID Number: ">
+                    <input type="number" id="lastname" name="ajc_jobseeker_id" class="form-control" placeholder="Enter JobSeeker ID Number: ">
                 </div>
 
 
@@ -1955,45 +1950,44 @@
             <h4 class="veterans_client">Client name: <input type="text" id="field"></h4>
             <h4 class="veterans_client">Client enrolled in job center? 
 
-                <input class="form-check-input form-check-input-sm" type="radio" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_client_name[]" type="radio" value="Yes?" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
               Yes?
                 </label>
-                <input class="form-check-input form-check-input-sm" type="radio" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm"  name="extra_data_client_name[]" type="radio" value="No?" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
             No?
                 </label></h4>
              
             <h4 class="date_enroll">Date enrolled <input type="text" id="field"></h4>
-            
             <h4 class="ivtp">IVTP(Incarceraetd Veterans Transition Program)Eligible?
-                <input class="form-check-input form-check-input-sm" type="radio" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm"  name="extra_data_ivtp[]" type="radio" value="Yes?" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
               Yes?
                 </label>
-                <input class="form-check-input form-check-input-sm" type="radio" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm"  name="	extra_data_ivtp[]" type="radio" value="No?" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
             No?
                 </label>
             </h4>
 
-            <h4 class="ivtp">Episodic Homeless-12 monthd of homeless(Chronically Homeless)?
-                <input class="form-check-input form-check-input-sm" type="radio" value="" id="defaultCheck1">
+            <h4 class="ivtp">Episodic Homeless-12 months of homeless(Chronically Homeless)?
+                <input class="form-check-input form-check-input-sm"  name="extra_data_episodic[]"  type="radio" value="Yes?" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
               Yes?
                 </label>
-                <input class="form-check-input form-check-input-sm" type="radio" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm"  name="extra_data_episodic[]"  type="radio" value="No?" id="defaultCheck1">
                 <label class="form-check-label labelll"  for="defaultCheck1">
             No?
                 </label>
             </h4>
 
             <h4 class="ivtp">Were work attire,rools,or equipment provided?
-                <input class="form-check-input form-check-input-sm" type="radio" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_work[]" type="radio" value="Yes?" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
               Yes?
                 </label>
-                <input class="form-check-input form-check-input-sm" type="radio" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_work[]" type="radio" value="No?" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
             No?
                 </label>
@@ -2002,7 +1996,7 @@
 
             <h3 class="client_programs mt-4">Client Co-enrolled in other grant programs (check those that apply):</h3>
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_client_coenrolled[]"  type="checkbox" value="SSVF" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                     SSVF
                          </label>
@@ -2013,7 +2007,7 @@
             </h5>
 
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_client_coenrolled[]" type="checkbox" value="GPD" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                    GPD
                          </label>
@@ -2023,7 +2017,7 @@
 
             
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_client_coenrolled[]" type="checkbox" value="HUD/VASH" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                   HUD/VASH
                          </label>
@@ -2032,7 +2026,7 @@
             </h5>
 
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_client_coenrolled[]" type="checkbox" value="HPRP" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                   HPRP
                          </label>
@@ -2041,7 +2035,7 @@
             </h5>
 
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_client_coenrolled[]" type="checkbox" value="FEMA" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                  FEMA
                          </label>
@@ -2050,7 +2044,7 @@
             </h5>
 
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_client_coenrolled[]" type="checkbox" value="NAHASDA" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                NAHASDA
                          </label>
@@ -2062,7 +2056,7 @@
 
             <h3 class="client_programs mt-4">Referral made for other services(If appropriate):</h3>
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_referral[]" type="checkbox" value="SSVF" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                     SSVF
                          </label>
@@ -2071,7 +2065,7 @@
             </h5>
 
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_referral[]" type="checkbox" value="GPD" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                    GPD
                          </label>
@@ -2081,7 +2075,7 @@
 
             
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_referral[]" type="checkbox" value="HUD/VASH" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                   HUD/VASH
                          </label>
@@ -2090,7 +2084,7 @@
             </h5>
 
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_referral[]" type="checkbox" value="HPRP" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                   HPRP
                          </label>
@@ -2099,7 +2093,7 @@
             </h5>
 
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_referral[]" type="checkbox" value="FEMA" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                  FEMA
                          </label>
@@ -2108,7 +2102,7 @@
             </h5>
 
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_referral[]" type="checkbox" value="NAHASDA" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                NAHASDA
                          </label>
@@ -2119,7 +2113,7 @@
 
             <h3 class="client_programs mt-4">Trainings:</h3>
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_trainings[]" type="checkbox" value="On the job" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                     On the job
                          </label>
@@ -2128,7 +2122,7 @@
             </h5>
 
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_trainings[]" type="checkbox" value="Technical" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                  Technical
                          </label>
@@ -2138,7 +2132,7 @@
 
             
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_trainings[]" type="checkbox" value="Enterpreneurial" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                   Enterpreneurial
                          </label>
@@ -2147,7 +2141,7 @@
             </h5>
 
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_trainings[]" type="checkbox" value="Customized" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                  Customized
                          </label>
@@ -2156,7 +2150,7 @@
             </h5>
 
             <h5 class="co_programs mt-2">
-                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_trainings[]" type="checkbox" value="Other" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
                 Other
                          </label>
