@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Form</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+<body>
+
+
+
+    <div class="container">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="Logo">
+        </div>
+        <h2 class="heading"> <i>Profile Information</i></h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="fullname">Full Legal Name-Last:</label>
+                    <input type="text"  id="fullname" name="" class="form-control"
+                        placeholder="Enter Your full legal name-last:">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">MI:</label>
+                    <input type="text" id="lastname" class="form-control" name="" placeholder="Enter your MI">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">First:</label>
+                    <input type="text" id="lastname" class="form-control" name="" placeholder="Enter First">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" class="form-control" name="">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Email Address:</label>
+                    <input type="number" id="lastname" class="form-control" name="" placeholder="Enter Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Phone:</label>
+                    <input type="number" id="lastname" class="form-control" name="" placeholder="Enter Phone:">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Address:</label>
+                    <input type="number" id="lastname" class="form-control" name=""
+                        placeholder="Address (if homeless use ZIP code only)">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Social Security #:</label>
+                    <input type="text" id="lastname" class="form-control" name="" placeholder="Enter Social Security #">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">CoC Location:</label>
+                    <input type="text" id="lastname" class="form-control" name="" placeholder="Enter CoC Location">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Continuum of Care Code # (HUD-assigned):</label>
+                    <input type="text" id="lastname" class="form-control" name=""
+                        placeholder="Enter Continuum of Care Code # (HUD-assigned)">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Referral Source</label>
+                    <input type="text" id="lastname" class="form-control" name="" placeholder="Enter Referral Source">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">VA Medical Center Station # closeset to CM's office</label>
+                    <input type="text" id="lastname" class="form-control" name=""
+                        placeholder="Enter VA Medical Center Station # closeset to CM's office">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-3 form-group ">
+                    <label>Gender:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">M</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">F</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Trans M/F</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Trans F/M</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Non-Conforming</label>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3 form-group">
+                    <label class="checkbox-label">Ethnicity:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="race3" value="race3">
+                        <label class="form-check-label" for="race3">Hispanic</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="race4" value="race4">
+                        <label class="form-check-label" for="race4">Non-Hispanic</label>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3 form-group">
+                    <label class="checkbox-label">Primary Race:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="race1" value="race1">
+                        <label class="form-check-label" for="race1">White</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="race2" value="race2">
+                        <label class="form-check-label" for="race2">Black/African American</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="race2" value="race2">
+                        <label class="form-check-label" for="race2">Asian</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="race2" value="race2">
+                        <label class="form-check-label" for="race2">American Indian / Alaskan Islander</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="race2" value="race2">
+                        <label class="form-check-label" for="race2">Native Hawaiian / Pacific Islander</label>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3 form-group">
+                    <label class="checkbox-label">Secondary Race:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="race3" value="race3">
+                        <label class="form-check-label" for="race3">White</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="race4" value="race4">
+                        <label class="form-check-label" for="race4">Black/African American</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="race2" value="race2">
+                        <label class="form-check-label" for="race2">Asian</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="race2" value="race2">
+                        <label class="form-check-label" for="race2">American Indian / Alaskan Islander</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="race2" value="race2">
+                        <label class="form-check-label" for="race2">Native Hawaiian / Pacific Islander</label>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr_style">
+            <h2 class="heading mt-5"><i>Military Information</i> </h2>
+            <div class="form-row mt-5">
+                <div class="form-group col-md-6">
+                    <label for="fullname">Branch of Service :</label>
+                    <input type="text" id="fullname" class="form-control"  name="" placeholder="Enter Your Branch of Service :">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="fullname">Service Date From to </label>
+                    <input type="number" id="fullname" class="form-control"  name=""
+                        placeholder="Enter Your Service Date From dd/mm/yyyy to dd/mm/yyyy">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="fullname">Military MOS :</label>
+                    <input type="text" id="fullname" class="form-control"  name="" placeholder="Enter Your Military MOS : ">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="fullname">Type of Injury (If any):</label>
+                    <input type="text" id="fullname" class="form-control"  name=""
+                        placeholder="Enter Your Type of Injur (If any): ">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mt-3 form-group ">
+                    <label>Military Status :</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Active Duty</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Veteran</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Reserve Component</label>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 form-group ">
+                    <label>Rank:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Enlisted</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Officer</label>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 form-group ">
+                    <label>Combat:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">No</label>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 form-group ">
+                    <label>Servcie connected Disability:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">No</label>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 form-group ">
+                    <label>Discharge:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Honorable</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">General</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">OTH</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Bad Conduct</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Dishonorable</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Other</label>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 form-group ">
+                    <label>Theater of Operations:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Iraq (Operation New Dawn)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Iraq (Op. Iraqi Freedom)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Afghanistan (Op. Enduring Freedom)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Persian Gulf (Op. Desert Storm)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Vietnam</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Korea</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">WWII</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Other</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">No to all</label>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr_style">
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="fullname">Prepared by:</label>
+                    <input type="text" id="fullname" class="form-control"  name="" placeholder="Prepared by :">
+                </div>
+                <div class="col-md-4 mt-3 form-group ">
+                    <label>Household Status:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Client-Only</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Client with Others in Household</label>
+                    </div>
+                </div>
+            </div>
+            <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
+        </form>
+    </div>
+
+    <div class="container custom-container">
+        <h4 class="custom-heading"> <u>CALL OF DUTY ENDOWMENT <br>VETERAN PROFILES RELEASE </u></h4>
+        <p class="custom-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum nisi id
+            ligula fermentum, sit amet eleifend neque vestibulum Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Vivamus bibendum nisi id
+            ligula fermentum, sit amet eleifend neque vestibulum Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Vivamus bibendum nisi id
+            ligula fermentum, sit amet eleifend neque vestibulum Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Vivamus bibendum nisi id
+            ligula fermentum, sit amet eleifend neque vestibulum Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Vivamus bibendum nisi id
+            ligula fermentum, sit amet eleifend neque vestibulum Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Vivamus bibendum nisi id
+            ligula fermentum, sit amet eleifend neque vestibulum </p>
+        <div class="form-group col-md-4">
+            <input type="text" id="fullname" class="form-control custom-input" name="" placeholder="">
+            <label for="fullname mt-5">Signature :</label>
+        </div>
+        <div class="form-group col-md-4">
+            <input type="text" id="fullname" class="form-control custom-input" name="" placeholder="">
+            <label for="fullname mt-5">Printed Name :</label>
+        </div>
+        <div class="form-group col-md-4">
+            <input type="number" id="fullname" class="form-control custom-input" name="" placeholder="">
+            <label for="fullname mt-5"> Date:</label>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="Logo">
+        </div>
+        <h2 class="heading"> <u>HYPER File Checklist</u></h2>
+
+
+        <div class="row">
+            <div class="form-group col-md-4">
+                <input type="text" id="fullname" class="form-control custom-input"  name="" placeholder="">
+                <label for="fullname mt-5">Veteran :</label>
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" id="fullname" class="form-control custom-input"  name="" placeholder="">
+                <label for="fullname mt-5">Case Manager:</label>
+            </div>
+            <div class="form-group col-md-4">
+                <input type="number" id="fullname" class="form-control custom-input"  name="" placeholder="">
+                <label for="fullname mt-5"> Enrollnment Date:</label>
+            </div>
+        </div>
+
+        <form>
+
+            <div class="row">
+                <div class="col-md-4 mt-3 form-group ">
+                    <h5> <u>HVRP Program:</u></h5><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male">AFA Tracking Sheet</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label custom-radio-label" for="female">Universal Services
+                            Application</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-male-female"
+                            value="trans-male-female">
+                        <label class="form-check-label custom-radio-label" for="trans-male-female">DD214</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-female-male"
+                            value="trans-female-male">
+                        <label class="form-check-label custom-radio-label" for="trans-female-male">Signed
+                            Release</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Document
+                            Checklist</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Homeless
+                            Verification</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Participation
+                            Agreement</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Andividual Employment
+                            Plan</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">AJC Form</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Employment
+                            History</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Extra Data Form</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">HVRP Referral
+                            Form</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">SSVF Referral
+                            Form</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Resume</label>
+                    </div>
+
+                </div>
+                <div class="col-md-4 mt-3 form-group">
+                    <h5> <u>CODE Program:</u></h5><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male">Universal Services
+                            Application</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label custom-radio-label" for="female"> DD214 or Squares
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-male-female"
+                            value="trans-male-female">
+                        <label class="form-check-label custom-radio-label" for="trans-male-female">Signed
+                            Release</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-female-male"
+                            value="trans-female-male">
+                        <label class="form-check-label custom-radio-label" for="trans-female-male">CODE Release
+                            Form</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Homeless
+                            Verification</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Participation
+                            Agreement</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male">Employment Verification</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label custom-radio-label" for="female"> CODE Success Story
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-3 form-group">
+                    <h5> <u>Arthur Blank Program</u></h5><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male">Universal Services
+                            Application</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label custom-radio-label" for="female"> DD214 or Squares.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-male-female"
+                            value="trans-male-female">
+                        <label class="form-check-label custom-radio-label" for="trans-male-female"> Signed
+                            Release</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-female-male"
+                            value="trans-female-male">
+                        <label class="form-check-label custom-radio-label" for="trans-female-male"> Arthur Blank
+                            Form</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Homeless
+                            Verification</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Participation
+                            Agreement</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male">Employment Verification</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label custom-radio-label" for="female">
+                            o Veteran Thank you to AB
+                        </label>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-md-4 mt-3 form-group">
+                    <label> <u>HVRP Program:</u></label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male">Employment Verification Follow
+                            Up</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label custom-radio-label" for="female">Individualized Employment Plan
+                            (IEP)
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-male-female"
+                            value="trans-male-female">
+                        <label class="form-check-label custom-radio-label" for="trans-male-female">Employment
+                            Verification Form</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-female-male"
+                            value="trans-female-male">
+                        <label class="form-check-label custom-radio-label" for="trans-female-male">Training Verification
+                            Form</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Training
+                            Certificates</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Amazon Approval w/
+                            items</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label custom-radio-label" for="female">Amazon Receipt of Goods
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-male-female"
+                            value="trans-male-female">
+                        <label class="form-check-label custom-radio-label" for="trans-male-female">Misc.
+                            Purchases</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-female-male"
+                            value="trans-female-male">
+                        <label class="form-check-label custom-radio-label" for="trans-female-male">Misc. Receipt of
+                            Goods</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">HVRP Purchase
+                            Requests</label>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-md-4 mt-3 form-group">
+                    <label> <u>CODE Program</u></label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male">TFA Tracking Sheet</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label custom-radio-label" for="female"> Amazon Approval w/ items
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-male-female"
+                            value="trans-male-female">
+                        <label class="form-check-label custom-radio-label" for="trans-male-female">Amazon Receipt of
+                            Goods</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-female-male"
+                            value="trans-female-male">
+                        <label class="form-check-label custom-radio-label" for="trans-female-male">Misc.
+                            Purchases</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Misc. Receipt of
+                            Goods</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">CODE Purchase
+                            Requests</label>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-md-4 mt-3 form-group">
+                    <label> <u>Arthur Blank Program</u></label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male">TFA Tracking Sheet</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label custom-radio-label" for="female"> Amazon Approval w/ items.
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-male-female"
+                            value="trans-male-female">
+                        <label class="form-check-label custom-radio-label" for="trans-male-female">Amazon Receipt of
+                            Goods</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-female-male"
+                            value="trans-female-male">
+                        <label class="form-check-label custom-radio-label" for="trans-female-male"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Misc. Purchases</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Mise. Receipt of
+                            Goods</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male"> AB Purchase Requests.</label>
+                    </div>
+
+
+
+                </div>
+
+
+
+                <div class="col-md-4 mt-3 form-group">
+                    <label> <u>Program Enrolled:</u></label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male">HVRP</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label custom-radio-label" for="female">HVRP ONLY
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-male-female"
+                            value="trans-male-female">
+                        <label class="form-check-label custom-radio-label" for="trans-male-female">CODE</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-female-male"
+                            value="trans-female-male">
+                        <label class="form-check-label custom-radio-label" for="trans-female-male">CODE ONLY</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Arthur Blank</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Arthur Blank</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male">ONLY</label>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-md-4 mt-3 form-group">
+                    <label> <u>Verification:</u></label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male">All Forms are Signed and
+                            Dated</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label custom-radio-label" for="female">
+                            S-Drive Matches Hard File
+                        </label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="non-conforming"
+                            value="non-conforming">
+                        <label class="form-check-label custom-radio-label" for="non-conforming">Hard File is in Correct
+                            Order</label>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-3 form-group">
+                    <label> <u>Case Notes:</u></label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label custom-radio-label" for="male">HVRP CN Current</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label custom-radio-label" for="female">
+                            CODE CN Current
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="trans-male-female"
+                            value="trans-male-female">
+                        <label class="form-check-label custom-radio-label" for="trans-male-female">
+                            Arthur Blank CN Current
+                        </label>
+                    </div>
+                </div>  
+
+
+                <div class="form-group col-md-4 mt-5">
+                    <input type="text" id="fullname" class="form-control custom-input" placeholder="">
+                    <label for="fullname mt-5">File Reviewed by:</label>
+                </div>
+                <div class="form-group col-md-4 mt-5">
+                    <input type="text" id="fullname" class="form-control custom-input" placeholder="">
+                    <label for="fullname mt-5">File Reviewed Date:</label>
+                </div>
+                
+            </div>
+
+
+
+
+            <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- fifth page starts -->
+
+    <div class="consent container">
+        <h1 class="head_info text-center">Confidential Information</h1>
+        <h1 class="consent_info text-center">Consent for the Release of Confidential Information</h1>
+
+        <p class="consent_para1">I,<input type="text" id="date">with a date of birth <input type="text" id="social">and
+            a Social Security Number of:<input type="text" id="authorization">give authorization to any necessary
+            persona/organiztions to give my information to Veterans Inc.so that they can better understand my condition
+            and help my obtain employment and/or other: <input type="text" id="last_blank"> </p>
+
+        <p class="consent_para2 mt-5">I understand that i have the option to opt out of releasing certain information.By
+            checking the boxes below,i understand that i giving permission for the selected information to sent by
+            Veterns Inc,to included giving permission for the Veterns Inc.Staff to assist myself with the job Americans
+            job centers and obtaining my DD214:</p>
+
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6">
+            <div class="form-check ">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    Employment
+                </label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-check ">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    National Archieves/DD214 Recovery
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    Other: <input type="text" id="consent_other">
+                </label>
+            </div>
+     
+    </div>
+    </div>
+    </div>
+
+        <div class="consent_para3">
+            <p class="consent_para3_para">I also understand that:</p>
+            <li>If i want to revoke permission of Veterans Inc.to get this information i need to give request written
+                request to Veterans Inc.staff.</li>
+            <li>The authorization im giving shall continue as long as im receiving services at Veterans Inc.or upto 1
+                year after ending services </li>
+
+
+        </div>
+
+        <p class="consent_para4">I also release,discharge and exonerate Veterans Inc,and any person funsihing my
+            Confidential any and all liability that might arise out of funishing.or inspecting these documents . Finally
+            i also authorize Veterans Inc.staff and volunteers to release any of information to the appropriate agents
+            in the event of a medical emergency.</p>
+
+       
+        <div class="row mt-5">
+            <div class="form-group col-md-8">
+                <label for="applicantsignature mt-5">Veterans Signature</label>
+                <input type="text" id="applicantsignature" class="form-control custom-input" placeholder="">
+
+            </div>
+            <div class="form-group col-md-4">
+                <label for="fullname mt-5">Date</label>
+                <input type="text" id="date" class="form-control custom-input" placeholder="">
+
+            </div>
+         
+        </div>
+
+    </div>
+
+    <!-- fifth page ends -->
+
+    <!-- sixth page starts -->
+
+    <div class="veterans container">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="Logo">
+        </div>
+
+        <p class="veterans_para">I hereby acknowledged that i have received a copy of the following doucments and that
+            they were reviewed with me at the time of that intake for participation of Veteras Inc.Universla Services
+            Program adminsitrated by Veterans Inc.and its identified subcontractors.</p>
+        <div class="col-md-12 offset-1 d-flex justify-content-center" >
+            <div class="col-md-6 mt-5 mb-5 custom-font-size">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Fair and Equal Services Acknowledgement
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Participant Rights
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Griedvance Procedures
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Warning and Early Termination Policy
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="form-group col-md-8">
+                <label for="applicantsignature mt-5">Signature of Veteran</label>
+                <input type="text" id="applicantsignature" class="form-control custom-input" placeholder="">
+
+            </div>
+            <div class="form-group col-md-4">
+                <label for="fullname mt-5">Date</label>
+                <input type="text" id="date" class="form-control custom-input" placeholder="">
+
+            </div>
+         
+        </div>
+
+        <div class="row mt-5">
+            <div class="form-group col-md-8">
+                <label for="applicantsignature mt-5">Veterans Inc.Case Manager</label>
+                <input type="text" id="applicantsignature" class="form-control custom-input" placeholder="">
+
+            </div>
+            <div class="form-group col-md-4">
+                <label for="fullname mt-5">Date</label>
+                <input type="text" id="date" class="form-control custom-input" placeholder="">
+
+            </div>
+         
+        </div>
+
+
+    </div>
+
+    <!-- sixth page ends  -->
+
+     <!-- seventh page starts  -->
+     <div class="container">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="Logo">
+        </div>
+        <h2 class="heading"> <i>HOMELESS VERIFICATION / SELF VERIFICATION</i></h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="applicantname">Applicant Name:</label>
+                    <input type="text" id="applicantname" class="form-control"
+                        placeholder="Enter Your full name:">
+                </div>
+                <div class="form-group col-md-12 border-bottom-2">
+                    <p for="instructions">Instructions: This form is to certify, via a third party, that the above named applicant is currently “literally homeless" as defined
+                        by program description. The third party completing this form must check one box below, provide a description, and sign and date
+                        this form. Clients may complete this self-certification if third party documentation (i.e., written or oral verification) cannot be
+                        obtained from an appropriate third party. Applicants may self-certify their current “literally homeless” status per one of the
+                        categories below and as defined by program description. Staff should review this form with applicants and assist in completing,
+                        as needed. Applicanis must sign and date this form.</p>
+                    
+                </div>
+                <h4> <i>I certify that (check only one):</i></h2>
+                    <div class="col-md-12 mt-3 form-group">
+                      
+                        <div class="form-check ">
+                            <input class="form-check-input" type="checkbox" id="certify1" value="certify1">
+                            <label class="form-check-label" for="certify1">A person who lacks a fixed, regular, and adequate nighttime residence; an individual who will
+                                imminently lose his or her housing, has no subsequent residence identified, and/or who lacks the
+                                resources or support network needed to obtain other permanent housing, or victim of domestic violence.
+                                HVRP = Homeless, SSVF = Prevention</label>
+                        </div>
+                        <div class="form-check form-check-inline mt-3 border-bottom-3">
+                            
+                            <label class="form-check-label" for="certify1_description">Description of Veteran Situaion:</label><br><br>
+                            <textarea class="custom-text-area mb-4"></textarea>
+                        </div>
+
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" id="certify2" value="certify2">
+                            <label class="form-check-label" for="certify2">I (we) am living in a car, park, abandoned building, bus/train station, airport, camping ground,
+                                or other place not designed for or ordinarily used as a regular sleeping accommodation.</label>
+                        </div>
+                        <div class="form-check form-check-inline mt-3 border-bottom-3">
+                            
+                            <label class="form-check-label" for="certify2_description">Description of Where You Are Staying:</label><br><br>
+                            <textarea class="custom-text-area mb-4"></textarea>
+                        </div>
+
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" id="certify3" value="certify3">
+                            <label class="form-check-label" for="certify3">I (we) am staying in an emergency shelter OR a transitional housing program for people who
+                                are homeless OR a hotel or motel that is paid for by a charity or government program.</label>
+                        </div>
+                        <div class="form-check form-check-inline mt-3 border-bottom-3">
+                            
+                            <label class="form-check-label" for="certify3_input1">Shelter, Transitional Housing or Hotel/Motel Name:</label><br><br>
+                            <input type="text" id="certify3_input1" class="form-control mb-3">
+                        <label class="form-check-label" for="certify3_input2">Location:</label><br><br>
+                        <input type="text" id="certify3_input2" class="form-control mb-3">
+                    <label class="form-check-label" for="certify3_input3">If Hotel/Motel: Name of Charity/Program Paying for Stay:</label><br><br>
+                    <input type="text" id="certify3_input3" class="form-control mb-4">
+                        </div>
+
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" id="certify4" value="certify4">
+                            <label class="form-check-label" for="certify4">Exiting an institution where | have been staying for 90 days or less AND | stayed in an
+                                emergency shelter OR a place not designed for or ordinarily used as a regular sleeping
+                                accommodation immediately prior to entering that institution.</label>
+                        </div>
+                        <div class="form-check form-check-inline mt-3 border-bottom-3">
+                            
+                            <label class="form-check-label" for="certify4_input1">Name of Institution:</label><br><br>
+                            <input type="text" id="certify4_input1" class="form-control mb-3">
+                        <label class="form-check-label" for="certify4_input2">Location:</label><br><br>
+                        <input type="text" id="certify4_input2" class="form-control mb-3">
+                        <label class="form-check-label" for="certify4_input3">Date of Admission:</label><br><br>
+                        <input type="text" id="certify4_input3" class="form-control mb-3">
+                        <label class="form-check-label" for="certify4_input4">Description of Unsheltered Location:</label><br><br>
+                        <textarea class="custom-text-area mb-4"></textarea>
+                        <label class="form-check-label" for="certify4_input5">Authorized Agency Representative Signature:</label><br><br>
+                        <input type="text" id="certify4_input5" class="form-control mb-3">
+                    <label class="form-check-label" for="certify4_input6">Date:</label><br><br>
+                    <input type="date" id="certify4_input6" class="form-control mb-4">
+                        </div>
+                        <div class="row mt-5">
+                            <div class="form-group col-md-8">
+                                <label for="applicantsignature mt-5">Applicant Signature :</label>
+                                <input type="text" id="applicantsignature" class="form-control custom-input" placeholder="">
+
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="fullname mt-5">Date:</label>
+                                <input type="text" id="date" class="form-control custom-input" placeholder="">
+
+                            </div>
+                         
+                        </div>
+                        
+                    </div>
+
+                    
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="Logo">
+        </div>
+        <h3 class="text-center mb-3">Participant Agreement and Right to Terminate</h3>
+        <form>
+            <div class="col-md-12">
+                <p>As a participant within the Veterans Inc. Program, | understand that participation is completely voluntary for me
+                    and/or my household.</p>
+                <p>I understand that the services provided by this program are time-limited and are not meant to be permanent or
+                    long-term assistance. | also understand that in order to receive or maintain assistance | must adhere to
+                    specific program requirements.</p>
+                <p><b>Program Requirements:</b></p>
+                <ol>
+                    <li>Working collaboratively with Veterans Inc. staff and applicable service providers.</li>
+                    <li>Actively participate in the development and successful outcome of my Individual Service Plan(s);</li>
+                    <li>Participating in stabilization services following my placement in permanent housing (if applicable);</li>
+                    <li>Notifying my Case Manager within 72 business hours of any changes to my household income or
+                        housing status (if applicable);
+                        </li>
+                    <li>Developing and adhering to a monthly household budget, if needed.</li>
+
+                </ol>
+
+                <p><b>Early Program Termination:</b></p>
+                <ol>
+                    <li>You may be terminated early from the Veterans Inc. Program for not following program requirements;</li>
+                    <li>Providing false or misleading information;</li>
+                    <li>Not complying with staff requests for information;</li>
+                    <li>Engaging in unlawful activity, threats, violence, acts of terrorism, or any other behavior that poses
+                        a threat to agency personnel, agency affiliated organizations, and groups or contractors.</li>
+                </ol>
+
+                <p><b>Program Completion:</b></p>
+                <p>You will be dismissed from Veterans Inc. Services Programs on the Date of Completion; which will be the date
+                    in which the requested supportive services are completed and no longer needed.</p>
+                <p><b>* </b>All participant households will receive mailed written confirmation and justified reason(s). Copy of termination
+                    and/or completion Setter will be kept on record and placed within participant file.
+                    </p>
+                    <div class="row mt-5">
+                        <div class="form-group col-md-8">
+                            <label for="applicantsignature mt-5">Participant Name (Print)</label>
+                            <input type="text" id="applicantsignature" class="form-control custom-input" placeholder="">
+
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="fullname mt-5">(Signature)</label>
+                            <input type="text" id="date" class="form-control custom-input" placeholder="">
+
+                        </div>
+                     
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-group col-md-8">
+                            <label for="applicantsignature mt-5">Case Manager Name (Print)</label>
+                            <input type="text" id="applicantsignature" class="form-control custom-input" placeholder="">
+
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="fullname mt-5">(Signature)</label>
+                            <input type="text" id="date" class="form-control custom-input" placeholder="">
+
+                        </div>
+                     
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="fullname mt-5">Date:</label>
+                        <input type="text" id="date" class="form-control custom-input" placeholder="">
+
+                    </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="Logo">
+        </div>
+        <h2 class="heading"> <i>Individual Employnment Plan </i></h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="fullname">Client Name</label>
+                    <input type="text" id="fullname" class="form-control" placeholder="Enter Your Client Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Registered @ CC:</label>
+                    <input type="text" id="lastname" class="form-control" placeholder="Enter your Registered @ CC">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">DVOP</label>
+                    <input type="text" id="lastname" class="form-control" placeholder="Enter DVOP">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">JOB Seeker #</label>
+                    <input type="text" id="lastname" class="form-control" placeholder="Enter JOB Seeker #">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Transportation?:</label>
+                    <input type="text" id="lastname" class="form-control" placeholder="Car/ Bus/ Walk">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Licenses: Drivers Lic.?</label>
+                    <input type="text" id="lastname" class="form-control"
+                        placeholder="Class D / CDL A,B, / 7D (School Van)">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Looking For:</label>
+                    <input type="number" id="lastname" class="form-control" placeholder="FT/PT Hrs">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Do You Have a Resume?</label>
+                    <input type="text" id="lastname" class="form-control" placeholder="Yes / No / Sort of">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Restrictions</label>
+                    <textarea class="text-area-individual" name="" id=""
+                        placeholder="(i.e. No overnights/ On bus route/ No heavy lifting)"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Job Title/ Titles</label>
+                    <textarea class="text-area-individual" name="" id=""
+                        placeholder="(i.e. Secretary / HR Generalist / B2B Sales person / Diesel Mechanic / Executive Chef)"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Skills In This Field</label>
+                    <textarea class="text-area-individual" name="" id=""
+                        placeholder="(i.e. Years of Exp. / State Lic. / Certifications / Software / General knowledge)"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Short Term Goal:</label>
+                    <textarea class="text-area-individual" name="" id="" placeholder="Short Term Goal:"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Long Term Goal:</label>
+                    <textarea class="text-area-individual"  name="" id="" placeholder="Short Term Goal:"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Any Training Required</label>
+                    <textarea class="text-area-individual" name="" id="" placeholder="Any Training Required"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mt-3 form-group ">
+                    <label>Desired Industry (Select From List):</label><br>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="male" value="male">
+                        <label class="form-check-label" for="male">Administration (Office Work)</label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Construction </label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Defense</label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Education</label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Entertainment </label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Financial Food </label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Healthcare </label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Hospitality </label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Insurance </label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Manufacturing </label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Mechanical </label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Pharmaceutical </label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Retail </label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Sales </label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Security</label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Social Work</label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Software (IT)</label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Transportation (Driving)</label>
+                    </div>
+                    <div class="form-check form-check-inline-individual-employnment">
+                        <input class="form-check-input" type="checkbox" id="female" value="female">
+                        <label class="form-check-label" for="female">Other</label>
+                    </div>
+
+                </div>
+                
+               
+            </div>
+
+            <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
+        </form>
+    </div>
+
+     <!-- seventh page ends  -->
+
+     
+
+   <!-- Bootstrap JS -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
