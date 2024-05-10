@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2024 at 02:28 PM
+-- Generation Time: May 10, 2024 at 06:30 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -184,6 +184,39 @@ CREATE TABLE `form2` (
   `extra_data_trainings` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `questionnaire`
+--
+
+CREATE TABLE `questionnaire` (
+  `id` int(11) NOT NULL,
+  `date` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `state` varchar(255) NOT NULL,
+  `older_than_55` varchar(255) NOT NULL,
+  `hear_about_us` varchar(255) NOT NULL,
+  `seeking_resources` varchar(255) NOT NULL,
+  `dob` varchar(255) NOT NULL,
+  `street_address` varchar(255) NOT NULL,
+  `phone` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `abundant_aging` longtext NOT NULL,
+  `volunteering` longtext NOT NULL,
+  `kinship_family` longtext NOT NULL,
+  `care_services` longtext NOT NULL,
+  `legal_decision_making` longtext NOT NULL,
+  `lss_meals` longtext NOT NULL,
+  `volunteer_paid_opportunities` longtext NOT NULL,
+  `personal_finances` longtext NOT NULL,
+  `payroll_support` longtext NOT NULL,
+  `caregiver_support` longtext NOT NULL,
+  `elp_in_home` longtext NOT NULL,
+  `technology_program` longtext NOT NULL,
+  `companion_services` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 --
 -- Indexes for dumped tables
 --
@@ -207,6 +240,12 @@ ALTER TABLE `form2`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `questionnaire`
+--
+ALTER TABLE `questionnaire`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -226,6 +265,12 @@ ALTER TABLE `form1_part2`
 -- AUTO_INCREMENT for table `form2`
 --
 ALTER TABLE `form2`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `questionnaire`
+--
+ALTER TABLE `questionnaire`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
