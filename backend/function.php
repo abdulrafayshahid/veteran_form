@@ -35,7 +35,7 @@ try {
     $mail->Body    = $bodyContent;
  
     $mail->send();
-    header('Location: thankyou.php');
+    header('Location: ../index.php');
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
