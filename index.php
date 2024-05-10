@@ -932,10 +932,6 @@
                             items</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="hvrp_program_2" type="radio" id="male" value="male">
-                        <label class="form-check-label custom-radio-label" for="male"></label>
-                    </div>
-                    <div class="form-check form-check-inline">
                         <input class="form-check-input" name="hvrp_program_2" type="radio" id="female" value="Amazon Receipt of Goods">
                         <label class="form-check-label custom-radio-label" for="female">Amazon Receipt of Goods
                         </label>
