@@ -19,11 +19,11 @@
                     <div class="logo">
                         <img src="./assets/images/logo.png" alt="Logo">
                     </div>
-                    <h3 class="text-center font-weight-bold">Veterans inc. Digital Intake sheet</h3>
-                    <h6 class="text-center font-weight-bold">Veterans Project Digital Intake Questionnaire
+                    <h3 class="text-center font-weight-bold" style="color: #8D4946;">Veterans inc. Digital Intake sheet</h3>
+                    <h6 class="text-center font-weight-bold" style="color: #8D4946;">Veterans Project Digital Intake Questionnaire
                     </h6>
                     <div style="width:60%; margin: 0px auto;">
-                        <p class="mt-5 text-center"><i>Thank you for participating in our Veterans Project Digital
+                        <p class="mt-5 text-center" style="color: #8D4946;"><i>Thank you for participating in our Veterans Project Digital
                                 Intake
                                 Questionnaire. Your
                                 responses will help us better understand your needs and how we can support you. Please

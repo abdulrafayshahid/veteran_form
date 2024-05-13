@@ -514,9 +514,9 @@ outline: none;
 }
 
 .btn-outline-dark {
-  background-color: #007bff;
+  background-color: #8D4946;
   color: #fff;
-  border: 2px solid #007bff;
+  border: 2px solid #fff;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
@@ -524,9 +524,9 @@ outline: none;
 }
 
 .btn-outline-dark:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-  color: #fff;
+  background-color: #fff;
+  border-color: #8D4946;
+  color: #000;
 }
 
 
