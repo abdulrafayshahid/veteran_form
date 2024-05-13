@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2024 at 08:01 PM
+-- Generation Time: May 13, 2024 at 09:00 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -33,7 +33,7 @@ CREATE TABLE `form1_part1` (
   `mi` varchar(255) DEFAULT NULL,
   `first` varchar(255) DEFAULT NULL,
   `dob` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
+  `email_address` varchar(255) DEFAULT NULL,
   `phone` varchar(255) DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
   `social_security` varchar(255) DEFAULT NULL,
@@ -92,6 +92,15 @@ CREATE TABLE `form1_part1` (
   `hvsv_applicant_date` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `form1_part1`
+--
+
+INSERT INTO `form1_part1` (`id`, `full_legal_last_name`, `mi`, `first`, `dob`, `email_address`, `phone`, `address`, `social_security`, `coc_location`, `continuum_care_code`, `referral_source`, `va_station`, `gender`, `ethnicity`, `primary_race`, `secondary_race`, `branch_service`, `service_date`, `military_mos`, `injury`, `military_status`, `rank`, `combat`, `service_connected_disability`, `discharge`, `theater_operations`, `prepared_by`, `household_status`, `cod_signature`, `cod_printed_name`, `cod_date`, `hfc_veteran`, `hfc_case_manager`, `hfc_enrol_date`, `hvrp_program`, `code_program`, `arthur_blank_program`, `hvrp_program_2`, `code_program_2`, `arthur_blank_program_2`, `cod_program_enrolled`, `cod_verification`, `cod_case_notes`, `file_reviewed_by`, `file_reviewed_date`, `consent_blanks`, `consent_employment`, `consent_national`, `consent_other`, `consent_veteran_signature`, `consent_date`, `consent_blanks_2`, `consent_veteran_signature_2`, `consent_date_2`, `consent_veteran_inc_case_signature`, `consent_date_3`, `hvsv_applicant_name`, `hvsv_checkbox_value`, `hvsv_description`, `hvsv_applicant_signature`, `hvsv_applicant_date`) VALUES
+(1, 'asd', 'asd', 'asd', '', '', '', '', '', '', '', '', '', 'M', 'Non-Hispanic', 'Black/African American', '', 'asd', '', 'asd', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'TFA Tracking Sheet', '', 'CODE ONLY', 'Hard File is in Correct Order', 'CODE CN Current', '', '', NULL, '', '', '', '', '', 'Griedvance Procedures', '', '', '', '', '', '', '', '', ''),
+(2, 'asd', 'asd', 'asd', '', '', '', '', '', '', '', '', '', 'M', 'Non-Hispanic', 'Black/African American', '', 'asd', '', 'asd', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'TFA Tracking Sheet', '', 'CODE ONLY', 'Hard File is in Correct Order', 'CODE CN Current', '', '', NULL, '', '', '', '', '', 'Griedvance Procedures', '', '', '', '', '', '', '', '', ''),
+(3, 'asd', 'asd', 'asdasd', '', '', '', '', '', '', '', '', '', 'M', '', '', 'White', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Universal Services\r\n                              Application', '', '', '', '', '', 'ONLY', '', '', '', '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -121,6 +130,14 @@ CREATE TABLE `form1_part2` (
   `iep_training` longtext DEFAULT NULL,
   `iep_desired_industry` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `form1_part2`
+--
+
+INSERT INTO `form1_part2` (`id`, `pa_name`, `pa_signature_1`, `pa_case_manager_name`, `pa_signature_2`, `pa_date`, `iep_client_name`, `iep_registered@cc`, `iep_dvop`, `iep_job_seeker`, `iep_transportation`, `iep_licenses`, `iep_looking_for`, `iep_resume`, `iep_restrictions`, `iep_job_titles`, `iep_skills`, `iep_short_term_goal`, `iep_long_term_goal`, `iep_training`, `iep_desired_industry`) VALUES
+(1, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'female,female'),
+(2, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asd', '', 'sad', 'asd', 'female,female');
 
 -- --------------------------------------------------------
 
@@ -184,6 +201,14 @@ CREATE TABLE `form2` (
   `extra_data_trainings` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `form2`
+--
+
+INSERT INTO `form2` (`id`, `purchase_request`, `amount`, `vendor_name`, `address`, `description_purchases`, `name_grant_program`, `requester_name`, `approver_name`, `date_request`, `date_approval`, `requester_signature`, `approver_signature`, `acknowledge`, `veterans_name`, `veterans_signature`, `date`, `ev_name`, `ev_ss_number`, `ev_address`, `ev_phone_number`, `ev_employer_name`, `ev_start_date`, `ev_date`, `ev_phone_number_2`, `ev_contact_person`, `ev_title`, `ev_clients_job_title`, `ev_hrs_week`, `ev_wage`, `ev_veterans_provided`, `ev_date_placement`, `ev_submitted_by`, `ajc_veterans_name`, `ajc_veterans_address`, `ajc_dob`, `ajc_dos`, `ajc_email`, `ajc_phone_number`, `ajc_client`, `ajc_dvop_name`, `ajc_telephone`, `ajc_doe`, `ajc_jobseeker_id`, `extra_data_client_name`, `extra_data_client_enolled`, `extra_data_date_name`, `extra_data_ivtp`, `extra_data_episodic`, `extra_data_work`, `extra_data_client_coenrolled`, `extra_data_referral`, `extra_data_trainings`) VALUES
+(1, '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asd', 'Yes?', '', '', '', '', '', '', ''),
+(2, '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asd', 'asd', '', '', '', 'asd', 'Yes?', '', '', '', '', '', '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -192,67 +217,38 @@ CREATE TABLE `form2` (
 
 CREATE TABLE `questionnaire` (
   `id` int(11) NOT NULL,
-  `date` varchar(255) DEFAULT NULL,
-  `name` varchar(255) DEFAULT NULL,
-  `state` varchar(255) DEFAULT NULL,
-  `older_than_55` varchar(255) DEFAULT NULL,
-  `hear_about_us` varchar(255) DEFAULT NULL,
-  `seeking_resources` varchar(255) DEFAULT NULL,
-  `dob` varchar(255) DEFAULT NULL,
-  `street_address` varchar(255) DEFAULT NULL,
-  `phone` varchar(255) DEFAULT NULL,
+  `first_name` varchar(255) DEFAULT NULL,
+  `middle_initial` varchar(255) DEFAULT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  `cell_phone` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `abundant_aging_question1` varchar(255) DEFAULT NULL,
-  `abundant_aging_question2` varchar(255) DEFAULT NULL,
-  `abundant_aging_question3` varchar(255) DEFAULT NULL,
-  `volunteering_question1` varchar(255) DEFAULT NULL,
-  `volunteering_question2` varchar(255) DEFAULT NULL,
-  `volunteering_question3` varchar(255) DEFAULT NULL,
-  `volunteering_question4` varchar(255) DEFAULT NULL,
-  `kinship_family_question1` varchar(255) DEFAULT NULL,
-  `kinship_family_question2` varchar(255) DEFAULT NULL,
-  `kinship_family_question3` varchar(255) DEFAULT NULL,
-  `kinship_family_question4` varchar(255) DEFAULT NULL,
-  `care_services_question1` varchar(255) DEFAULT NULL,
-  `care_services_question2` varchar(255) DEFAULT NULL,
-  `care_services_question3` varchar(255) DEFAULT NULL,
-  `legal_decision_making_question1` varchar(255) DEFAULT NULL,
-  `legal_decision_making_question2` varchar(255) DEFAULT NULL,
-  `legal_decision_making_question3` varchar(255) DEFAULT NULL,
-  `legal_decision_making_question4` varchar(255) DEFAULT NULL,
-  `legal_decision_making_question5` varchar(255) DEFAULT NULL,
-  `legal_decision_making_question6` varchar(255) DEFAULT NULL,
-  `lss_meals_question1` varchar(255) DEFAULT NULL,
-  `lss_meals_question2` varchar(255) DEFAULT NULL,
-  `lss_meals_question3` varchar(255) DEFAULT NULL,
-  `lss_meals_question4` varchar(255) DEFAULT NULL,
-  `lss_meals_question5` varchar(255) DEFAULT NULL,
-  `volunteer_paid_opportunities_question1` varchar(255) DEFAULT NULL,
-  `volunteer_paid_opportunities_question2` varchar(255) DEFAULT NULL,
-  `volunteer_paid_opportunities_question3` varchar(255) DEFAULT NULL,
-  `volunteer_paid_opportunities_question4` varchar(255) DEFAULT NULL,
-  `volunteer_paid_opportunities_question5` varchar(255) DEFAULT NULL,
-  `personal_finances_question1` varchar(255) DEFAULT NULL,
-  `personal_finances_question2` varchar(255) DEFAULT NULL,
-  `personal_finances_question3` varchar(255) DEFAULT NULL,
-  `personal_finances_question4` varchar(255) DEFAULT NULL,
-  `payroll_support_question1` varchar(255) DEFAULT NULL,
-  `payroll_support_question2` varchar(255) DEFAULT NULL,
-  `payroll_support_question3` varchar(255) DEFAULT NULL,
-  `caregiver_support_question1` varchar(255) DEFAULT NULL,
-  `caregiver_support_question2` varchar(255) DEFAULT NULL,
-  `caregiver_support_question3` varchar(255) DEFAULT NULL,
-  `caregiver_support_question4` varchar(255) DEFAULT NULL,
-  `elp_in_home_question1` varchar(255) DEFAULT NULL,
-  `elp_in_home_question2` varchar(255) DEFAULT NULL,
-  `elp_in_home_question3` varchar(255) DEFAULT NULL,
-  `technology_program_question1` varchar(255) DEFAULT NULL,
-  `technology_program_question2` varchar(255) DEFAULT NULL,
-  `companion_services_question1` varchar(255) DEFAULT NULL,
-  `companion_services_question2` varchar(255) DEFAULT NULL,
-  `companion_services_question3` varchar(255) DEFAULT NULL,
-  `companion_services_question4` varchar(255) DEFAULT NULL
+  `address` varchar(255) DEFAULT NULL,
+  `homeless` varchar(255) DEFAULT NULL,
+  `your_description` varchar(255) DEFAULT NULL,
+  `other_details` varchar(255) DEFAULT NULL,
+  `homeless2` varchar(255) DEFAULT NULL,
+  `sex` varchar(255) DEFAULT NULL,
+  `age` varchar(255) DEFAULT NULL,
+  `race` varchar(255) DEFAULT NULL,
+  `hear_about_us` varchar(255) DEFAULT NULL,
+  `county_residence` varchar(255) DEFAULT NULL,
+  `work_hours` varchar(255) DEFAULT NULL,
+  `school_certification` varchar(255) DEFAULT NULL,
+  `learn_about_services` longtext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `questionnaire`
+--
+
+INSERT INTO `questionnaire` (`id`, `first_name`, `middle_initial`, `last_name`, `cell_phone`, `email`, `address`, `homeless`, `your_description`, `other_details`, `homeless2`, `sex`, `age`, `race`, `hear_about_us`, `county_residence`, `work_hours`, `school_certification`, `learn_about_services`) VALUES
+(1, 'Max', 'Hof', 'Man', '1154221123', '', '', 'yes', 'service_provider', '', 'no', '', '', '', 'friend_referral', 'US', 'yes', 'no', 'Veterans Inc Community presentation,Social Media'),
+(2, 'Max', 'Hof', 'Man', '1154221123', '', '', 'yes', 'service_provider', '', 'no', '', '', '', 'friend_referral', 'US', 'yes', 'no', 'Veterans Inc Community presentation,Social Media'),
+(3, 'Max', 'hof', 'man', '12311111111111113123', '', '', 'yes', 'service_provider', '', 'yes', 'm', '', '', 'social_media', '', 'no', 'no', ''),
+(4, 'Max', 'asd', 'asd', 'sad', 'sad', '', 'yes', 'service_provider', '', 'yes', 'm', '19', '', 'social_media', '', 'no', '', 'Veteran UNC Community Event,Social Media,Flyer'),
+(5, 'Max', 'asd', 'asd', 'asd', 'asd', '', 'no', 'actively_seeking', '', 'no', '', '', '', 'social_media', '', 'no', 'no', ''),
+(6, 'Max', 'asd', 'asd', 'asd', 'asd', '', 'no', 'actively_seeking', '', 'no', '', '', '', 'social_media', '', 'no', 'no', ''),
+(7, '', '', '', '', '', '', 'yes', 'dvop_worker', '', 'yes', 'm', '24', '', 'social_media', '', 'no', 'no', 'Veterans Inc Community presentation,Veteran UNC Community Event,Social Media,Flyer');
 
 --
 -- Indexes for dumped tables
@@ -290,25 +286,25 @@ ALTER TABLE `questionnaire`
 -- AUTO_INCREMENT for table `form1_part1`
 --
 ALTER TABLE `form1_part1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `form1_part2`
 --
 ALTER TABLE `form1_part2`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `form2`
 --
 ALTER TABLE `form2`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `questionnaire`
 --
 ALTER TABLE `questionnaire`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables

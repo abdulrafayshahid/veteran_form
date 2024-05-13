@@ -1064,14 +1064,14 @@
                 <div class="consent container">
                     <h1 class="head_info text-center">Confidential Information</h1>
                     <h1 class="consent_info text-center">Consent for the Release of Confidential Information</h1>
-                    <p class="consent_para1">I,<input type="text" id="date" name="consent_blanks">with a date of birth
-                        <input type="text" id="social" name="consent_blanks">and
-                        a Social Security Number of:<input type="text" id="authorization" name="consent_blanks">give
+                    <p class="consent_para1">I,<input type="text" id="date" name="consent_blanks[]">with a date of birth
+                        <input type="text" id="social" name="consent_blanks[]">and
+                        a Social Security Number of:<input type="text" id="authorization" name="consent_blanks[]">give
                         authorization to any necessary
                         persona/organiztions to give my information to Veterans Inc.so that they can better understand
                         my condition
                         and help my obtain employment and/or other: <input type="text" id="last_blank"
-                            name="consent_blanks">
+                            name="consent_blanks[]">
                     </p>
                     <p class="consent_para2 mt-5">I understand that i have the option to opt out of releasing certain
                         information.By
@@ -1160,21 +1160,21 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox"
                                     value="Fair and Equal Services Acknowledgement" id="defaultCheck1"
-                                    name="consent_blanks_2">
+                                    name="consent_blanks_2[]">
                                 <label class="form-check-label" for="defaultCheck1">
                                     Fair and Equal Services Acknowledgement
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="Participant Rights"
-                                    id="defaultCheck1" name="consent_blanks_2">
+                                    id="defaultCheck1" name="consent_blanks_2[]">
                                 <label class="form-check-label" for="defaultCheck1">
                                     Participant Rights
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="Griedvance Procedures"
-                                    id="defaultCheck1" name="consent_blanks_2">
+                                    id="defaultCheck1" name="consent_blanks_2[]">
                                 <label class="form-check-label" for="defaultCheck1">
                                     Griedvance Procedures
                                 </label>
@@ -1182,7 +1182,7 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox"
                                     value="Warning and Early Termination Policy" id="defaultCheck1"
-                                    name="consent_blanks_2">
+                                    name="consent_blanks_2[]">
                                 <label class="form-check-label" for="defaultCheck1">
                                     Warning and Early Termination Policy
                                 </label>
@@ -1510,97 +1510,97 @@
                             <label>Desired Industry (Select From List):</label><br>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="male" value="male"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="male">Administration (Office Work)</label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Construction </label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Defense</label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Education</label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Entertainment </label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Financial Food </label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Healthcare </label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Hospitality </label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Insurance </label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Manufacturing </label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Mechanical </label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Pharmaceutical </label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Retail </label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Sales </label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Security</label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Social Work</label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Software (IT)</label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Transportation (Driving)</label>
                             </div>
                             <div class="form-check form-check-inline-individual-employnment">
                                 <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry">
+                                    name="iep_desired_industry[]">
                                 <label class="form-check-label" for="female">Other</label>
                             </div>
                         </div>
@@ -1924,7 +1924,7 @@
                         <label class="form-check-label labelll" for="defaultCheck1">
                             Yes?
                         </label>
-                        <input class="form-check-input form-check-input-sm" name="	extra_data_ivtp[]" type="radio"
+                        <input class="form-check-input form-check-input-sm" name="extra_data_ivtp[]" type="radio"
                             value="No?" id="defaultCheck1">
                         <label class="form-check-label labelll" for="defaultCheck1">
                             No?
