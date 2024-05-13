@@ -1943,19 +1943,19 @@
         <h2 class="report_heading"> <i>Extra Data for report</i></h2>
      
 
-            <h4 class="veterans_client">Client name: <input type="text" id="field"></h4>
+            <h4 class="veterans_client">Client name: <input type="text" name="extra_data_client_name" id="field"></h4>
             <h4 class="veterans_client">Client enrolled in job center? 
 
-                <input class="form-check-input form-check-input-sm" name="extra_data_client_name[]" type="radio" value="Yes?" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm" name="extra_data_client_enolled[]" type="radio" value="Yes?" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
               Yes?
                 </label>
-                <input class="form-check-input form-check-input-sm"  name="extra_data_client_name[]" type="radio" value="No?" id="defaultCheck1">
+                <input class="form-check-input form-check-input-sm"  name="extra_data_client_enolled[]" type="radio" value="No?" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
             No?
                 </label></h4>
              
-            <h4 class="date_enroll">Date enrolled <input type="text" id="field"></h4>
+            <h4 class="date_enroll">Date enrolled <input type="text" name="extra_data_date_name" id="field"></h4>
             <h4 class="ivtp">IVTP(Incarceraetd Veterans Transition Program)Eligible?
                 <input class="form-check-input form-check-input-sm"  name="extra_data_ivtp[]" type="radio" value="Yes?" id="defaultCheck1">
                 <label class="form-check-label labelll" for="defaultCheck1">
