@@ -57,13 +57,13 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="address">Address</label>
-                            <input type="text" id="email" name="email" class="form-control" placeholder="Enter Address">
+                            <input type="text" id="address" name="address" class="form-control" placeholder="Enter Address">
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="homeless">I am a homeless veteran or at risk of becoming
                                     homeless.</label>
-                                <select class="form-control" id="homeless">
+                                <select class="form-control" id="homeless" name="homeless">
                                     <option value="no">No</option>
                                     <option value="yes">Yes</option>
                                 </select>
@@ -71,7 +71,7 @@
                             <div id="homelessDetails" class="hidden">
                                 <div class="form-group">
                                     <label>Please select the option that best describes you:</label>
-                                    <select class="form-control" id="homelessOption">
+                                    <select class="form-control" id="homelessOption" name="your_description">
                                         <option value="actively_seeking">Veteran actively seeking employment</option>
                                         <option value="service_provider">Veteran service provider assisting a veteran
                                             seeking employment
@@ -85,14 +85,14 @@
                                 </div>
                                 <div id="otherDetails" class="form-group hidden">
                                     <label for="otherInput">Please specify:</label>
-                                    <input type="text" class="form-control" id="otherInput" placeholder="Enter details">
+                                    <input type="text" class="form-control" id="otherInput" name="other_details" placeholder="Enter details">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="homeless">Are you a homeless veteran?</label>
-                                <select class="form-control" id="homeless_1">
+                                <select class="form-control" id="homeless_1" name="homeless2">
                                     <option value="no">No</option>
                                     <option value="yes">Yes</option>
                                 </select>
@@ -101,7 +101,7 @@
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <label for="address">Address:</label>
-                                        <input type="text" id="address" name="address" class="form-control"
+                                        <input type="text" id="address" name="address2" class="form-control"
                                             placeholder="Enter Address">
                                     </div>
                                     <div class="form-group col-md-6">
@@ -124,7 +124,7 @@
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="hear_about_us">How did you hear about us?</label>
-                            <select class="form-control" id="hear_about_us">
+                            <select class="form-control" id="hear_about_us" name="hear_about_us">
                                 <option value="social_media">Social Media</option>
                                 <option value="friend_referral">Friend Referral</option>
                                 <option value="online_search">Online Search</option>
