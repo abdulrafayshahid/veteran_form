@@ -53,7 +53,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email">
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Enter Email">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="address">Address</label>
@@ -235,8 +235,8 @@
                             <input type="date" id="dob" class="form-control" name="dob">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="lastname">Email Address:</label>
-                            <input type="number" id="lastname" class="form-control" name="email"
+                            <label for="email_address">Email Address:</label>
+                            <input type="number" id="email_address" class="form-control" name="email_address"
                                 placeholder="Enter Email">
                         </div>
                         <div class="form-group col-md-6">

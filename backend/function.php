@@ -22,7 +22,7 @@ try {
 
     //Recipients
     $mail->setFrom('noreply@progsportsdev.com', 'Mailer');
-    $mail->addAddress('abdulrafay99910@gmail.com', 'Wide Awake Community'); // Add a recipient
+    $mail->addAddress('abdulrafay99910@gmail.com', 'Veterans Inc.'); // Add a recipient
 
     $first_name = $_POST['first_name'];
     $middle_initial = $_POST['middle_initial'];
@@ -44,7 +44,6 @@ try {
     $learn_about_services = $_POST['learn_about_services'];
     $learn=implode(',',$learn_about_services);
 
-    // Prepare SQL statement to insert data into the table
     $sql = "INSERT INTO questionnaire (`first_name`, `middle_initial`, `last_name`, `cell_phone`, `email`, `address`, `homeless`, `your_description`, `other_details`, `homeless2`,`sex`,`age`,`race`,`hear_about_us`,`county_residence`,`work_hours`,`school_certification`,`learn_about_services`) 
             VALUES ('$first_name', '$middle_initial', '$last_name', '$cell_phone', '$email', '$address', '$homeless', '$your_description', '$other_details', '$homeless2','$sex','$age','$race','$hear_about_us','$county_residence','$work_hours','$school_certification','$learn')";
 
