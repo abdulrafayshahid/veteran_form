@@ -19,13 +19,13 @@
                     <div class="logo">
                         <img src="./assets/images/logo.png" alt="Logo">
                     </div>
-                    <h3 class="text-center font-weight-bold" style="color: #8D4946;">Veterans inc. Digital Intake sheet</h3>
-                    <h6 class="text-center font-weight-bold" style="color: #8D4946;">Veterans Project Digital Intake Questionnaire
+                    <h3 class="text-center font-weight-bold" style="color: #8D4946;">Veterans inc. Digital Intake sheet
+                    </h3>
+                    <h6 class="text-center font-weight-bold" style="color: #8D4946;">Veterans Project Digital Intake
+                        Questionnaire
                     </h6>
                     <div style="width:60%; margin: 0px auto;">
-                        <p class="mt-5 text-center" style="color: #8D4946;"><i>Thank you for participating in our Veterans Project Digital
-                                Intake
-                                Questionnaire. Your
+                        <p class="mt-5 text-center" style="color: #8D4946;"><i> Your
                                 responses will help us better understand your needs and how we can support you. Please
                                 fill out the following information:</i>
                         </p>
@@ -57,7 +57,8 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="address">Address</label>
-                            <input type="text" id="address" name="address" class="form-control" placeholder="Enter Address">
+                            <input type="text" id="address" name="address" class="form-control"
+                                placeholder="Enter Address">
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
@@ -85,7 +86,8 @@
                                 </div>
                                 <div id="otherDetails" class="form-group hidden">
                                     <label for="otherInput">Please specify:</label>
-                                    <input type="text" class="form-control" id="otherInput" name="other_details" placeholder="Enter details">
+                                    <input type="text" class="form-control" id="otherInput" name="other_details"
+                                        placeholder="Enter details">
                                 </div>
                             </div>
                         </div>
@@ -99,11 +101,7 @@
                             </div>
                             <div id="homelessDetails_1" class="hidden">
                                 <div class="row">
-                                    <div class="form-group col-md-6">
-                                        <label for="address">Address:</label>
-                                        <input type="text" id="address" name="address2" class="form-control"
-                                            placeholder="Enter Address">
-                                    </div>
+
                                     <div class="form-group col-md-6">
                                         <label for="sex">Sex:</label>
                                         <input type="text" id="sex" name="sex" class="form-control"
@@ -118,6 +116,9 @@
                                         <label for="race">Race:</label>
                                         <input type="text" id="race" name="race" class="form-control"
                                             placeholder="Enter Race">
+                                    </div>
+                                    <div class="col-md-6">
+
                                     </div>
                                 </div>
                             </div>
