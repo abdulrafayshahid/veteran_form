@@ -222,13 +222,13 @@
                             <label>How did you learn about our services? (Select all that apply)</label><br>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="learn_about_services[]"
-                                    id="presentation" value="Veterans Inc Community presentation">
+                                    id="presentation" value="Veterans inc. Community presentation">
                                 <label class="form-check-label" for="presentation">Veterans inc. Community
                                     presentation</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="learn_about_services[]" id="event"
-                                    value="Veteran UNC Community Event">
+                                    value="Veteran inc. Community Event">
                                 <label class="form-check-label" for="event">Veteran inc. Community Event</label>
                             </div>
                             <div class="form-check">
