@@ -60,6 +60,48 @@
                             <input type="text" id="address" name="address" class="form-control"
                                 placeholder="Enter Address">
                         </div>
+                        <div class="form-group col-md-6">
+                                        <label for="sex">Gender:</label>
+                                        <select id="gender" name="gender" class="form-control">
+                                            <option value="">Select Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Binary">Binary</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="age">Marital Status:</label>
+                                        <select id="marital_status" name="marital_status" class="form-control">
+                                            <option value="">Select Marital Status</option>
+                                            <option value="Married">Married</option>
+                                            <option value="Widowed">Widowed</option>
+                                            <option value="Domestic Partner">Domestic Partner</option>
+                                            <option value="Living with partner">Living with Partner</option>
+                                            <option value="Never Married">Never Married</option>
+                                        </select>
+                                    </div>                                   
+                                    <div class="form-group col-md-6">
+                                        <label for="race">Race:</label>
+                                       
+                                            <select id="race" name="race" class="form-control">
+                                                <option value="">Select Race</option>
+                                                <option value="American Indian">American Indian</option>
+                                                <option value="Alaska Native">Alaska Native</option>
+                                                <option value="Asian">Asian</option>
+                                                <option value="Black or African American">Black or African American</option>
+                                                <option value="Hispanic or Latino">Hispanic or Latino</option>
+                                                <option value="Native Hawaiian">Native Hawaiian</option>
+                                                <option value="White">White</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="age">Age:</label>
+                                        <input type="text" id="age" name="age" class="form-control"
+                                            placeholder="Enter Age">
+                                    </div>
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="homeless">I am a homeless veteran or at risk of becoming
@@ -91,7 +133,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <!-- <div class="col-md-12">
                             <div class="form-group">
                                 <label for="homeless">Are you a homeless veteran?</label>
                                 <select class="form-control" id="homeless_1" name="homeless2">
@@ -114,16 +156,27 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="race">Race:</label>
-                                        <input type="text" id="race" name="race" class="form-control"
-                                            placeholder="Enter Race">
+                                       
+                                            <select id="race" name="race" class="form-control">
+                                                <option value="">Select Race</option>
+                                                <option value="American Indian">American Indian</option>
+                                                <option value="Alaska Native">Alaska Native</option>
+                                                <option value="Asian">Asian</option>
+                                                <option value="Black or African American">Black or African American</option>
+                                                <option value="Hispanic or Latino">Hispanic or Latino</option>
+                                                <option value="Native Hawaiian">Native Hawaiian</option>
+                                                <option value="White">White</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+
                                     </div>
                                     <div class="col-md-6">
 
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 form-group">
+                        </div> -->
+                        <div class="col-md-12 form-group">
                             <label for="hear_about_us">How did you hear about us?</label>
                             <select class="form-control" id="hear_about_us" name="hear_about_us">
                                 <option value="social_media">Social Media</option>
@@ -133,11 +186,11 @@
                                 <option value="other">Other</option>
                             </select>
                         </div>
-                        <div class="col-md-6 form-group">
+                        <!-- <div class="col-md-6 form-group">
                             <label for="county_residence">County of Residence:</label>
                             <input type="text" class="form-control" id="county_residence" name="county_residence"
                                 placeholder="Enter County Name">
-                        </div>
+                        </div> -->
                         <div class="col-md-6 mt-3 form-group">
                             <label>Are you willing to work 25 hours or more per week?</label><br>
                             <div class="form-check form-check-inline">
@@ -201,6 +254,31 @@
                                     id="partner_org" value="Another Veterans Inc Partner Organization">
                                 <label class="form-check-label" for="partner_org">Another Veterans Inc Partner
                                     Organization</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-5 form-group">
+                            <label>I spoke with _____________________from North Dakota</label><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="spoke_with[]"
+                                    id="presentation" value="Marian Jordan">
+                                <label class="form-check-label" for="presentation">Marian Jordan</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="spoke_with[]" id="event"
+                                    value="Someone else/ I do not Remember">
+                                <label class="form-check-label" for="event">Someone else/ I do not Remember</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-5 form-group">
+                            <label>County of Residence:</label><br>
+                            <div class="form-check">
+                                <input class="form-control" name="country_residence[]">
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-5 form-group text center">
+                            <label>Thank you for completing the Veterans Inc. Digital Intake Questionnaire. Your information will be kept confidential and used solely for the purpose of providing you with appropriate services and support. If you have any additional comments or questions, please feel free to include them below:</label><br>
+                            <div class="form-check">
+                                <textarea class="form-control" name="any_questions"></textarea>
                             </div>
                         </div>
                     </div>
