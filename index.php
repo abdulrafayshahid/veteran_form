@@ -21,7 +21,7 @@
                     </div>
                     <h3 class="text-center font-weight-bold" style="color: #8D4946;">Veterans inc. Digital Intake sheet
                     </h3>
-                    <h6 class="text-center font-weight-bold" style="color: #8D4946;">Veterans Project Digital Intake
+                    <h6 class="text-center font-weight-bold" style="color: #8D4946;">Veterans inc. Digital Intake
                         Questionnaire
                     </h6>
                     <div style="width:60%; margin: 0px auto;">
@@ -205,8 +205,8 @@
                             </div>
                         </div>
                         <div class="col-md-6 mt-3 form-group">
-                            <label>Are you currently going back to school or obtaining
-                                certification?</label><br>
+                            <label>Are you currently attending or seeking to enroll in school or receive
+                                certification (s)?</label><br>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="school_certification"
                                     id="school_certification_yes" value="yes">
@@ -223,13 +223,13 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="learn_about_services[]"
                                     id="presentation" value="Veterans Inc Community presentation">
-                                <label class="form-check-label" for="presentation">Veterans Inc Community
+                                <label class="form-check-label" for="presentation">Veterans inc. Community
                                     presentation</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="learn_about_services[]" id="event"
                                     value="Veteran UNC Community Event">
-                                <label class="form-check-label" for="event">Veteran UNC Community Event</label>
+                                <label class="form-check-label" for="event">Veteran inc. Community Event</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="learn_about_services[]"
@@ -283,7 +283,7 @@
                         </div>
                     </div>
                     <div class="text-center w-100">
-                        <button type="button" id="questionnaire_btn" class="btn btn-outline-dark">NEXT</button>
+                        <button type="button" id="questionnaire_btn" class="btn btn-outline-dark">SUBMIT</button>
                     </div>
                 </div>
             </div>
