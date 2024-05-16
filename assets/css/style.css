@@ -49,6 +49,10 @@ label {
   display: block;
 }
 
+.form-check-inline2 {
+  display: inline !important;
+}
+
 .custom-heading {
   text-align: center;
   margin-bottom: 20px;
@@ -503,10 +507,6 @@ outline: none;
 .bn47:hover:before {
   top: 0;
   left: 0;
-}
-
-#form1{
-  display: none;
 }
 
 #form2{

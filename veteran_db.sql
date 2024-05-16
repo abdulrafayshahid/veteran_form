@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 13, 2024 at 09:00 PM
+-- Generation Time: May 16, 2024 at 04:48 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -45,6 +45,7 @@ CREATE TABLE `form1_part1` (
   `ethnicity` varchar(255) DEFAULT NULL,
   `primary_race` varchar(255) DEFAULT NULL,
   `secondary_race` varchar(255) DEFAULT NULL,
+  `copy_dd214` varchar(255) DEFAULT NULL,
   `branch_service` varchar(255) DEFAULT NULL,
   `service_date` varchar(255) DEFAULT NULL,
   `military_mos` varchar(255) DEFAULT NULL,
@@ -96,10 +97,9 @@ CREATE TABLE `form1_part1` (
 -- Dumping data for table `form1_part1`
 --
 
-INSERT INTO `form1_part1` (`id`, `full_legal_last_name`, `mi`, `first`, `dob`, `email_address`, `phone`, `address`, `social_security`, `coc_location`, `continuum_care_code`, `referral_source`, `va_station`, `gender`, `ethnicity`, `primary_race`, `secondary_race`, `branch_service`, `service_date`, `military_mos`, `injury`, `military_status`, `rank`, `combat`, `service_connected_disability`, `discharge`, `theater_operations`, `prepared_by`, `household_status`, `cod_signature`, `cod_printed_name`, `cod_date`, `hfc_veteran`, `hfc_case_manager`, `hfc_enrol_date`, `hvrp_program`, `code_program`, `arthur_blank_program`, `hvrp_program_2`, `code_program_2`, `arthur_blank_program_2`, `cod_program_enrolled`, `cod_verification`, `cod_case_notes`, `file_reviewed_by`, `file_reviewed_date`, `consent_blanks`, `consent_employment`, `consent_national`, `consent_other`, `consent_veteran_signature`, `consent_date`, `consent_blanks_2`, `consent_veteran_signature_2`, `consent_date_2`, `consent_veteran_inc_case_signature`, `consent_date_3`, `hvsv_applicant_name`, `hvsv_checkbox_value`, `hvsv_description`, `hvsv_applicant_signature`, `hvsv_applicant_date`) VALUES
-(1, 'asd', 'asd', 'asd', '', '', '', '', '', '', '', '', '', 'M', 'Non-Hispanic', 'Black/African American', '', 'asd', '', 'asd', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'TFA Tracking Sheet', '', 'CODE ONLY', 'Hard File is in Correct Order', 'CODE CN Current', '', '', NULL, '', '', '', '', '', 'Griedvance Procedures', '', '', '', '', '', '', '', '', ''),
-(2, 'asd', 'asd', 'asd', '', '', '', '', '', '', '', '', '', 'M', 'Non-Hispanic', 'Black/African American', '', 'asd', '', 'asd', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'TFA Tracking Sheet', '', 'CODE ONLY', 'Hard File is in Correct Order', 'CODE CN Current', '', '', NULL, '', '', '', '', '', 'Griedvance Procedures', '', '', '', '', '', '', '', '', ''),
-(3, 'asd', 'asd', 'asdasd', '', '', '', '', '', '', '', '', '', 'M', '', '', 'White', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Universal Services\r\n                              Application', '', '', '', '', '', 'ONLY', '', '', '', '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
+INSERT INTO `form1_part1` (`id`, `full_legal_last_name`, `mi`, `first`, `dob`, `email_address`, `phone`, `address`, `social_security`, `coc_location`, `continuum_care_code`, `referral_source`, `va_station`, `gender`, `ethnicity`, `primary_race`, `secondary_race`, `copy_dd214`, `branch_service`, `service_date`, `military_mos`, `injury`, `military_status`, `rank`, `combat`, `service_connected_disability`, `discharge`, `theater_operations`, `prepared_by`, `household_status`, `cod_signature`, `cod_printed_name`, `cod_date`, `hfc_veteran`, `hfc_case_manager`, `hfc_enrol_date`, `hvrp_program`, `code_program`, `arthur_blank_program`, `hvrp_program_2`, `code_program_2`, `arthur_blank_program_2`, `cod_program_enrolled`, `cod_verification`, `cod_case_notes`, `file_reviewed_by`, `file_reviewed_date`, `consent_blanks`, `consent_employment`, `consent_national`, `consent_other`, `consent_veteran_signature`, `consent_date`, `consent_blanks_2`, `consent_veteran_signature_2`, `consent_date_2`, `consent_veteran_inc_case_signature`, `consent_date_3`, `hvsv_applicant_name`, `hvsv_checkbox_value`, `hvsv_description`, `hvsv_applicant_signature`, `hvsv_applicant_date`) VALUES
+(4, 'asdsad', 'cole', 'asdf', '2024-05-01', 'user@gmail.com', '12515115', 'asd', 'asd', 'asd', 'asd', 'asd', 'sad', 'M', '', '', '', 'No', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(5, 'asdsad', 'cole', 'asdf', '2024-05-01', 'user@gmail.com', '12515115', 'asd', 'asd', 'asd', 'asd', 'asd', 'sad', 'M', '', '', '', 'No', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -109,6 +109,7 @@ INSERT INTO `form1_part1` (`id`, `full_legal_last_name`, `mi`, `first`, `dob`, `
 
 CREATE TABLE `form1_part2` (
   `id` int(11) NOT NULL,
+  `form1_part1_id` int(11) DEFAULT NULL,
   `pa_name` varchar(255) DEFAULT NULL,
   `pa_signature_1` varchar(255) DEFAULT NULL,
   `pa_case_manager_name` varchar(255) DEFAULT NULL,
@@ -135,9 +136,8 @@ CREATE TABLE `form1_part2` (
 -- Dumping data for table `form1_part2`
 --
 
-INSERT INTO `form1_part2` (`id`, `pa_name`, `pa_signature_1`, `pa_case_manager_name`, `pa_signature_2`, `pa_date`, `iep_client_name`, `iep_registered@cc`, `iep_dvop`, `iep_job_seeker`, `iep_transportation`, `iep_licenses`, `iep_looking_for`, `iep_resume`, `iep_restrictions`, `iep_job_titles`, `iep_skills`, `iep_short_term_goal`, `iep_long_term_goal`, `iep_training`, `iep_desired_industry`) VALUES
-(1, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'female,female'),
-(2, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asd', '', 'sad', 'asd', 'female,female');
+INSERT INTO `form1_part2` (`id`, `form1_part1_id`, `pa_name`, `pa_signature_1`, `pa_case_manager_name`, `pa_signature_2`, `pa_date`, `iep_client_name`, `iep_registered@cc`, `iep_dvop`, `iep_job_seeker`, `iep_transportation`, `iep_licenses`, `iep_looking_for`, `iep_resume`, `iep_restrictions`, `iep_job_titles`, `iep_skills`, `iep_short_term_goal`, `iep_long_term_goal`, `iep_training`, `iep_desired_industry`) VALUES
+(4, NULL, '', '', '', '', '', 'asd', 'asd', 'asdsad', 'asd', 'asd', 'asd', '', 'Yes', 'sad', 'sad', 'sad', 'dasdsad', 'asd', 'sasad', 'female,female,female');
 
 -- --------------------------------------------------------
 
@@ -206,8 +206,7 @@ CREATE TABLE `form2` (
 --
 
 INSERT INTO `form2` (`id`, `purchase_request`, `amount`, `vendor_name`, `address`, `description_purchases`, `name_grant_program`, `requester_name`, `approver_name`, `date_request`, `date_approval`, `requester_signature`, `approver_signature`, `acknowledge`, `veterans_name`, `veterans_signature`, `date`, `ev_name`, `ev_ss_number`, `ev_address`, `ev_phone_number`, `ev_employer_name`, `ev_start_date`, `ev_date`, `ev_phone_number_2`, `ev_contact_person`, `ev_title`, `ev_clients_job_title`, `ev_hrs_week`, `ev_wage`, `ev_veterans_provided`, `ev_date_placement`, `ev_submitted_by`, `ajc_veterans_name`, `ajc_veterans_address`, `ajc_dob`, `ajc_dos`, `ajc_email`, `ajc_phone_number`, `ajc_client`, `ajc_dvop_name`, `ajc_telephone`, `ajc_doe`, `ajc_jobseeker_id`, `extra_data_client_name`, `extra_data_client_enolled`, `extra_data_date_name`, `extra_data_ivtp`, `extra_data_episodic`, `extra_data_work`, `extra_data_client_coenrolled`, `extra_data_referral`, `extra_data_trainings`) VALUES
-(1, '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asd', 'Yes?', '', '', '', '', '', '', ''),
-(2, '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asd', 'asd', '', '', '', 'asd', 'Yes?', '', '', '', '', '', '', '');
+(3, 'URGENT* Needed within 24 Hours', 9, 'sad', 'asd', 'asd', 'asd', 'asd', 'sadsad', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asd', '', '', '', '2', 'asd', 'No?', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -226,29 +225,27 @@ CREATE TABLE `questionnaire` (
   `homeless` varchar(255) DEFAULT NULL,
   `your_description` varchar(255) DEFAULT NULL,
   `other_details` varchar(255) DEFAULT NULL,
-  `homeless2` varchar(255) DEFAULT NULL,
-  `sex` varchar(255) DEFAULT NULL,
+  `gender` varchar(255) DEFAULT NULL,
+  `marital_status` varchar(255) DEFAULT NULL,
   `age` varchar(255) DEFAULT NULL,
   `race` varchar(255) DEFAULT NULL,
   `hear_about_us` varchar(255) DEFAULT NULL,
   `county_residence` varchar(255) DEFAULT NULL,
   `work_hours` varchar(255) DEFAULT NULL,
   `school_certification` varchar(255) DEFAULT NULL,
-  `learn_about_services` longtext DEFAULT NULL
+  `learn_about_services` longtext DEFAULT NULL,
+  `spoke_with` varchar(255) DEFAULT NULL,
+  `any_questions` longtext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `questionnaire`
 --
 
-INSERT INTO `questionnaire` (`id`, `first_name`, `middle_initial`, `last_name`, `cell_phone`, `email`, `address`, `homeless`, `your_description`, `other_details`, `homeless2`, `sex`, `age`, `race`, `hear_about_us`, `county_residence`, `work_hours`, `school_certification`, `learn_about_services`) VALUES
-(1, 'Max', 'Hof', 'Man', '1154221123', '', '', 'yes', 'service_provider', '', 'no', '', '', '', 'friend_referral', 'US', 'yes', 'no', 'Veterans Inc Community presentation,Social Media'),
-(2, 'Max', 'Hof', 'Man', '1154221123', '', '', 'yes', 'service_provider', '', 'no', '', '', '', 'friend_referral', 'US', 'yes', 'no', 'Veterans Inc Community presentation,Social Media'),
-(3, 'Max', 'hof', 'man', '12311111111111113123', '', '', 'yes', 'service_provider', '', 'yes', 'm', '', '', 'social_media', '', 'no', 'no', ''),
-(4, 'Max', 'asd', 'asd', 'sad', 'sad', '', 'yes', 'service_provider', '', 'yes', 'm', '19', '', 'social_media', '', 'no', '', 'Veteran UNC Community Event,Social Media,Flyer'),
-(5, 'Max', 'asd', 'asd', 'asd', 'asd', '', 'no', 'actively_seeking', '', 'no', '', '', '', 'social_media', '', 'no', 'no', ''),
-(6, 'Max', 'asd', 'asd', 'asd', 'asd', '', 'no', 'actively_seeking', '', 'no', '', '', '', 'social_media', '', 'no', 'no', ''),
-(7, '', '', '', '', '', '', 'yes', 'dvop_worker', '', 'yes', 'm', '24', '', 'social_media', '', 'no', 'no', 'Veterans Inc Community presentation,Veteran UNC Community Event,Social Media,Flyer');
+INSERT INTO `questionnaire` (`id`, `first_name`, `middle_initial`, `last_name`, `cell_phone`, `email`, `address`, `homeless`, `your_description`, `other_details`, `gender`, `marital_status`, `age`, `race`, `hear_about_us`, `county_residence`, `work_hours`, `school_certification`, `learn_about_services`, `spoke_with`, `any_questions`) VALUES
+(8, 'Max', 'Som', 'Holloway', '0211111111211', 'user123@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'M', 'Never Married', '29', 'Native Hawaiian', 'friend_referral', 'US', 'yes', 'yes', 'Social Media', 'Someone else/ I do not Remember', 'No'),
+(9, 'ron', 'cole', 'man', '12515115', 'user1235@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'Male', 'Never Married', '29', 'Native Hawaiian', 'friend_referral', 'US', 'yes', 'yes', 'Social Media', 'Someone else/ I do not Remember', 'No'),
+(10, 'asdf', 'cole', 'asdsad', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'F', 'Widowed', '29', 'Hispanic or Latino', 'online_search', 'US', 'no', 'no', 'Veteran inc. Community Event', 'Marian Jordan', 'no');
 
 --
 -- Indexes for dumped tables
@@ -264,7 +261,8 @@ ALTER TABLE `form1_part1`
 -- Indexes for table `form1_part2`
 --
 ALTER TABLE `form1_part2`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `form1_part1_foreign_key` (`form1_part1_id`);
 
 --
 -- Indexes for table `form2`
@@ -286,25 +284,25 @@ ALTER TABLE `questionnaire`
 -- AUTO_INCREMENT for table `form1_part1`
 --
 ALTER TABLE `form1_part1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `form1_part2`
 --
 ALTER TABLE `form1_part2`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `form2`
 --
 ALTER TABLE `form2`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `questionnaire`
 --
 ALTER TABLE `questionnaire`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Constraints for dumped tables
@@ -314,7 +312,7 @@ ALTER TABLE `questionnaire`
 -- Constraints for table `form1_part2`
 --
 ALTER TABLE `form1_part2`
-  ADD CONSTRAINT `form1_part1_foreign_key` FOREIGN KEY (`id`) REFERENCES `form1_part1` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `form1_part1_foreign_key` FOREIGN KEY (`form1_part1_id`) REFERENCES `form1_part1` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
