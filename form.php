@@ -39,10 +39,15 @@ mysqli_close($conn);
         <form action="backend/function.php" method="post">
             <div id="form1">
                 <div class="container">
-                    <div class="logo">
+                <div class="row">
+                    <div class="logo col-md-4">
                         <img src="./assets/images/logo.png" alt="Logo">
                     </div>
-                    <h2 class="heading"> <i>Profile Information</i></h2>
+                    <div>
+                    <h2 class="heading3"> <i>Universal Services Application</i></h2>
+                    </div>
+                </div>
+                    <h2 class="heading2"> <u>Profile Information</u></h2>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="fullname">Full Legal Name-Last:</label>
@@ -220,7 +225,7 @@ mysqli_close($conn);
                     </div>
                 
                     <hr class="hr_style">
-                    <h2 class="heading mt-5"><i>Military Information</i> </h2>
+                    <h2 class="heading2 mt-5"><u>Military Information</u> </h2>
                     <div class="col-md-10 mt-3 form-group mt-5">
                             <label  class="mr-3">Do you have a Copy of Your DD214 or VA Medical Card:</label>
                             <div class="form-check form-check-inline2">

@@ -28,6 +28,21 @@ body {
   font-size: 35px;
 }
 
+.heading2 {
+  color: #8D4946;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.heading3 {
+  text-align: center;
+  color: #8D4946;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
 .hr_style {
   border: 1px solid #000 !important;
   margin: 40px 0px !important;
