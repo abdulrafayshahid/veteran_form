@@ -1,5 +1,5 @@
 <?php
-include('connection.php');
+include('backend/connection.php');
 
 $query = "SELECT `first_name`, `middle_initial`, `last_name`, `cell_phone`, `email`, `gender`, `address`, `race` FROM questionnaire ORDER BY `id` DESC LIMIT 1";
 $result = mysqli_query($conn, $query);
