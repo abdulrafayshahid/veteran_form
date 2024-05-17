@@ -419,6 +419,802 @@ mysqli_close($conn);
                     </div>
                     <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
                 </div>
+                
+                     <!-- fifth page starts -->
+                     <div class="consent container">
+                    <h1 class="head_info text-center">Confidential Information</h1>
+                    <h1 class="consent_info text-center">Consent for the Release of Confidential Information</h1>
+                    <p class="consent_para1">I,<input type="text" id="date" name="consent_blanks[]">with a date of birth
+                        <input type="text" id="social" name="consent_blanks[]">and
+                        a Social Security Number of:<input type="text" id="authorization" name="consent_blanks[]">give
+                        authorization to any necessary
+                        persona/organiztions to give my information to Veterans Inc.so that they can better understand
+                        my condition
+                        and help my obtain employment and/or other: <input type="text" id="last_blank"
+                            name="consent_blanks[]">
+                    </p>
+                    <p class="consent_para2 mt-5">I understand that i have the option to opt out of releasing certain
+                        information.By
+                        checking the boxes below,i understand that i giving permission for the selected information to
+                        sent by
+                        Veterns Inc,to included giving permission for the Veterns Inc.Staff to assist myself with the
+                        job Americans
+                        job centers and obtaining my DD214:
+                    </p>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="radio" value="Employment" id="defaultCheck1"
+                                        name="consent_employment">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Employment
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="radio"
+                                        value="National Archieves/DD214 Recovery" id="defaultCheck1"
+                                        name="consent_national">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        National Archieves/DD214 Recovery
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="Other" id="defaultCheck1"
+                                        name="consent_other">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Other: <input type="text" id="consent_other">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consent_para3">
+                        <p class="consent_para3_para">I also understand that:</p>
+                        <li>If i want to revoke permission of Veterans Inc.to get this information i need to give
+                            request written
+                            request to Veterans Inc.staff.
+                        </li>
+                        <li>The authorization im giving shall continue as long as im receiving services at Veterans
+                            Inc.or upto 1
+                            year after ending services
+                        </li>
+                    </div>
+                    <p class="consent_para4">I also release,discharge and exonerate Veterans Inc,and any person
+                        funsihing my
+                        Confidential any and all liability that might arise out of funishing.or inspecting these
+                        documents . Finally
+                        i also authorize Veterans Inc.staff and volunteers to release any of information to the
+                        appropriate agents
+                        in the event of a medical emergency.
+                    </p>
+                    <div class="row mt-5">
+                        <div class="form-group col-md-8">
+                            <label for="applicantsignature mt-5">Veterans Signature</label>
+                            <input type="text" id="applicantsignature" class="form-control custom-input"
+                                name="consent_veteran_signature" placeholder="">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="fullname mt-5">Date</label>
+                            <input type="text" id="date" class="form-control custom-input" name="consent_date"
+                                placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <!-- fifth page ends -->
+                 <!-- sixth page starts -->
+                 <div class="veterans container">
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
+                    <p class="veterans_para">I hereby acknowledged that i have received a copy of the following
+                        doucments and that
+                        they were reviewed with me at the time of that intake for participation of Veteras Inc.Universla
+                        Services
+                        Program adminsitrated by Veterans Inc.and its identified subcontractors.
+                    </p>
+                    <div class="col-md-12 offset-1 d-flex justify-content-center">
+                        <div class="col-md-6 mt-5 mb-5 custom-font-size">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox"
+                                    value="Fair and Equal Services Acknowledgement" id="defaultCheck1"
+                                    name="consent_blanks_2[]">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Fair and Equal Services Acknowledgement
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Participant Rights"
+                                    id="defaultCheck1" name="consent_blanks_2[]">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Participant Rights
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Griedvance Procedures"
+                                    id="defaultCheck1" name="consent_blanks_2[]">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Griedvance Procedures
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox"
+                                    value="Warning and Early Termination Policy" id="defaultCheck1"
+                                    name="consent_blanks_2[]">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Warning and Early Termination Policy
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-group col-md-8">
+                            <label for="applicantsignature mt-5">Signature of Veteran</label>
+                            <input type="text" id="applicantsignature" class="form-control custom-input" placeholder=""
+                                name="consent_veteran_signature_2">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="fullname mt-5">Date</label>
+                            <input type="text" id="date" class="form-control custom-input" placeholder=""
+                                name="consent_date_2">
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="form-group col-md-8">
+                            <label for="applicantsignature mt-5">Veterans Inc.Case Manager</label>
+                            <input type="text" id="applicantsignature" class="form-control custom-input" placeholder=""
+                                name="consent_veteran_inc_case_signature">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="fullname mt-5">Date</label>
+                            <input type="text" id="date" class="form-control custom-input" placeholder=""
+                                name="consent_date_3">
+                        </div>
+                    </div>
+                </div>
+                <!-- sixth page ends  -->
+
+                <!-- fourth page starts -->
+                <div class="fourth container">
+                    <img src="assets/images/logo.png" alt="">
+                    <h4 class="fourth-head mt-5">Fair and Equal Services Acknowledgment</h4>
+                    <p>Veterans Inc. is committed to providing fair and equal supportive services to individuals
+without regard to race, color, religion, sex, national origin, ancestry, age, disability,
+marital status, sexual orientation, or any other characteristic protected by law. 
+</p>
+
+<p>If you feel that you have been treated in a discriminatory manner, you may contact the
+following persons:</p>
+
+<p>If you feel that you have been treated in a discriminatory manner, you may contact the
+following persons:</p>
+
+<p>Supervisor Name: <input type="text" placeholder="Chris Grudzinski"></p>
+<p>Supervisor Phone Number: <input type="text" placeholder="406-413-8939"></p>
+
+<p>Correspondence must be addressed to:</p>
+
+<p>Veterans Rights Officer (VRO) <br>
+Veterans Inc. <br>
+69 Grove Street <br>
+Worcester, MA 01605</p>
+
+<p>All notices and communications shall be provided in a manner that is effective for
+persons with hearing, visual, and other communication-related disabilities.</p>
+                </div>
+                  <!-- fourth page ends -->
+
+                  <!-- seventh section starts -->
+                  <div class="participant container">
+                    <img src="assets/images/logo.png" alt="">
+                    <h4>Participant Rights</h4>
+                    <p>You have the right to:</p>
+                    <li>Have your confidentiality protected and respected, and know
+what information can and cannot be kept confidential. All client
+information will remain confidential except for certain types of
+information and situations. Those exceptions are: Release of
+Information as Approved by Client, Safety (risk of self-harm or
+risk of harm to others), Abuse, or Court Order to which this
+program is a party in fact. Participant information will be kept in
+a secured/locked area;</li>
+<li> Be treated with dignity and respect;</li>
+<li> Be protected from verbal, physical and sexual mistreatment by
+Program Staff;</li>
+<li>Receive a written list of the guidelines of the program;</li>
+<li>• A safe environment when meeting with Program Staff;</li>
+<li>• An explanation of all available services and referral
+opportunities regarding healthcare, substance abuse, mental
+health, HIV/AIDS, case management, public benefits and
+employment services depending upon your need and eligibility;</li>
+<li>Participate in the development and implementation of your
+individual service plan and access to your files and records;</li>
+<li>Appeal any decisions made by this program and to contribute
+feedback through internal and external surveys;</li>
+<li>Receive fair and equal treatment from Program Staff.</li>
+                  </div>
+                     <!-- seventh section ends -->
+
+                     <div class="container">
+                    <div class="text-center pb-3">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
+                    <h3 class="text-center mb-3">Grievance Procedure</h3>
+                    <div class="col-md-6 offset-3">
+                        <p>You have the right to:
+                        </p>
+                        <ul>
+                            <li class="mb-3">Address any program problem you have with the Veterans Inc.
+Case Manager. If s/he cannot solve your problem, please refer
+to next bullet;</li>
+<li class="mb-3">Address your problem with the supervisor of the Case Manager.
+The supervisor will investigate the problem by talking to you and
+the Case Manger involved and will respond to you within 3
+business days. If you feel that your problem is not resolved,
+please refer to next bullet;</li>
+                            <li>Put your grievance in writing to the Veterans Inc. Grievance
+Officer. He or she will connect with you and gather all the
+written reports as well as speak to the staff involved. The
+Grievance Officer will respond to you within three business
+days. 
+                            </li>                         
+                        </ul>
+                    </div>
+                    <div class="col-md-6 offset-2 mt-5">
+                        <p class="mb-3">Correspondence must be addressed to:</p>
+                        <i>Veterans Rights Officer (VRO)</i><br>
+                        <i>Veterans Inc.</i><br>
+                        <i>69 Grove Street</i><br>
+                        <i>Worcester, MA 01605</i>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="text-center pb-3">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
+                    <h3 class="text-center mb-3">Warning and Early Termination Policy</h3>
+                    <div class="col-md-9 offset-2">
+                        <ul>
+                            <li class="mb-3">Warnings are determined on a case by case basis, in relation to Veterans Inc.’s
+policy on participant termination.</li>
+<li class="mb-3">All extenuating circumstances are taken into account, and warnings are issued
+only in relation to extreme situations.</li>
+                            <li class="mb-3">The major issuance of a warning is in relation to a participants’ refusal of
+program services.
+                            </li>  
+                            <li class="mb-3">The authority for making determinations regarding verbal and written warnings
+rests with Veterans Inc. management, supported by input from the participants’
+Case Manager.</li>       
+<li class="mb-3">Written notice will be provided to the participant containing a clear statement of
+the reasons for termination. Copies of all confirmations of verbal warnings and
+written warnings shall be maintained in the participant’s program file.</li>    
+<li class="mb-3">Participant has the right to appeal and to have a fair review my Program
+Management.</li>          
+<li class="mb-3">Determinations regarding final warnings and termination from program shall be
+made jointly by the Case Manager and the Program Manager. Prompt written
+notice of the final decision to the participant will be given.
+</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9 offset-2 mt-5">
+                        <p>*Reasonable accommodations will be made to terminating program services in the
+event that the head of household expire. Veterans Inc. will work with other adult
+occupants (listed on existing lease) in securing other housing arrangements if
+applicable and will allow said occupants to remain within the subsidy program for
+determined period of time.</p>
+                    </div>
+                   
+                </div>
+
+                <!-- eight page starts -->
+
+                <div class="container">
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
+                    <h2 class="heading"> <i>HOMELESS VERIFICATION / SELF VERIFICATION</i></h2>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="applicantname">Applicant Name:</label>
+                            <input type="text" id="applicantname" class="form-control"
+                                placeholder="Enter Your full name:" name="hvsv_applicant_name">
+                        </div>
+                        <div class="form-group col-md-12 border-bottom-2">
+                            <p for="instructions">Instructions: This form is to certify, via a third party, that the
+                                above named applicant is currently “literally homeless" as defined
+                                by program description. The third party completing this form must check one box below,
+                                provide a description, and sign and date
+                                this form. Clients may complete this self-certification if third party documentation
+                                (i.e., written or oral verification) cannot be
+                                obtained from an appropriate third party. Applicants may self-certify their current
+                                “literally homeless” status per one of the
+                                categories below and as defined by program description. Staff should review this form
+                                with applicants and assist in completing,
+                                as needed. Applicanis must sign and date this form.
+                            </p>
+                        </div>
+                        <h4>
+                            <i>I certify that (check only one):</i></h2>
+                            <div class="col-md-12 mt-3 form-group">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" id="certify1" value="certify1"
+                                        name="hvsv_checkbox_value">
+                                    <label class="form-check-label" for="certify1">A person who lacks a fixed, regular,
+                                        and adequate nighttime residence; an individual who will
+                                        imminently lose his or her housing, has no subsequent residence identified,
+                                        and/or who lacks the
+                                        resources or support network needed to obtain other permanent housing, or victim
+                                        of domestic violence.
+                                        HVRP = Homeless, SSVF = Prevention</label>
+                                </div>
+                                <div class="form-check form-check-inline mt-3 border-bottom-3">
+                                    <label class="form-check-label" for="certify1_description">Description of Veteran
+                                        Situaion:</label><br><br>
+                                    <textarea class="custom-text-area mb-4" name="hvsv_description"></textarea>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" id="certify2" value="certify2"
+                                        name="hvsv_checkbox_value">
+                                    <label class="form-check-label" for="certify2">I (we) am living in a car, park,
+                                        abandoned building, bus/train station, airport, camping ground,
+                                        or other place not designed for or ordinarily used as a regular sleeping
+                                        accommodation.</label>
+                                </div>
+                                <div class="form-check form-check-inline mt-3 border-bottom-3">
+                                    <label class="form-check-label" for="certify2_description">Description of Where You
+                                        Are Staying:</label><br><br>
+                                    <textarea class="custom-text-area mb-4" name="hvsv_description"></textarea>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" id="certify3" value="certify3"
+                                        name="hvsv_checkbox_value">
+                                    <label class="form-check-label" for="certify3">I (we) am staying in an emergency
+                                        shelter OR a transitional housing program for people who
+                                        are homeless OR a hotel or motel that is paid for by a charity or government
+                                        program.</label>
+                                </div>
+                                <div class="form-check form-check-inline mt-3 border-bottom-3">
+                                    <label class="form-check-label" for="certify3_input1">Shelter, Transitional Housing
+                                        or Hotel/Motel Name:</label><br><br>
+                                    <input type="text" id="certify3_input1" class="form-control mb-3"
+                                        name="hvsv_description">
+                                    <label class="form-check-label" for="certify3_input2">Location:</label><br><br>
+                                    <input type="text" id="certify3_input2" class="form-control mb-3"
+                                        name="hvsv_description">
+                                    <label class="form-check-label" for="certify3_input3">If Hotel/Motel: Name of
+                                        Charity/Program Paying for Stay:</label><br><br>
+                                    <input type="text" id="certify3_input3" class="form-control mb-4"
+                                        name="hvsv_description">
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" id="certify4" value="certify4"
+                                        name="hvsv_checkbox_value">
+                                    <label class="form-check-label" for="certify4">Exiting an institution where | have
+                                        been staying for 90 days or less AND | stayed in an
+                                        emergency shelter OR a place not designed for or ordinarily used as a regular
+                                        sleeping
+                                        accommodation immediately prior to entering that institution.</label>
+                                </div>
+                                <div class="form-check form-check-inline mt-3 border-bottom-3">
+                                    <label class="form-check-label" for="certify4_input1">Name of
+                                        Institution:</label><br><br>
+                                    <input type="text" id="certify4_input1" class="form-control mb-3"
+                                        name="hvsv_description">
+                                    <label class="form-check-label" for="certify4_input2">Location:</label><br><br>
+                                    <input type="text" id="certify4_input2" class="form-control mb-3"
+                                        name="hvsv_description">
+                                    <label class="form-check-label" for="certify4_input3">Date of
+                                        Admission:</label><br><br>
+                                    <input type="text" id="certify4_input3" class="form-control mb-3"
+                                        name="hvsv_description">
+                                    <label class="form-check-label" for="certify4_input4">Description of Unsheltered
+                                        Location:</label><br><br>
+                                    <textarea class="custom-text-area mb-4" name="hvsv_description"></textarea>
+                                    <label class="form-check-label" for="certify4_input5">Authorized Agency
+                                        Representative Signature:</label><br><br>
+                                    <input type="text" id="certify4_input5" class="form-control mb-3"
+                                        name="hvsv_description">
+                                    <label class="form-check-label" for="certify4_input6">Date:</label><br><br>
+                                    <input type="date" id="certify4_input6" class="form-control mb-4"
+                                        name="hvsv_description">
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="form-group col-md-8">
+                                        <label for="applicantsignature mt-5">Applicant Signature :</label>
+                                        <input type="text" id="applicantsignature" class="form-control custom-input"
+                                            placeholder="" name="hvsv_applicant_signature">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="fullname mt-5">Date:</label>
+                                        <input type="text" id="date" class="form-control custom-input" placeholder=""
+                                            name="hvsv_applicant_date">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+
+                   <!-- ninth page starts  -->
+              
+                   <div class="container">
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
+                    <h3 class="text-center mb-3">Participant Agreement and Right to Terminate</h3>
+                    <div class="col-md-12">
+                        <p>As a participant within the Veterans Inc. Program, | understand that participation is
+                            completely voluntary for me
+                            and/or my household.
+                        </p>
+                        <p>I understand that the services provided by this program are time-limited and are not meant to
+                            be permanent or
+                            long-term assistance. | also understand that in order to receive or maintain assistance |
+                            must adhere to
+                            specific program requirements.
+                        </p>
+                        <p><b>Program Requirements:</b></p>
+                        <ol>
+                            <li>Working collaboratively with Veterans Inc. staff and applicable service providers.</li>
+                            <li>Actively participate in the development and successful outcome of my Individual Service
+                                Plan(s);
+                            </li>
+                            <li>Participating in stabilization services following my placement in permanent housing (if
+                                applicable);
+                            </li>
+                            <li>Notifying my Case Manager within 72 business hours of any changes to my household income
+                                or
+                                housing status (if applicable);
+                            </li>
+                            <li>Developing and adhering to a monthly household budget, if needed.</li>
+                        </ol>
+                        <p><b>Early Program Termination:</b></p>
+                        <ol>
+                            <li>You may be terminated early from the Veterans Inc. Program for not following program
+                                requirements;
+                            </li>
+                            <li>Providing false or misleading information;</li>
+                            <li>Not complying with staff requests for information;</li>
+                            <li>Engaging in unlawful activity, threats, violence, acts of terrorism, or any other
+                                behavior that poses
+                                a threat to agency personnel, agency affiliated organizations, and groups or
+                                contractors.
+                            </li>
+                        </ol>
+                        <p><b>Program Completion:</b></p>
+                        <p>You will be dismissed from Veterans Inc. Services Programs on the Date of Completion; which
+                            will be the date
+                            in which the requested supportive services are completed and no longer needed.
+                        </p>
+                        <p><b>* </b>All participant households will receive mailed written confirmation and justified
+                            reason(s). Copy of termination
+                            and/or completion Setter will be kept on record and placed within participant file.
+                        </p>
+                        <div class="row mt-5">
+                            <div class="form-group col-md-8">
+                                <label for="applicantsignature mt-5">Participant Name (Print)</label>
+                                <input type="text" id="applicantsignature" class="form-control custom-input"
+                                    placeholder="" name="pa_name">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="fullname mt-5">(Signature)</label>
+                                <input type="text" id="date" class="form-control custom-input" placeholder=""
+                                    name="pa_signature_1">
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="form-group col-md-8">
+                                <label for="applicantsignature mt-5">Case Manager Name (Print)</label>
+                                <input type="text" id="applicantsignature" class="form-control custom-input"
+                                    placeholder="" name="pa_case_manager_name">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="fullname mt-5">(Signature)</label>
+                                <input type="text" id="date" class="form-control custom-input" placeholder=""
+                                    name="pa_signature_2">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="fullname mt-5">Date:</label>
+                            <input type="text" id="date" class="form-control custom-input" placeholder=""
+                                name="pa_date">
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <!-- tenth page starts -->
+
+                
+                <div class="container">
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
+                    <h2 class="heading"> <i>Individual Employnment Plan </i></h2>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="fullname">Client Name</label>
+                            <input type="text" id="fullname" class="form-control" placeholder="Enter Your Client Name"
+                                name="iep_client_name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Registered @ CC:</label>
+                            <input type="text" id="lastname" class="form-control"
+                                placeholder="Enter your Registered @ CC" name="iep_registered@cc">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">DVOP</label>
+                            <input type="text" id="lastname" class="form-control" placeholder="Enter DVOP"
+                                name="iep_dvop">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">JOB Seeker #</label>
+                            <input type="text" id="lastname" class="form-control" placeholder="Enter JOB Seeker #"
+                                name="iep_job_seeker">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Transportation?:</label>
+                            <input type="text" id="lastname" class="form-control" placeholder="Car/ Bus/ Walk"
+                                name="iep_transportation">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Licenses: Drivers Lic.?</label>
+                            <input type="text" id="lastname" class="form-control"
+                                placeholder="Class D / CDL A,B, / 7D (School Van)" name="iep_licenses">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Looking For:</label>
+                            <input type="number" id="lastname" class="form-control" placeholder="FT/PT Hrs"
+                                name="iep_looking_for">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Do You Have a Resume?</label>
+                            <input type="text" id="lastname" class="form-control" placeholder="Yes / No / Sort of"
+                                name="iep_resume">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Restrictions</label>
+                            <textarea class="text-area-individual" id=""
+                                placeholder="(i.e. No overnights/ On bus route/ No heavy lifting)"
+                                name="iep_restrictions"></textarea>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Job Title/ Titles</label>
+                            <textarea class="text-area-individual" id=""
+                                placeholder="(i.e. Secretary / HR Generalist / B2B Sales person / Diesel Mechanic / Executive Chef)"
+                                name="iep_job_titles"></textarea>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Skills In This Field</label>
+                            <textarea class="text-area-individual" id=""
+                                placeholder="(i.e. Years of Exp. / State Lic. / Certifications / Software / General knowledge)"
+                                name="iep_skills"></textarea>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Short Term Goal:</label>
+                            <textarea class="text-area-individual" id="" placeholder="Short Term Goal:"
+                                name="iep_short_term_goal"></textarea>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Long Term Goal:</label>
+                            <textarea class="text-area-individual" id="" placeholder="Short Term Goal:"
+                                name="iep_long_term_goal"></textarea>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Any Training Required</label>
+                            <textarea class="text-area-individual" id="" placeholder="Any Training Required"
+                                name="iep_training"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-3 form-group ">
+                            <label>Desired Industry (Select From List):</label><br>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="male" value="male"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="male">Administration (Office Work)</label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Construction </label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Defense</label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Education</label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Entertainment </label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Financial Food </label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Healthcare </label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Hospitality </label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Insurance </label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Manufacturing </label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Mechanical </label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Pharmaceutical </label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Retail </label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Sales </label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Security</label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Social Work</label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Software (IT)</label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Transportation (Driving)</label>
+                            </div>
+                            <div class="form-check form-check-inline-individual-employnment">
+                                <input class="form-check-input" type="checkbox" id="female" value="female"
+                                    name="iep_desired_industry[]">
+                                <label class="form-check-label" for="female">Other</label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
+                </div>
+            </div>
+
+            <!--  -->
+
+            <!-- eleventh page starts -->
+
+            <div class="container">
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
+                    <!-- <h2 class="heading"> <i>Serving Veterans aud Thr Familiy Across America</i></h2> -->
+                    <h4 class="mt-5 text-center">Employment Verification</h4>
+                    <div class="form-row mt-5">
+                        <div class="form-group col-md-6">
+                            <label for="fullname">Name</label>
+                            <input type="number" id="fullname" name="ev_name" class="form-control"
+                                placeholder="Enter Your Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Social Security Number</label>
+                            <input type="number" id="lastname" name="ev_ss_number" class="form-control"
+                                placeholder="Enter Social Security Number">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Address</label>
+                            <input type="text" id="lastname" name="ev_address" class="form-control"
+                                placeholder="Enter Address">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Phone Number</label>
+                            <input type="number" id="lastname" name="ev_phone_number" class="form-control"
+                                placeholder="Enter Phone Number">
+                        </div>
+                        <h4 class="mt-5 mb-5 text-center col-md-12">Employment Verification</h4>
+                        <div class="form-group col-md-6">
+                            <label for="fullname">Name of Employer</label>
+                            <input type="text" id="fullname" name="ev_employer_name" class="form-control"
+                                placeholder="Enter Your Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fullname">Start Date</label>
+                            <input type="number" id="fullname" name="ev_start_date" class="form-control"
+                                placeholder="Enter Start Date">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fullname">Address</label>
+                            <input type="text" id="fullname" name="ev_date" class="form-control"
+                                placeholder="Enter Address">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fullname">Phone Number</label>
+                            <input type="number" id="fullname" name="ev_phone_number_2" class="form-control"
+                                placeholder="Enter Phone Number">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fullname">Contact Person</label>
+                            <input type="number" id="fullname" name="ev_contact_person" class="form-control"
+                                placeholder="Enter Contact Person">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fullname">Title</label>
+                            <input type="text" id="fullname" name="ev_title" class="form-control"
+                                placeholder="Enter Title ">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fullname"> Client's Job Title</label>
+                            <input type="text" id="fullname" name="ev_clients_job_title" class="form-control"
+                                placeholder="Enter Client's Job Title">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fullname"> HRS per week</label>
+                            <input type="text" id="fullname" name="ev_hrs_week" class="form-control"
+                                placeholder="Enter HRS per week">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fullname"> Wage</label>
+                            <input type="text" id="fullname" name="ev_wage" class="form-control"
+                                placeholder="Enter Wage">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fullname"> Veterans Inc. Provided: Tools, Uniform, Supplies</label>
+                            <input type="text" id="fullname" name="ev_veterans_provided" class="form-control"
+                                placeholder="Enter Veterans Inc. Provided: Tools, Uniform, Supplies">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fullname"> Date Placement Confirmed</label>
+                            <input type="number" id="fullname" name="ev_date_placement" class="form-control"
+                                placeholder="Enter  Date Placement Confirmed">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fullname"> Submitted By</label>
+                            <input type="number" id="fullname" name="ev_submitted_by" class="form-control"
+                                placeholder="Enter  Submited By">
+                        </div>
+                    </div>
+                    <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
+                </div>
+
+                <!-- eleventh page ends -->
+
+                <!-- twelve page starts -->
+
                 <div class="container custom-container">
                     <h4 class="custom-heading"> <u>CALL OF DUTY ENDOWMENT <br>VETERAN PROFILES RELEASE </u></h4>
                     <p class="custom-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
@@ -456,6 +1252,38 @@ mysqli_close($conn);
                         <label for="fullname mt-5"> Date:</label>
                     </div>
                 </div>
+
+                <!-- twelve page ends -->
+
+
+                <!-- fourteen page starts -->
+
+                <div class="container p-5" style="color: #0f4761">
+                    <h4 class="mb-5 mt-5">Arthur M. Blank Foundation:</h4>
+                    <h4 class="mb-5">      I would like to send my sincerest gratitude to all of you
+with the Arthur M. Blank Foundation for your
+overwhelming support of our nations Service Men and
+Women. I am a Veteran in Montana that was a participant
+in the Veterans Incorporated, Homeless Veterans
+Reintegration Program (HVRP). This amazing program
+assisted me with gaining meaningful training and
+employment, that made it possible for me to maintain a
+stable living. 
+</h4>
+<h4 class="mb-5">       Your Foundation’s financial support made it possible
+for me to receive the high-quality training and work
+supplies I needed but was unable to afford. Thank you
+again for your continued support of not only Veterans
+Incorporated, but of me and my fellow Veterans with their
+success at sustainable employment and living.
+</h4>
+<h4>Sincerely,</h4>
+
+<i>_________</i>
+
+                </div>
+
+
                 <div class="container">
                     <div class="logo">
                         <img src="./assets/images/logo.png" alt="Logo">
@@ -925,559 +1753,15 @@ mysqli_close($conn);
                             <label for="fullname mt-5">File Reviewed Date:</label>
                         </div>
                     </div>
-                    <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
-                </div>
-                <!-- fifth page starts -->
-                <div class="consent container">
-                    <h1 class="head_info text-center">Confidential Information</h1>
-                    <h1 class="consent_info text-center">Consent for the Release of Confidential Information</h1>
-                    <p class="consent_para1">I,<input type="text" id="date" name="consent_blanks[]">with a date of birth
-                        <input type="text" id="social" name="consent_blanks[]">and
-                        a Social Security Number of:<input type="text" id="authorization" name="consent_blanks[]">give
-                        authorization to any necessary
-                        persona/organiztions to give my information to Veterans Inc.so that they can better understand
-                        my condition
-                        and help my obtain employment and/or other: <input type="text" id="last_blank"
-                            name="consent_blanks[]">
-                    </p>
-                    <p class="consent_para2 mt-5">I understand that i have the option to opt out of releasing certain
-                        information.By
-                        checking the boxes below,i understand that i giving permission for the selected information to
-                        sent by
-                        Veterns Inc,to included giving permission for the Veterns Inc.Staff to assist myself with the
-                        job Americans
-                        job centers and obtaining my DD214:
-                    </p>
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-check ">
-                                    <input class="form-check-input" type="radio" value="Employment" id="defaultCheck1"
-                                        name="consent_employment">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Employment
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-check ">
-                                    <input class="form-check-input" type="radio"
-                                        value="National Archieves/DD214 Recovery" id="defaultCheck1"
-                                        name="consent_national">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        National Archieves/DD214 Recovery
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" value="Other" id="defaultCheck1"
-                                        name="consent_other">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Other: <input type="text" id="consent_other">
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="consent_para3">
-                        <p class="consent_para3_para">I also understand that:</p>
-                        <li>If i want to revoke permission of Veterans Inc.to get this information i need to give
-                            request written
-                            request to Veterans Inc.staff.
-                        </li>
-                        <li>The authorization im giving shall continue as long as im receiving services at Veterans
-                            Inc.or upto 1
-                            year after ending services
-                        </li>
-                    </div>
-                    <p class="consent_para4">I also release,discharge and exonerate Veterans Inc,and any person
-                        funsihing my
-                        Confidential any and all liability that might arise out of funishing.or inspecting these
-                        documents . Finally
-                        i also authorize Veterans Inc.staff and volunteers to release any of information to the
-                        appropriate agents
-                        in the event of a medical emergency.
-                    </p>
-                    <div class="row mt-5">
-                        <div class="form-group col-md-8">
-                            <label for="applicantsignature mt-5">Veterans Signature</label>
-                            <input type="text" id="applicantsignature" class="form-control custom-input"
-                                name="consent_veteran_signature" placeholder="">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="fullname mt-5">Date</label>
-                            <input type="text" id="date" class="form-control custom-input" name="consent_date"
-                                placeholder="">
-                        </div>
-                    </div>
-                </div>
-                <!-- fifth page ends -->
-                <!-- sixth page starts -->
-                <div class="veterans container">
-                    <div class="logo">
-                        <img src="./assets/images/logo.png" alt="Logo">
-                    </div>
-                    <p class="veterans_para">I hereby acknowledged that i have received a copy of the following
-                        doucments and that
-                        they were reviewed with me at the time of that intake for participation of Veteras Inc.Universla
-                        Services
-                        Program adminsitrated by Veterans Inc.and its identified subcontractors.
-                    </p>
-                    <div class="col-md-12 offset-1 d-flex justify-content-center">
-                        <div class="col-md-6 mt-5 mb-5 custom-font-size">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox"
-                                    value="Fair and Equal Services Acknowledgement" id="defaultCheck1"
-                                    name="consent_blanks_2[]">
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Fair and Equal Services Acknowledgement
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="Participant Rights"
-                                    id="defaultCheck1" name="consent_blanks_2[]">
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Participant Rights
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="Griedvance Procedures"
-                                    id="defaultCheck1" name="consent_blanks_2[]">
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Griedvance Procedures
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox"
-                                    value="Warning and Early Termination Policy" id="defaultCheck1"
-                                    name="consent_blanks_2[]">
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Warning and Early Termination Policy
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="form-group col-md-8">
-                            <label for="applicantsignature mt-5">Signature of Veteran</label>
-                            <input type="text" id="applicantsignature" class="form-control custom-input" placeholder=""
-                                name="consent_veteran_signature_2">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="fullname mt-5">Date</label>
-                            <input type="text" id="date" class="form-control custom-input" placeholder=""
-                                name="consent_date_2">
-                        </div>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="form-group col-md-8">
-                            <label for="applicantsignature mt-5">Veterans Inc.Case Manager</label>
-                            <input type="text" id="applicantsignature" class="form-control custom-input" placeholder=""
-                                name="consent_veteran_inc_case_signature">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="fullname mt-5">Date</label>
-                            <input type="text" id="date" class="form-control custom-input" placeholder=""
-                                name="consent_date_3">
-                        </div>
-                    </div>
-                </div>
-                <!-- sixth page ends  -->
-                <!-- seventh page starts  -->
-                <div class="container">
-                    <div class="logo">
-                        <img src="./assets/images/logo.png" alt="Logo">
-                    </div>
-                    <h2 class="heading"> <i>HOMELESS VERIFICATION / SELF VERIFICATION</i></h2>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="applicantname">Applicant Name:</label>
-                            <input type="text" id="applicantname" class="form-control"
-                                placeholder="Enter Your full name:" name="hvsv_applicant_name">
-                        </div>
-                        <div class="form-group col-md-12 border-bottom-2">
-                            <p for="instructions">Instructions: This form is to certify, via a third party, that the
-                                above named applicant is currently “literally homeless" as defined
-                                by program description. The third party completing this form must check one box below,
-                                provide a description, and sign and date
-                                this form. Clients may complete this self-certification if third party documentation
-                                (i.e., written or oral verification) cannot be
-                                obtained from an appropriate third party. Applicants may self-certify their current
-                                “literally homeless” status per one of the
-                                categories below and as defined by program description. Staff should review this form
-                                with applicants and assist in completing,
-                                as needed. Applicanis must sign and date this form.
-                            </p>
-                        </div>
-                        <h4>
-                            <i>I certify that (check only one):</i></h2>
-                            <div class="col-md-12 mt-3 form-group">
-                                <div class="form-check ">
-                                    <input class="form-check-input" type="checkbox" id="certify1" value="certify1"
-                                        name="hvsv_checkbox_value">
-                                    <label class="form-check-label" for="certify1">A person who lacks a fixed, regular,
-                                        and adequate nighttime residence; an individual who will
-                                        imminently lose his or her housing, has no subsequent residence identified,
-                                        and/or who lacks the
-                                        resources or support network needed to obtain other permanent housing, or victim
-                                        of domestic violence.
-                                        HVRP = Homeless, SSVF = Prevention</label>
-                                </div>
-                                <div class="form-check form-check-inline mt-3 border-bottom-3">
-                                    <label class="form-check-label" for="certify1_description">Description of Veteran
-                                        Situaion:</label><br><br>
-                                    <textarea class="custom-text-area mb-4" name="hvsv_description"></textarea>
-                                </div>
-                                <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" id="certify2" value="certify2"
-                                        name="hvsv_checkbox_value">
-                                    <label class="form-check-label" for="certify2">I (we) am living in a car, park,
-                                        abandoned building, bus/train station, airport, camping ground,
-                                        or other place not designed for or ordinarily used as a regular sleeping
-                                        accommodation.</label>
-                                </div>
-                                <div class="form-check form-check-inline mt-3 border-bottom-3">
-                                    <label class="form-check-label" for="certify2_description">Description of Where You
-                                        Are Staying:</label><br><br>
-                                    <textarea class="custom-text-area mb-4" name="hvsv_description"></textarea>
-                                </div>
-                                <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" id="certify3" value="certify3"
-                                        name="hvsv_checkbox_value">
-                                    <label class="form-check-label" for="certify3">I (we) am staying in an emergency
-                                        shelter OR a transitional housing program for people who
-                                        are homeless OR a hotel or motel that is paid for by a charity or government
-                                        program.</label>
-                                </div>
-                                <div class="form-check form-check-inline mt-3 border-bottom-3">
-                                    <label class="form-check-label" for="certify3_input1">Shelter, Transitional Housing
-                                        or Hotel/Motel Name:</label><br><br>
-                                    <input type="text" id="certify3_input1" class="form-control mb-3"
-                                        name="hvsv_description">
-                                    <label class="form-check-label" for="certify3_input2">Location:</label><br><br>
-                                    <input type="text" id="certify3_input2" class="form-control mb-3"
-                                        name="hvsv_description">
-                                    <label class="form-check-label" for="certify3_input3">If Hotel/Motel: Name of
-                                        Charity/Program Paying for Stay:</label><br><br>
-                                    <input type="text" id="certify3_input3" class="form-control mb-4"
-                                        name="hvsv_description">
-                                </div>
-                                <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" id="certify4" value="certify4"
-                                        name="hvsv_checkbox_value">
-                                    <label class="form-check-label" for="certify4">Exiting an institution where | have
-                                        been staying for 90 days or less AND | stayed in an
-                                        emergency shelter OR a place not designed for or ordinarily used as a regular
-                                        sleeping
-                                        accommodation immediately prior to entering that institution.</label>
-                                </div>
-                                <div class="form-check form-check-inline mt-3 border-bottom-3">
-                                    <label class="form-check-label" for="certify4_input1">Name of
-                                        Institution:</label><br><br>
-                                    <input type="text" id="certify4_input1" class="form-control mb-3"
-                                        name="hvsv_description">
-                                    <label class="form-check-label" for="certify4_input2">Location:</label><br><br>
-                                    <input type="text" id="certify4_input2" class="form-control mb-3"
-                                        name="hvsv_description">
-                                    <label class="form-check-label" for="certify4_input3">Date of
-                                        Admission:</label><br><br>
-                                    <input type="text" id="certify4_input3" class="form-control mb-3"
-                                        name="hvsv_description">
-                                    <label class="form-check-label" for="certify4_input4">Description of Unsheltered
-                                        Location:</label><br><br>
-                                    <textarea class="custom-text-area mb-4" name="hvsv_description"></textarea>
-                                    <label class="form-check-label" for="certify4_input5">Authorized Agency
-                                        Representative Signature:</label><br><br>
-                                    <input type="text" id="certify4_input5" class="form-control mb-3"
-                                        name="hvsv_description">
-                                    <label class="form-check-label" for="certify4_input6">Date:</label><br><br>
-                                    <input type="date" id="certify4_input6" class="form-control mb-4"
-                                        name="hvsv_description">
-                                </div>
-                                <div class="row mt-5">
-                                    <div class="form-group col-md-8">
-                                        <label for="applicantsignature mt-5">Applicant Signature :</label>
-                                        <input type="text" id="applicantsignature" class="form-control custom-input"
-                                            placeholder="" name="hvsv_applicant_signature">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="fullname mt-5">Date:</label>
-                                        <input type="text" id="date" class="form-control custom-input" placeholder=""
-                                            name="hvsv_applicant_date">
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="logo">
-                        <img src="./assets/images/logo.png" alt="Logo">
-                    </div>
-                    <h3 class="text-center mb-3">Participant Agreement and Right to Terminate</h3>
-                    <div class="col-md-12">
-                        <p>As a participant within the Veterans Inc. Program, | understand that participation is
-                            completely voluntary for me
-                            and/or my household.
-                        </p>
-                        <p>I understand that the services provided by this program are time-limited and are not meant to
-                            be permanent or
-                            long-term assistance. | also understand that in order to receive or maintain assistance |
-                            must adhere to
-                            specific program requirements.
-                        </p>
-                        <p><b>Program Requirements:</b></p>
-                        <ol>
-                            <li>Working collaboratively with Veterans Inc. staff and applicable service providers.</li>
-                            <li>Actively participate in the development and successful outcome of my Individual Service
-                                Plan(s);
-                            </li>
-                            <li>Participating in stabilization services following my placement in permanent housing (if
-                                applicable);
-                            </li>
-                            <li>Notifying my Case Manager within 72 business hours of any changes to my household income
-                                or
-                                housing status (if applicable);
-                            </li>
-                            <li>Developing and adhering to a monthly household budget, if needed.</li>
-                        </ol>
-                        <p><b>Early Program Termination:</b></p>
-                        <ol>
-                            <li>You may be terminated early from the Veterans Inc. Program for not following program
-                                requirements;
-                            </li>
-                            <li>Providing false or misleading information;</li>
-                            <li>Not complying with staff requests for information;</li>
-                            <li>Engaging in unlawful activity, threats, violence, acts of terrorism, or any other
-                                behavior that poses
-                                a threat to agency personnel, agency affiliated organizations, and groups or
-                                contractors.
-                            </li>
-                        </ol>
-                        <p><b>Program Completion:</b></p>
-                        <p>You will be dismissed from Veterans Inc. Services Programs on the Date of Completion; which
-                            will be the date
-                            in which the requested supportive services are completed and no longer needed.
-                        </p>
-                        <p><b>* </b>All participant households will receive mailed written confirmation and justified
-                            reason(s). Copy of termination
-                            and/or completion Setter will be kept on record and placed within participant file.
-                        </p>
-                        <div class="row mt-5">
-                            <div class="form-group col-md-8">
-                                <label for="applicantsignature mt-5">Participant Name (Print)</label>
-                                <input type="text" id="applicantsignature" class="form-control custom-input"
-                                    placeholder="" name="pa_name">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="fullname mt-5">(Signature)</label>
-                                <input type="text" id="date" class="form-control custom-input" placeholder=""
-                                    name="pa_signature_1">
-                            </div>
-                        </div>
-                        <div class="row mt-5">
-                            <div class="form-group col-md-8">
-                                <label for="applicantsignature mt-5">Case Manager Name (Print)</label>
-                                <input type="text" id="applicantsignature" class="form-control custom-input"
-                                    placeholder="" name="pa_case_manager_name">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="fullname mt-5">(Signature)</label>
-                                <input type="text" id="date" class="form-control custom-input" placeholder=""
-                                    name="pa_signature_2">
-                            </div>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="fullname mt-5">Date:</label>
-                            <input type="text" id="date" class="form-control custom-input" placeholder=""
-                                name="pa_date">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="logo">
-                        <img src="./assets/images/logo.png" alt="Logo">
-                    </div>
-                    <h2 class="heading"> <i>Individual Employnment Plan </i></h2>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="fullname">Client Name</label>
-                            <input type="text" id="fullname" class="form-control" placeholder="Enter Your Client Name"
-                                name="iep_client_name">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Registered @ CC:</label>
-                            <input type="text" id="lastname" class="form-control"
-                                placeholder="Enter your Registered @ CC" name="iep_registered@cc">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">DVOP</label>
-                            <input type="text" id="lastname" class="form-control" placeholder="Enter DVOP"
-                                name="iep_dvop">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">JOB Seeker #</label>
-                            <input type="text" id="lastname" class="form-control" placeholder="Enter JOB Seeker #"
-                                name="iep_job_seeker">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Transportation?:</label>
-                            <input type="text" id="lastname" class="form-control" placeholder="Car/ Bus/ Walk"
-                                name="iep_transportation">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Licenses: Drivers Lic.?</label>
-                            <input type="text" id="lastname" class="form-control"
-                                placeholder="Class D / CDL A,B, / 7D (School Van)" name="iep_licenses">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Looking For:</label>
-                            <input type="number" id="lastname" class="form-control" placeholder="FT/PT Hrs"
-                                name="iep_looking_for">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Do You Have a Resume?</label>
-                            <input type="text" id="lastname" class="form-control" placeholder="Yes / No / Sort of"
-                                name="iep_resume">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Restrictions</label>
-                            <textarea class="text-area-individual" id=""
-                                placeholder="(i.e. No overnights/ On bus route/ No heavy lifting)"
-                                name="iep_restrictions"></textarea>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Job Title/ Titles</label>
-                            <textarea class="text-area-individual" id=""
-                                placeholder="(i.e. Secretary / HR Generalist / B2B Sales person / Diesel Mechanic / Executive Chef)"
-                                name="iep_job_titles"></textarea>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Skills In This Field</label>
-                            <textarea class="text-area-individual" id=""
-                                placeholder="(i.e. Years of Exp. / State Lic. / Certifications / Software / General knowledge)"
-                                name="iep_skills"></textarea>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Short Term Goal:</label>
-                            <textarea class="text-area-individual" id="" placeholder="Short Term Goal:"
-                                name="iep_short_term_goal"></textarea>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Long Term Goal:</label>
-                            <textarea class="text-area-individual" id="" placeholder="Short Term Goal:"
-                                name="iep_long_term_goal"></textarea>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Any Training Required</label>
-                            <textarea class="text-area-individual" id="" placeholder="Any Training Required"
-                                name="iep_training"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 mt-3 form-group ">
-                            <label>Desired Industry (Select From List):</label><br>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="male" value="male"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="male">Administration (Office Work)</label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Construction </label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Defense</label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Education</label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Entertainment </label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Financial Food </label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Healthcare </label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Hospitality </label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Insurance </label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Manufacturing </label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Mechanical </label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Pharmaceutical </label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Retail </label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Sales </label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Security</label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Social Work</label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Software (IT)</label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Transportation (Driving)</label>
-                            </div>
-                            <div class="form-check form-check-inline-individual-employnment">
-                                <input class="form-check-input" type="checkbox" id="female" value="female"
-                                    name="iep_desired_industry[]">
-                                <label class="form-check-label" for="female">Other</label>
-                            </div>
-                        </div>
-                        <div class="text-center w-100">
+                    <!-- <div class="text-center w-100">
                             <button type="button" id="form1_btn" class="btn btn-outline-dark">NEXT</button>
-                        </div>
-                    </div>
+                        </div> -->
                     <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
                 </div>
-            </div>
+           
+            
+        
+
             <div id="form2">
                 <div class="container">
                     <div class="logo">
@@ -1610,97 +1894,8 @@ mysqli_close($conn);
                     </div>
                     <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
                 </div>
-                <div class="container">
-                    <div class="logo">
-                        <img src="./assets/images/logo.png" alt="Logo">
-                    </div>
-                    <h2 class="heading"> <i>Serving Veterans aud Thr Familiy Across America</i></h2>
-                    <h4 class="mt-5 text-center">Employment Verification</h4>
-                    <div class="form-row mt-5">
-                        <div class="form-group col-md-6">
-                            <label for="fullname">Name</label>
-                            <input type="number" id="fullname" name="ev_name" class="form-control"
-                                placeholder="Enter Your Name">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Social Security Number</label>
-                            <input type="number" id="lastname" name="ev_ss_number" class="form-control"
-                                placeholder="Enter Social Security Number">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Address</label>
-                            <input type="text" id="lastname" name="ev_address" class="form-control"
-                                placeholder="Enter Address">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="lastname">Phone Number</label>
-                            <input type="number" id="lastname" name="ev_phone_number" class="form-control"
-                                placeholder="Enter Phone Number">
-                        </div>
-                        <h4 class="mt-5 mb-5 text-center col-md-12">Employment Verification</h4>
-                        <div class="form-group col-md-6">
-                            <label for="fullname">Name of Employer</label>
-                            <input type="text" id="fullname" name="ev_employer_name" class="form-control"
-                                placeholder="Enter Your Name">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="fullname">Start Date</label>
-                            <input type="number" id="fullname" name="ev_start_date" class="form-control"
-                                placeholder="Enter Start Date">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="fullname">Address</label>
-                            <input type="text" id="fullname" name="ev_date" class="form-control"
-                                placeholder="Enter Address">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="fullname">Phone Number</label>
-                            <input type="number" id="fullname" name="ev_phone_number_2" class="form-control"
-                                placeholder="Enter Phone Number">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="fullname">Contact Person</label>
-                            <input type="number" id="fullname" name="ev_contact_person" class="form-control"
-                                placeholder="Enter Contact Person">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="fullname">Title</label>
-                            <input type="text" id="fullname" name="ev_title" class="form-control"
-                                placeholder="Enter Title ">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="fullname"> Client's Job Title</label>
-                            <input type="text" id="fullname" name="ev_clients_job_title" class="form-control"
-                                placeholder="Enter Client's Job Title">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="fullname"> HRS per week</label>
-                            <input type="text" id="fullname" name="ev_hrs_week" class="form-control"
-                                placeholder="Enter HRS per week">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="fullname"> Wage</label>
-                            <input type="text" id="fullname" name="ev_wage" class="form-control"
-                                placeholder="Enter Wage">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="fullname"> Veterans Inc. Provided: Tools, Uniform, Supplies</label>
-                            <input type="text" id="fullname" name="ev_veterans_provided" class="form-control"
-                                placeholder="Enter Veterans Inc. Provided: Tools, Uniform, Supplies">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="fullname"> Date Placement Confirmed</label>
-                            <input type="number" id="fullname" name="ev_date_placement" class="form-control"
-                                placeholder="Enter  Date Placement Confirmed">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="fullname"> Submitted By</label>
-                            <input type="number" id="fullname" name="ev_submitted_by" class="form-control"
-                                placeholder="Enter  Submited By">
-                        </div>
-                    </div>
-                    <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
-                </div>
+
+              
                 <div class="container">
                     <div class="logo">
                         <img src="./assets/images/logo.png" alt="Logo">
