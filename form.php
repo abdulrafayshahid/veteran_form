@@ -578,7 +578,9 @@ mysqli_close($conn);
 
                 <!-- fourth page starts -->
                 <div class="fourth container">
-                    <img src="assets/images/logo.png" alt="">
+                <div class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
                     <h4 class="fourth-head mt-5">Fair and Equal Services Acknowledgment</h4>
                     <p>Veterans Inc. is committed to providing fair and equal supportive services to individuals
 without regard to race, color, religion, sex, national origin, ancestry, age, disability,
@@ -608,7 +610,9 @@ persons with hearing, visual, and other communication-related disabilities.</p>
 
                   <!-- seventh section starts -->
                   <div class="participant container">
-                    <img src="assets/images/logo.png" alt="">
+                  <div class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
                     <h4>Participant Rights</h4>
                     <p>You have the right to:</p>
                     <li>Have your confidentiality protected and respected, and know
