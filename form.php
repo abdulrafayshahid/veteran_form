@@ -21,6 +21,7 @@ if ($result && mysqli_num_rows($result) > 0) {
 
 mysqli_close($conn);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -641,75 +642,55 @@ feedback through internal and external surveys;</li>
                      <!-- seventh section ends -->
 
                      <div class="container">
-                    <div class="text-center pb-3">
-                        <img src="./assets/images/logo.png" alt="Logo">
-                    </div>
-                    <h3 class="text-center mb-3">Grievance Procedure</h3>
-                    <div class="col-md-6 offset-3">
-                        <p>You have the right to:
-                        </p>
-                        <ul>
-                            <li class="mb-3">Address any program problem you have with the Veterans Inc.
-Case Manager. If s/he cannot solve your problem, please refer
-to next bullet;</li>
-<li class="mb-3">Address your problem with the supervisor of the Case Manager.
-The supervisor will investigate the problem by talking to you and
-the Case Manger involved and will respond to you within 3
-business days. If you feel that your problem is not resolved,
-please refer to next bullet;</li>
-                            <li>Put your grievance in writing to the Veterans Inc. Grievance
-Officer. He or she will connect with you and gather all the
-written reports as well as speak to the staff involved. The
-Grievance Officer will respond to you within three business
-days. 
-                            </li>                         
-                        </ul>
-                    </div>
-                    <div class="col-md-6 offset-2 mt-5">
-                        <p class="mb-3">Correspondence must be addressed to:</p>
-                        <i>Veterans Rights Officer (VRO)</i><br>
-                        <i>Veterans Inc.</i><br>
-                        <i>69 Grove Street</i><br>
-                        <i>Worcester, MA 01605</i>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="text-center pb-3">
-                        <img src="./assets/images/logo.png" alt="Logo">
-                    </div>
-                    <h3 class="text-center mb-3">Warning and Early Termination Policy</h3>
-                    <div class="col-md-9 offset-2">
-                        <ul>
-                            <li class="mb-3">Warnings are determined on a case by case basis, in relation to Veterans Inc.’s
-policy on participant termination.</li>
-<li class="mb-3">All extenuating circumstances are taken into account, and warnings are issued
-only in relation to extreme situations.</li>
-                            <li class="mb-3">The major issuance of a warning is in relation to a participants’ refusal of
-program services.
-                            </li>  
-                            <li class="mb-3">The authority for making determinations regarding verbal and written warnings
-rests with Veterans Inc. management, supported by input from the participants’
-Case Manager.</li>       
-<li class="mb-3">Written notice will be provided to the participant containing a clear statement of
-the reasons for termination. Copies of all confirmations of verbal warnings and
-written warnings shall be maintained in the participant’s program file.</li>    
-<li class="mb-3">Participant has the right to appeal and to have a fair review my Program
-Management.</li>          
-<li class="mb-3">Determinations regarding final warnings and termination from program shall be
-made jointly by the Case Manager and the Program Manager. Prompt written
-notice of the final decision to the participant will be given.
-</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-9 offset-2 mt-5">
-                        <p>*Reasonable accommodations will be made to terminating program services in the
-event that the head of household expire. Veterans Inc. will work with other adult
-occupants (listed on existing lease) in securing other housing arrangements if
-applicable and will allow said occupants to remain within the subsidy program for
-determined period of time.</p>
-                    </div>
-                   
-                </div>
+        <div class="text-center pb-3">
+            <img src="./assets/images/logo.png" alt="Logo" class="img-fluid">
+        </div>
+        <h3 class="text-center mb-3">Grievance Procedure</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Address any program problem you have with the Veterans Inc. Case Manager. If s/he cannot solve your problem, please refer to next bullet;</li>
+                    <li>Address your problem with the supervisor of the Case Manager. The supervisor will investigate the problem by talking to you and the Case Manager involved and will respond to you within 3 business days. If you feel that your problem is not resolved, please refer to next bullet;</li>
+                    <li>Put your grievance in writing to the Veterans Inc. Grievance Officer. He or she will connect with you and gather all the written reports as well as speak to the staff involved. The Grievance Officer will respond to you within three business days.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <p class="mb-3">Correspondence must be addressed to:</p>
+                <i>Veterans Rights Officer (VRO)</i><br>
+                <i>Veterans Inc.</i><br>
+                <i>69 Grove Street</i><br>
+                <i>Worcester, MA 01605</i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="text-center pb-3">
+            <img src="./assets/images/logo.png" alt="Logo" class="img-fluid">
+        </div>
+        <h3 class="text-center mb-3">Warning and Early Termination Policy</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <ul>
+                    <li class="mb-3">Warnings are determined on a case by case basis, in relation to Veterans Inc.’s policy on participant termination.</li>
+                    <li class="mb-3">All extenuating circumstances are taken into account, and warnings are issued only in relation to extreme situations.</li>
+                    <li class="mb-3">The major issuance of a warning is in relation to a participant’s refusal of program services.</li>
+                    <li class="mb-3">The authority for making determinations regarding verbal and written warnings rests with Veterans Inc. management, supported by input from the participants’ Case Manager.</li>
+                    <li class="mb-3">Written notice will be provided to the participant containing a clear statement of the reasons for termination. Copies of all confirmations of verbal warnings and written warnings shall be maintained in the participant’s program file.</li>
+                    <li class="mb-3">Participant has the right to appeal and to have a fair review by Program Management.</li>
+                    <li class="mb-3">Determinations regarding final warnings and termination from the program shall be made jointly by the Case Manager and the Program Manager. Prompt written notice of the final decision to the participant will be given.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-10">
+                <p>*Reasonable accommodations will be made to terminating program services in the event that the head of household expires. Veterans Inc. will work with other adult occupants (listed on existing lease) in securing other housing arrangements if applicable and will allow said occupants to remain within the subsidy program for a determined period of time.</p>
+            </div>
+        </div>
+    </div>
 
                 <!-- eight page starts -->
 
@@ -840,7 +821,6 @@ determined period of time.</p>
                 </div>
 
                 <!--  -->
-
 
                    <!-- ninth page starts  -->
               
