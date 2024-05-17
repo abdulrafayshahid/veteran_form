@@ -1215,9 +1215,9 @@ determined period of time.</p>
 
                 <!-- twelve page starts -->
 
-                <div class="container custom-container">
-                    <h4 class="custom-heading"> <u>CALL OF DUTY ENDOWMENT <br>VETERAN PROFILES RELEASE </u></h4>
-                    <p class="custom-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                <div class="container custom-container p-4">
+                    <h4 class="custom-heading mt-5"> <u>CALL OF DUTY ENDOWMENT <br>VETERAN PROFILES RELEASE </u></h4>
+                    <p class="custom-paragraph mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                         bibendum nisi id
                         ligula fermentum, sit amet eleifend neque vestibulum Lorem ipsum dolor sit amet, consectetur
                         adipiscing
@@ -1254,6 +1254,44 @@ determined period of time.</p>
                 </div>
 
                 <!-- twelve page ends -->
+
+    <!-- thirth page starts -->
+
+    <div class="container custom-container p-4">
+                    <h4 class="custom-heading mt-5"> <u>Arthur M. Blank Family Foundation <br>
+VETERAN PROFILES RELEASE </u></h4>
+                    <p class="custom-paragraph mt-5">As part of its ongoing efforts to help veterans find high quality careers, the Arthur M.
+Blank Family Foundation may create and publish a success story though social
+media online or otherwise when a veteran successfully finds a new job following
+efforts by the Arthur M. Blank Family Foundation and/or it's non-profit partners.
+The Arthur M. Blank Family Foundation and its partners ask you here for permission
+to use your name, biography, image, footage, likeness and voice (the "Licensed
+Property") in such a success story. By signing below you hereby grant the Arthur
+M. Blank Family Foundation and its partners a worldwide, non-exclusive, perpetual,
+right and license, but not obligation, to use the Licensed Property for such purpose.
+You understand that th1s is a gratis license and that you will not receive any payment for
+this consent, and you release and hold the Arthur M. Blank Family Foundation and its
+partners harmless from any claims, demands or liabilities arising out of any such
+success story
+                    </p>
+                    <div class="form-group col-md-4">
+                        <input type="text" id="fullname" class="form-control custom-input" name="cod_signature"
+                            placeholder="">
+                        <label for="fullname mt-5">Signature :</label>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="text" id="fullname" class="form-control custom-input" name="cod_printed_name"
+                            placeholder="">
+                        <label for="fullname mt-5">Printed Name :</label>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="number" id="fullname" class="form-control custom-input" name="cod_date"
+                            placeholder="">
+                        <label for="fullname mt-5"> Date:</label>
+                    </div>
+                </div>
+
+                <!-- thirth page ends -->
 
 
                 <!-- fourteen page starts -->
@@ -1758,9 +1796,7 @@ success at sustainable employment and living.
                         </div> -->
                     <!-- <button type="submit" class="btn btn-primary btn-submit">Submit</button> -->
                 </div>
-           
-            
-        
+
 
             <div id="form2">
                 <div class="container">
