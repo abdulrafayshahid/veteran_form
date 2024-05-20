@@ -1,0 +1,1203 @@
+<script>
+    window.print();
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterans Inc. Universal Services Application</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .logo-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .rowDiv {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .form-row {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .firstNameInput {
+      width: 350px;
+      height: 20px;
+      border: none;
+      border-bottom: 1px solid;
+    }
+
+    .lastNameInput {
+      width: 350px;
+      height: 20px;
+      border: none;
+      border-bottom: 1px solid;
+    }
+
+    .MIInput {
+      width: 120px;
+      height: 20px;
+      border: none;
+      border-bottom: 1px solid;
+    }
+
+    h3 {
+      text-decoration: underline;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      font-size: 25px;
+    }
+
+    .label {
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .label2 {
+      color: black;
+      font-weight: bold;
+      margin-top: 20px;
+      text-decoration: underline;
+      font-size: 18px;
+    }
+
+    .radio-label {
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+
+    .row-check-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .label-ckeck {
+      margin-right: 10px;
+      color: black;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .form-select-main-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .formCheck {
+      width: 50%;
+    }
+
+    .address-input {
+      width: 65%;
+      height: 20px;
+      border: none;
+      border-bottom: 1px solid;
+    }
+
+    .HUD-assigned-input {
+      width: 100px;
+      height: 20px;
+      border: none;
+      border-bottom: 1px solid;
+    }
+
+    .Location-input {
+      width: 70%;
+      height: 20px;
+      border: none;
+      border-bottom: 1px solid;
+    }
+
+    .vz-medical-center-station-input {
+      width: 50%;
+      height: 20px;
+      border: none;
+      border-bottom: 1px solid;
+    }
+
+    .fixed-input-container {
+      width: 50%;
+    }
+
+    .fixed-input {
+      width: 50%;
+      height: 20px;
+      border: none;
+      border-bottom: 1px solid;
+    }
+
+    .no-to-all-input {
+      width: 100px;
+      height: 20px;
+      border: none;
+      border-bottom: 1px solid;
+    }
+
+    .divider {
+      height: 2px;
+      background-color: #000000;
+      margin: 30px 0;
+    }
+
+    .prepared-by-label {
+      margin-right: 10px;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .form-check-input {
+      color: black;
+      height: 15px;
+      width: 15px;
+    }
+
+    .form-check-input:checked {
+      background-color: #000;
+      border-color: #000;
+    }
+
+    .signature-input {
+      width: 50%;
+      height: 20px;
+      border: none;
+      border-bottom: 2px solid;
+    }
+
+    .page3-input {
+      width: 200px;
+      height: 20px;
+      border: none;
+      border-bottom: 1px solid;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="logo-container" style="margin-top: 50px; margin-bottom: 50px;">
+        <img src="img/logo.png" alt="Girl in a jacket" width="200">
+        <h5 class="card-subtitle mb-4 text-center">Universal Services Application</h5>
+        <label class="label-ckeck" style="font-weight: bold; font-size: 15px;">
+          Today's Date :
+          <input type="text" name="operations-details" class="no-to-all-input">
+        </label>
+      </div>
+      <div style="width: 100%; border: 2px solid; padding: 10px; border-color: rgb(0, 0, 0);">
+        <h3><i>Profile Information</i></h3>
+        <div class="rowDiv">
+          <label for="lastName" class="label">Full Legal Name - Last:</label>
+          <input type="text" class="lastNameInput" id="lastName">
+          <label for="middleInitial" class="label">MI:</label>
+          <input type="text" class="MIInput" id="middleInitial">
+          <label for="firstName" class="label">First:</label>
+          <input type="text" class="firstNameInput" id="firstName">
+        </div>
+        <div class="rowDiv">
+          <label for="lastName" class="label">Date of Birth:</label>
+          <input type="text" class="lastNameInput" id="lastName">
+          <label for="firstName" class="label">Social Security #:</label>
+          <input type="text" class="firstNameInput" id="firstName">
+        </div>
+        <div class="row-check-container">
+          <label class="radio-label">Gender:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">M</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">F</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderTransM" value="TransM">
+            <label class="label-ckeck" for="genderTransM">Trans M/F</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderNonConforming"
+              value="NonConforming">
+            <label class="label-ckeck" for="genderNonConforming">Non-Conforming</label>
+          </div>
+        </div>
+        <div class="form-select-main-container">
+          <div class="formCheck">
+            <label class="label">Primary Race :</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <label class="label-ckeck" for="genderM">White</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <label class="label-ckeck" for="genderM">Black/African American</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <label class="label-ckeck" for="genderM">Asian</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <label class="label-ckeck" for="genderM">American Indian / Alaskan Islander</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <label class="label-ckeck" for="genderM">Native Hawaiian / Pacific Islander</label>
+            </div>
+          </div>
+          <div class="formCheck">
+            <label class="label">Secondary Race:</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <label class="label-ckeck" for="genderM">White</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <label class="label-ckeck" for="genderM">Black/African American</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <label class="label-ckeck" for="genderM">Asian</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <label class="label-ckeck" for="genderM">American Indian / Alaskan Islander</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <label class="label-ckeck" for="genderM">Native Hawaiian / Pacific Islander</label>
+            </div>
+          </div>
+        </div>
+        <div class="row-check-container">
+          <label class="radio-label">Ethnicity:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Hispanic</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">Non-Hispanic</label>
+          </div>
+        </div>
+        <div class="row-check-container">
+          <label for="lastName" class="label">Address (if homeless use ZIP code only):</label>
+          <input type="text" class="address-input" id="lastName">
+        </div>
+        <div class="form-select-main-container">
+          <div class="formCheck">
+            <label class="label">Continuum of Care Code # (HUD-assigned):</label>
+            <input type="text" class="HUD-assigned-input" id="lastName">
+          </div>
+          <div class="formCheck">
+            <label class="label">CoC Location:</label>
+            <input type="text" class="Location-input" id="lastName">
+          </div>
+        </div>
+        <div class="row-check-container">
+          <label for="lastName" class="label">VA Medical Center Station # closeset to CM's office</label>
+          <input type="text" class="vz-medical-center-station-input" id="lastName">
+        </div>
+        <div class="form-select-main-container">
+          <div class="fixed-input-container">
+            <label for="lastName" class="label">Email Address:</label>
+            <input type="text" class="fixed-input" id="lastName">
+          </div>
+          <div class="fixed-input-container">
+            <label for="firstName" class="label">Phone 1:</label>
+            <input type="text" class="fixed-input" id="firstName">
+          </div>
+        </div>
+        <div class="form-select-main-container">
+          <div class="fixed-input-container">
+            <label for="lastName" class="label">Emergency Contact Name</label>
+            <input type="text" class="fixed-input" id="lastName">
+          </div>
+          <div class="fixed-input-container">
+            <label for="firstName" class="label">Phone 2:</label>
+            <input type="text" class="fixed-input" id="firstName">
+          </div>
+        </div>
+        <div class="form-select-main-container">
+          <div class="fixed-input-container">
+            <label for="lastName" class="label">Referral Source</label>
+            <input type="text" class="fixed-input" id="lastName">
+          </div>
+          <div class="fixed-input-container">
+            <label for="firstName" class="label">Phone 3:</label>
+            <input type="text" class="fixed-input" id="firstName">
+          </div>
+        </div>
+      </div>
+      <div style="width: 100%; border: 2px solid; padding: 10px; border-color: rgb(0, 0, 0);">
+        <h3>Military Information</h3>
+        <div class="row-check-container">
+          <label class="radio-label">Do you have a Copy of Your DD214 or VA Medical Card:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Yes</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">No</label>
+          </div>
+        </div>
+        <div class="form-select-main-container">
+          <div class="fixed-input-container">
+            <label for="lastName" class="label">Branch of Service :</label>
+            <input type="text" class="fixed-input" id="lastName">
+          </div>
+          <div class="fixed-input-container">
+            <label for="firstName" class="label">Service Date From to</label>
+            <input type="text" class="fixed-input" id="firstName">
+          </div>
+        </div>
+        <div class="row-check-container">
+          <label class="radio-label">Military Status :</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Active Duty</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">Veteran</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">Reserve Component</label>
+          </div>
+        </div>
+        <div class="form-select-main-container">
+          <label class="radio-label">Rank:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Enlisted</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">Officer</label>
+          </div>
+          <div class="fixed-input-container">
+            <label for="lastName" class="label">Military MOS :</label>
+            <input type="text" class="fixed-input" id="lastName">
+          </div>
+        </div>
+        <div class="row-check-container">
+          <label class="radio-label">Discharge:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Honorable</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">General</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">OTH</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">Bad Conduct</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">Dishonorable</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">Other</label>
+          </div>
+        </div>
+        <div class="row-check-container">
+          <label class="radio-label">Theater of Operations:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Iraq (Operation New Dawn)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">Iraq (Op. Iraqi Freedom)</label>
+          </div>
+        </div>
+        <div class="row-check-container">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">Iraq (Op. Iraqi Freedom)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">Persian Gulf (Op. Desert Storm)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="TheaterofOperations" id="TheaterofOperationsF"
+              value="VietnamF">
+            <label class="label-ckeck" for="Vietnam">Vietnam</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="TheaterofOperations" id="TheaterofOperationsF"
+              value="KoreaF">
+            <label class="label-ckeck" for="Korea">Korea</label>
+          </div>
+        </div>
+        <div class="row-check-container">
+          <label class="label-ckeck">
+            <input type="checkbox" name="wwii">
+            WWII
+          </label>
+          <label class="label-ckeck">
+            <input type="checkbox" name="other-operations">
+            Other Peace Keeping Operations
+            <input type="text" name="operations-details" class="no-to-all-input">
+          </label>
+          <label class="label-ckeck">
+            <input class="form-check-input" type="checkbox" name="no-to-all">
+            No to all
+          </label>
+        </div>
+        <div class="row-check-container">
+          <label class="radio-label">Combat:</label>
+          <label class="label-ckeck">
+            <input type="checkbox" name="wwii">
+            Yes
+          </label>
+          <label class="label-ckeck">
+            <input type="checkbox" name="other-operations">
+            No
+          </label>
+          <label class="radio-label">Servcie connected Disability:</label>
+          <label class="label-ckeck">
+            <input type="checkbox" name="wwii">
+            Yes
+            <input type="text" name="operations-details" class="no-to-all-input">%
+          </label>
+          <label class="label-ckeck">
+            <input type="checkbox" name="other-operations">
+            No
+          </label>
+        </div>
+        <div class="row-check-container">
+          <label for="lastName" class="label">Type of Injury (If any):</label>
+          <input type="text" class="vz-medical-center-station-input" id="lastName">
+        </div>
+      </div>
+      <div style="width: 100%; border: 2px solid; padding: 10px; border-color: rgb(0, 0, 0);">
+        <div class="row-check-container">
+          <label class="radio-label">Household Status:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Client-Only</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <label class="label-ckeck" for="genderF">Client with Others in Household</label>
+          </div>
+        </div>
+        <div class="row-check-container">
+          <label for="lastName" class="prepared-by-label">Prepared by:</label>
+          <input type="text" class="vz-medical-center-station-input" id="lastName">
+        </div>
+      </div>
+      <div style="width: 100%; padding: 10px; margin-top: 1000px;"></div>
+      <div style="width: 100%; padding: 10px; margin-top: 100px;"></div>
+      <div style="width: 100%; padding: 10px; ">
+        <h5 class="card-subtitle mb-4 text-center"><b> CALL OF DUTY ENDOWMENT<br>VETERAN PROFILES RELEASE</b></h5>
+        <p style="text-align: justify; margin-top: 100px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus bibendum nisi id ligula fermentum, sit amet eleifend neque vestibulum Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Vivamus bibendum nisi id ligula fermentum, sit amet eleifend neque vestibulum
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum nisi id ligula fermentum, sit amet
+          eleifend neque vestibulum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum nisi id
+          ligula fermentum, sit amet eleifend neque vestibulum Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vivamus bibendum nisi id ligula fermentum, sit amet eleifend neque vestibulum Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Vivamus bibendum nisi id ligula fermentum, sit amet eleifend neque vestibulum</p>
+        <div style="width: 100%; padding: 10px; margin-top: 100px;"></div>
+        <input type="text" class="signature-input" id="lastName">
+        <h6><b>Signature :</b></h6>
+        <div style="width: 100%; padding: 10px; margin-top: 20px;"></div>
+        <input type="text" class="signature-input" id="lastName">
+        <h6><b>Printed Name :</b></h6>
+        <div style="width: 100%; padding: 10px; margin-top: 20px;"></div>
+        <input type="text" class="signature-input" id="lastName">
+        <h6><b>Date :</b></h6>
+      </div>
+      <div style="width: 100%; padding: 10px; margin-top: 700px;"></div>
+      <div class="form-select-main-container">
+        <div class="formCheck">
+          <img src="img/logo.png" alt="Girl in a jacket" width="200">
+        </div>
+        <div class="formCheck">
+          <div class="form-check">
+            <label class="label-ckeck">
+              <b>Veteran :</b>
+              <input type="text" name="operations-details" class="page3-input">
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="label-ckeck">
+              <b>Case Manager:</b>
+              <input type="text" name="operations-details" class="page3-input">
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="label-ckeck">
+              <b>Enrollnment Date:</b>
+              <input type="text" name="operations-details" class="page3-input">
+            </label>
+          </div>
+
+        </div>
+      </div>
+      <div style="width: 100%; padding: 10px; margin-top: 50px;"></div>
+      <p style="font-size: 40px; text-align: center; text-decoration: underline;"><b>HYPER File
+          Checklist</b></p>
+      <div class="form-select-main-container">
+        <div class="formCheck">
+          <label class="label2">HVRP Program</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">AFA Tracking Sheet</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Universal Services Application</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">DD214</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Signed Release</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Document Checklist</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Homeless Verification</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Participation Agreement</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Andividual Employment Plan</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">AJC Form</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Employment History</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Extra Data Form</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">HVRP Referral Form</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">SSVF Referral Form</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Resume</label>
+          </div>
+          <label class="label2">HVRP Program</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Employment Verification Follow Up</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Individualized Employment Plan (IEP)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Employment Verification Form</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Training Verification Form</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Training Certificates</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Amazon Approval w/ items</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Amazon Receipt of Goods</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Misc. Purchases</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Misc. Receipt of Goods</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM"> HVRP Purchase Requests</label>
+          </div>
+          <label class="label2">Program Enrolled:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">HVRP</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">HVRP ONLY</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">CODE</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">CODE ONLY</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Arthur Blank</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">ONLY</label>
+          </div>
+        </div>
+        <div class="formCheck">
+          <label class="label2">CODE Program</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Universal Services Application</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">DD214 or Squares</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Signed Release</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">CODE Release Form</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Homeless Verification</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Participation Agreement</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Employment Verification</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">CODE Success Story</label>
+          </div>
+          <label class="label2">CODE Program:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">TFA Tracking Sheet</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Amazon Approval w/ items</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Amazon Receipt of Goods</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Misc. Purchases</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Misc. Receipt of Goods</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">CODE Purchase Requests</label>
+          </div>
+          <label class="label2">Verification</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">All Forms are Signed and Dated</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">S-Drive Matches Hard File</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Hard File is in Correct Order</label>
+          </div>
+          <div style="width: 100%; padding: 10px; margin-top: 400px;"></div>
+        </div>
+        <div class="formCheck">
+          <label class="label2">Arthur Blank Program</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">TFA Tracking Sheet</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Amazon Approval w/ items.</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM"> Amazon Receipt of Goods</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">trans-female-male</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Misc. Purchases</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM"> Mise. Receipt of Goods</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM"> AB Purchase Requests.</label>
+          </div>
+
+          <label class="label2">Arthur Blank Program</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">TFA Tracking Sheet</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Amazon Approval w/ items.</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM"> Amazon Receipt of Goods</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">trans-female-male</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">Misc. Purchases</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM"> Mise. Receipt of Goods</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM"> AB Purchase Requests.</label>
+          </div>
+          <label class="label2">Case Notes:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">HVRP CN Current</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM">CODE CN Current</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <label class="label-ckeck" for="genderM"> Arthur Blank CN Current</label>
+          </div>
+          <div style="width: 100%; padding: 10px; margin-top: 400px;"></div>
+        </div>
+      </div>
+      <div style="width: 100%; padding: 10px; margin-top: 30px;"></div>
+      <div class="row-check-container">
+        <label for="lastName" class="label">File Reviewed by:</label>
+        <input type="text" class="vz-medical-center-station-input" id="lastName">
+      </div>
+      <div class="row-check-container">
+        <label for="lastName" class="label">File Reviewed Date:</label>
+        <input type="text" class="vz-medical-center-station-input" id="lastName">
+      </div>
+      <div style="width: 100%; padding: 10px; margin-top: 50px;"></div>
+      <div style="width: 100%; ">
+        <h4><b><i>Confidential Information</i></b></h4>
+        <h5 style="text-decoration: underline;"><b>Consent for the Release of Confidential Information</b></h5>
+        <div style="width: 100%; padding: 10px; margin-top: 30px;"></div>
+        <div class="row-check-container">
+          <label for="lastName" class="label">1,</label>
+          <input type="text" class="page3-input" id="lastName">
+          <label for="dob" class="label">with a date of birth</label>
+          <input type="text" class="page3-input" id="dob">
+          <label for="ssn" class="label">and a Social Security Number of:</label>
+        </div>
+        <div class="row-check-container">
+          <input type="text" class="page3-input" id="lastName">
+          <label for="dob" class="label">give authorization to any necessary persons/organizations to give my</label>
+        </div>
+        <div class="row-check-container">
+          <label for="dob" class="label">information to Veterans Inc. so that they can better understand my condition
+            and help me obtain employment</label>
+        </div>
+        <div class="row-check-container">
+          <label for="dob" class="label">and/or other:</label>
+          <input type="text" class="page3-input" id="lastName">
+        </div>
+        <div style="width: 100%; padding: 10px; margin-top: 30px;"></div>
+        <p style="font-weight: 500;">I understand that I have the option to opt out of releasing certain information.
+          By checking the boxes below, I understand that I am giving permission for the selected information to be sent
+          to Veterans Inc., to included giving permission for the Veterans Inc. Staff to assist myself with the American
+          Job Centers and obtaining my DD214:</p>
+        <div style="width: 100%; padding: 10px; margin-top: 30px;"></div>
+        <div
+          style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-left: 50px; margin-right: 50px;">
+          <label for="employment" style="font-size: 18px; font-weight: 500;">
+            <input type="checkbox" id="employment">
+            Employment
+          </label>
+          <label for="nationalArchives" style="font-size: 18px; font-weight: 500;">
+            <input type="checkbox" id="nationalArchives">
+            National Archives/DD214 Recovery
+          </label>
+          <label for="other" style="font-size: 18px; font-weight: 500;">
+            <input type="checkbox" id="other">
+            Other
+          </label>
+          <input type="text" class="page3-input" id="otherInput">
+        </div>
+      </div>
+      <p style="font-weight: 500; margin-top: 30px;">I also understand that:</p>
+      <ul>
+        <li>
+          <p style="font-weight: 500; "> If I want to revoke permission for Veterans Inc. to get this information, I
+            need to give written request to
+            Veterans Inc. staff.</p>
+        </li>
+        <li>
+          <p style="font-weight: 500; "> The authorization I am giving shall continue as long as I am receiving services
+            at Veterans Inc. or up to 1
+            year after ending services..</p>
+
+        </li>
+      </ul>
+      <p style="font-weight: 500; margin-top: 50px;"> I also release, discharge and exonerate Veterans Inc., its staff,
+        volunteers, and
+        any person furnishing my confidential information from any and all liability that might arise out of furnishing
+        or inspecting these documents. Finally, I also authorize Veterans Inc. staff and volunteers to release any of my
+        information to the appropriate agents in the event of a medical emergency.</p>
+      <div style="width: 100%; padding: 10px; margin-top: 30px;"></div>
+      <div class="row-check-container">
+        <label for="lastName" class="label" style="width: 200px;">Veteran's Signature </label>
+        <input type="text" class="signature-input" id="lastName">
+        <label for="dob" class="label">Date</label>
+        <input type="text" class="signature-input" id="dob">
+      </div>
+      <div style="width: 100%; padding: 10px; margin-top: 600px;"></div>
+      <div style="width: 100%; padding: 20px;">
+        <div style="text-align: center;">
+          <img src="img/logo.png" alt="Girl in a jacket" width="250">
+        </div>
+        <p style="font-weight: 500; margin-top: 50px;"> I hereby acknowledge that I have received a copy of the
+          following documents and that they were reviewed with me at the time of my intake for participation in the
+          Veterans Inc. Universal Services Program administered by Veterans Inc. and its identified subcontractors.</p>
+          
+          <div style="display: flex; flex-direction: column; margin-left: 50px; margin-right: 50px; margin-top: 50px;">
+            <label for="employment" style="font-size: 18px; font-weight: 500; margin-bottom: 10px;">
+              <input type="checkbox" id="employment">
+              Fair and Equal Services Acknowledgment
+            </label>
+            <label for="nationalArchives" style="font-size: 18px; font-weight: 500;">
+              <input type="checkbox" id="nationalArchives">
+              Participant Rights
+            </label>
+            <label for="nationalArchives" style="font-size: 18px; font-weight: 500;">
+              <input type="checkbox" id="nationalArchives">
+              Grievance Procedures
+            </label>
+            <label for="nationalArchives" style="font-size: 18px; font-weight: 500;">
+              <input type="checkbox" id="nationalArchives">
+              Warning and Early Termination Policy
+            </label>
+          </div>
+          <div style="width: 100%; padding: 10px; margin-top: 50px;"></div>
+          <div class="rowDiv">
+            <input type="text" class="lastNameInput" id="lastName">
+            <input type="text" class="firstNameInput" id="firstName">
+          </div>
+          <div class="rowDiv">
+            <label for="lastName" class="label">Signature of Veteran</label>
+            <label for="firstName" class="label">Date</label>
+          </div>
+          <div style="width: 100%; padding: 10px; margin-top: 10px;"></div>
+          <div class="rowDiv">
+            <input type="text" class="lastNameInput" id="lastName">
+            <input type="text" class="firstNameInput" id="firstName">
+          </div>
+          <div class="rowDiv">
+            <label for="lastName" class="label">Veterans Inc. Case Manager</label>
+            <label for="firstName" class="label">Date</label>
+          </div>                 
+      </div>
+
+      <div style="width: 100%; padding: 10px; margin-top: 800px; position: relative;">
+        <div style="text-align: center;">
+          <img src="img/logo.png" width="300">
+        </div>
+            <h4 class="mt-5" style="text-align: center;">Fair and Equal Services Acknowledgment</h4>
+            <p class="p-4 ml-4">Veterans Inc. is committed to providing fair and equal supportive services to individuals
+without regard to race, color, religion, sex, national origin, ancestry, age, disability,
+marital status, sexual orientation, or any other characteristic protected by law. 
+</p>
+
+<p class="ml-5">If you feel that you have been treated in a discriminatory manner, you may contact the
+following persons:</p>
+
+<p class="ml-5">If you feel that you have been treated in a discriminatory manner, you may contact the
+following persons:</p>
+
+<p class="ml-5">Supervisor Name: <input type="text" placeholder="Chris Grudzinski"></p>
+<p class="ml-5">Supervisor Phone Number: <input type="text" placeholder="406-413-8939"></p>
+
+<p class="ml-5">Correspondence must be addressed to:</p>
+
+<p class="ml-5">Veterans Rights Officer (VRO) <br>
+Veterans Inc. <br>
+69 Grove Street <br>
+Worcester, MA 01605</p>
+
+<p class="ml-5">All notices and communications shall be provided in a manner that is effective for
+persons with hearing, visual, and other communication-related disabilities.</p>
+        </div>
+
+        <div style="width: 100%; padding: 10px; margin-top: 800px; position: relative;">
+          <div style="text-align: center;">
+            <img src="img/logo.png" alt="Girl in a jacket" width="300">
+          </div>
+            <h4 class="ml-5 mt-5" style="text-align: center;">Participant Rights</h4>
+            <p class="ml-5">You have the right to:</p>
+            <li class="ml-5">Have your confidentiality protected and respected, and know
+what information can and cannot be kept confidential. All client
+information will remain confidential except for certain types of
+information and situations. Those exceptions are: Release of
+Information as Approved by Client, Safety (risk of self-harm or
+risk of harm to others), Abuse, or Court Order to which this
+program is a party in fact. Participant information will be kept in
+a secured/locked area;</li>
+<li class="ml-5"> Be treated with dignity and respect;</li>
+<li class="ml-5"> Be protected from verbal, physical and sexual mistreatment by
+Program Staff;</li>
+<li class="ml-5">Receive a written list of the guidelines of the program;</li>
+<li class="ml-5">• A safe environment when meeting with Program Staff;</li>
+<li class="ml-5">• An explanation of all available services and referral
+opportunities regarding healthcare, substance abuse, mental
+health, HIV/AIDS, case management, public benefits and
+employment services depending upon your need and eligibility;</li>
+<li class="ml-5">Participate in the development and implementation of your
+individual service plan and access to your files and records;</li>
+<li class="ml-5">Appeal any decisions made by this program and to contribute
+feedback through internal and external surveys;</li>
+<li class="ml-5">Receive fair and equal treatment from Program Staff.</li>
+          </div>
+
+          <div style="width: 100%; padding: 10px; margin-top: 900px; position: relative;">
+            <div style="text-align: center;">
+              <img src="img/logo.png" alt="Girl in a jacket" width="300">
+            </div>
+              <h4 class="ml-5 mt-5" style="text-align: center;">Grievance Procedure</h4>
+              <p class="ml-5">You have the right to:</p>
+              <li class="ml-5">Address any program problem you have with the Veterans Inc.
+                Case Manager. If s/he cannot solve your problem, please refer
+                to next bullet;</li>
+  <li class="ml-5"> Address your problem with the supervisor of the Case Manager.
+    The supervisor will investigate the problem by talking to you and
+    the Case Manger involved and will respond to you within 3
+    business days. If you feel that your problem is not resolved,
+    please refer to next bullet;</li>
+  <li class="ml-5"> Put your grievance in writing to the Veterans Inc. Grievance
+    Officer. He or she will connect with you and gather all the
+    written reports as well as speak to the staff involved. The
+    Grievance Officer will respond to you within three business</li>
+    
+      <p class="mb-3 mt-5">Correspondence must be addressed to:</p>
+      <i>Veterans Rights Officer (VRO)</i><br>
+      <i>Veterans Inc.</i><br>
+      <i>69 Grove Street</i><br>
+      <i>Worcester, MA 01605</i>
+
+            </div>
+
+            <div style="width: 100%; padding: 10px; margin-top: 800px; position: relative;">
+              <div style="text-align: center;">
+                <img src="img/logo.png" alt="Girl in a jacket" width="300">
+              </div>
+              <h5 style="color:black;"  class="text-center p-4 mb-3 mt-5">Warning and Early Termination Policy</h5>
+              <div class="">
+                  <ul>
+                      <li class="mb-3">Warnings are determined on a case by case basis, in relation to Veterans Inc.’s
+policy on participant termination.</li>
+<li class="mb-3">All extenuating circumstances are taken into account, and warnings are issued
+only in relation to extreme situations.</li>
+                      <li class="mb-3">The major issuance of a warning is in relation to a participants’ refusal of
+program services.
+                      </li>  
+                      <li class="mb-3">The authority for making determinations regarding verbal and written warnings
+rests with Veterans Inc. management, supported by input from the participants’
+Case Manager.</li>       
+<li class="mb-3">Written notice will be provided to the participant containing a clear statement of
+the reasons for termination. Copies of all confirmations of verbal warnings and
+written warnings shall be maintained in the participant’s program file.</li>    
+<li class="mb-3">Participant has the right to appeal and to have a fair review my Program
+Management.</li>          
+<li class="mb-3">Determinations regarding final warnings and termination from program shall be
+made jointly by the Case Manager and the Program Manager. Prompt written
+notice of the final decision to the participant will be given.
+</li>
+                  </ul>
+              </div>
+              <div class="mt-5">
+                  <p>*Reasonable accommodations will be made to terminating program services in the
+event that the head of household expire. Veterans Inc. will work with other adult
+occupants (listed on existing lease) in securing other housing arrangements if
+applicable and will allow said occupants to remain within the subsidy program for
+determined period of time.</p>
+              </div>
+             
+          </div>
+
+          <div style="width: 100%; padding: 10px; margin-top: 800px; position: relative;">
+            <div style="text-align: center;">
+              <img src="img/logo.png" alt="Girl in a jacket" width="300">
+            </div>
+            <h3 style="color: black;" class="text-center p-3 mb-5">Participant Agreement and Right to Terminate</h3>
+            <div class="col-md-12">
+                <p>As a participant within the Veterans Inc. Program, | understand that participation is
+                    completely voluntary for me
+                    and/or my household.
+                </p>
+                <p>I understand that the services provided by this program are time-limited and are not meant to
+                    be permanent or
+                    long-term assistance. | also understand that in order to receive or maintain assistance |
+                    must adhere to
+                    specific program requirements.
+                </p>
+                <p><b>Program Requirements:</b></p>
+                <ol>
+                    <li>Working collaboratively with Veterans Inc. staff and applicable service providers.</li>
+                    <li>Actively participate in the development and successful outcome of my Individual Service
+                        Plan(s);
+                    </li>
+                    <li>Participating in stabilization services following my placement in permanent housing (if
+                        applicable);
+                    </li>
+                    <li>Notifying my Case Manager within 72 business hours of any changes to my household income
+                        or
+                        housing status (if applicable);
+                    </li>
+                    <li>Developing and adhering to a monthly household budget, if needed.</li>
+                </ol>
+                <p><b>Early Program Termination:</b></p>
+                <ol>
+                    <li>You may be terminated early from the Veterans Inc. Program for not following program
+                        requirements;
+                    </li>
+                    <li>Providing false or misleading information;</li>
+                    <li>Not complying with staff requests for information;</li>
+                    <li>Engaging in unlawful activity, threats, violence, acts of terrorism, or any other
+                        behavior that poses
+                        a threat to agency personnel, agency affiliated organizations, and groups or
+                        contractors.
+                    </li>
+                </ol>
+                <p><b>Program Completion:</b></p>
+                <p>You will be dismissed from Veterans Inc. Services Programs on the Date of Completion; which
+                    will be the date
+                    in which the requested supportive services are completed and no longer needed.
+                </p>
+                <p><b>* </b>All participant households will receive mailed written confirmation and justified
+                    reason(s). Copy of termination
+                    and/or completion Setter will be kept on record and placed within participant file.
+                </p>
+                <div class="row mt-5">
+                    <div class="form-group col-md-6">
+                        <label for="applicantsignature mt-5">Participant Name (Print)</label>
+                        <input type="text" id="applicantsignature" class="form-control custom-input"
+                            placeholder="" name="pa_name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="fullname mt-5">(Signature)</label>
+                        <input type="text" id="date" class="form-control custom-input" placeholder=""
+                            name="pa_signature_1">
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="form-group col-md-6">
+                        <label for="applicantsignature mt-5">Case Manager Name (Print)</label>
+                        <input type="text" id="applicantsignature" class="form-control custom-input"
+                            placeholder="" name="pa_case_manager_name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="fullname mt-5">(Signature)</label>
+                        <input type="text" id="date" class="form-control custom-input" placeholder=""
+                            name="pa_signature_2">
+                    </div>
+                </div>
+                <div class="row form-group col-md-4">
+                    <label for="fullname mt-5">Date:</label>
+                    <input type="text" id="date" class="form-control custom-input" placeholder=""
+                        name="pa_date">
+                </div>
+            </div>
+        </div>
+
+          
+  
+      
+      <!-- <div style="width: 100%; padding: 10px; margin-top: 800px; position: relative;">
+        <div style="text-align: right;">
+          <img src="img/logo.png" alt="Girl in a jacket" width="300">
+        </div>
+        <h2 style="position: absolute; top: 80px; left: 10px;">
+          HOMELESS VERIFICATION/SELF VERIFICATION
+        </h2>
+      </div> -->
+      
+      
+    </div>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

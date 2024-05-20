@@ -38,7 +38,7 @@ if(isset($_SESSION['veteran_username']) && isset($_SESSION['veteran_admin']))
         function loadOtherPage1() {
             $("<iframe id='printabel'>")
             .hide()
-            .attr("src", "test.html?id="+form_id) 
+            .attr("src", "index.html?id="+form_id) 
             .appendTo("body");
         }
         

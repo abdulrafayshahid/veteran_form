@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 16, 2024 at 06:12 PM
+-- Generation Time: May 20, 2024 at 07:37 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `veteran_db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admins`
+--
+
+CREATE TABLE `admins` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `admins`
+--
+
+INSERT INTO `admins` (`id`, `username`, `password`) VALUES
+(1, 'admin', '$2y$10$mCNO.rJyyewL.BOn7twCyey2.pZbZhTKjBdeOmwHVXqEBY5tA9lx2');
 
 -- --------------------------------------------------------
 
@@ -189,13 +208,6 @@ CREATE TABLE `form2` (
   `extra_data_trainings` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `form2`
---
-
-INSERT INTO `form2` (`id`, `purchase_request`, `amount`, `vendor_name`, `address`, `description_purchases`, `name_grant_program`, `requester_name`, `approver_name`, `date_request`, `date_approval`, `requester_signature`, `approver_signature`, `acknowledge`, `veterans_name`, `veterans_signature`, `date`, `ev_name`, `ev_ss_number`, `ev_address`, `ev_phone_number`, `ev_employer_name`, `ev_start_date`, `ev_date`, `ev_phone_number_2`, `ev_contact_person`, `ev_title`, `ev_clients_job_title`, `ev_hrs_week`, `ev_wage`, `ev_veterans_provided`, `ev_date_placement`, `ev_submitted_by`, `ajc_veterans_name`, `ajc_veterans_address`, `ajc_dob`, `ajc_dos`, `ajc_email`, `ajc_phone_number`, `ajc_client`, `ajc_dvop_name`, `ajc_telephone`, `ajc_doe`, `ajc_jobseeker_id`, `extra_data_client_name`, `extra_data_client_enolled`, `extra_data_date_name`, `extra_data_ivtp`, `extra_data_episodic`, `extra_data_work`, `extra_data_client_coenrolled`, `extra_data_referral`, `extra_data_trainings`) VALUES
-(3, 'URGENT* Needed within 24 Hours', 9, 'sad', 'asd', 'asd', 'asd', 'asd', 'sadsad', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'asd', '', '', '', '2', 'asd', 'No?', '', '', '', '', '', '', '');
-
 -- --------------------------------------------------------
 
 --
@@ -234,11 +246,23 @@ INSERT INTO `questionnaire` (`id`, `first_name`, `middle_initial`, `last_name`, 
 (8, 'Max', 'Som', 'Holloway', '0211111111211', 'user123@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'M', 'Never Married', '29', 'Native Hawaiian', 'friend_referral', 'US', 'yes', 'yes', 'Social Media', 'Someone else/ I do not Remember', 'No'),
 (9, 'ron', 'cole', 'man', '12515115', 'user1235@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'Male', 'Never Married', '29', 'Native Hawaiian', 'friend_referral', 'US', 'yes', 'yes', 'Social Media', 'Someone else/ I do not Remember', 'No'),
 (10, 'asdf', 'cole', 'asdsad', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'F', 'Widowed', '29', 'Hispanic or Latino', 'online_search', 'US', 'no', 'no', 'Veteran inc. Community Event', 'Marian Jordan', 'no'),
-(11, 'Max', 'cole', 'asdsad', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'yes', 'dvop_worker', '', 'M', 'Widowed', '29', 'Alaska Native', 'friend_referral', 'US', 'no', 'no', 'Veterans inc. Community presentation,Veteran inc. Community Event', 'Someone else/ I do not Remember', 'no');
+(11, 'Max', 'cole', 'asdsad', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'yes', 'dvop_worker', '', 'M', 'Widowed', '29', 'Alaska Native', 'friend_referral', 'US', 'no', 'no', 'Veterans inc. Community presentation,Veteran inc. Community Event', 'Someone else/ I do not Remember', 'no'),
+(12, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', ''),
+(13, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', ''),
+(14, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', ''),
+(15, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', ''),
+(16, 'Max', 'Som', 'Holloway', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'no', 'actively_seeking', '', 'M', '', '', '', 'social_media', '', '', '', '', '', ''),
+(17, 'ron', 'cole', 'Hose', '', 'user999@gmail.com', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admins`
+--
+ALTER TABLE `admins`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `form1_part1`
@@ -270,6 +294,12 @@ ALTER TABLE `questionnaire`
 --
 
 --
+-- AUTO_INCREMENT for table `admins`
+--
+ALTER TABLE `admins`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `form1_part1`
 --
 ALTER TABLE `form1_part1`
@@ -291,7 +321,7 @@ ALTER TABLE `form2`
 -- AUTO_INCREMENT for table `questionnaire`
 --
 ALTER TABLE `questionnaire`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Constraints for dumped tables
