@@ -12,8 +12,40 @@ if(isset($_SESSION['veteran_username']) && isset($_SESSION['veteran_admin']))
 
 <?php include('components/sidebar.php');
  ?>
+<script>
+     $(document).ready(function() {
+            
+            $('#formData').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'copyHtml5',
+                    'excelHtml5',
+                    'csvHtml5'
+                ],
+                order: [[0, 'desc']] 
+            });
+        });
+
+    $(document).ready(function(){
+
+        var form_id;
+
+        $(document).on("click" ,".print" , function(){
+		var form_id=$(this).attr("id");
+        loadOtherPage1();           
+        });
+
+        function loadOtherPage1() {
+            $("<iframe id='printabel'>")
+            .hide()
+            .attr("src", "test.html?id="+form_id) 
+            .appendTo("body");
+        }
+        
+});
 
 
+</script>
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -58,6 +90,8 @@ if(isset($_SESSION['veteran_username']) && isset($_SESSION['veteran_admin']))
                 </nav>
                 <!-- End of Topbar -->
 
+
+                
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
@@ -70,7 +104,6 @@ if(isset($_SESSION['veteran_username']) && isset($_SESSION['veteran_admin']))
                     <div class="container">
                         <div class="card">
                             <div class="card-body">
-                                
                            
         <table id="formData" class="display" style="width:100%">
             <thead>
@@ -79,48 +112,16 @@ if(isset($_SESSION['veteran_username']) && isset($_SESSION['veteran_admin']))
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Email</th>
-                    <th class="display-none">Address</th>
-                    <th class="display-none">Number</th>
-                    <th>Country</th>
-                    <th>Nationality</th>
-                    <th>DOB</th>
-                    <th class="display-none">Stage Name</th>
-                    <th class="display-none">Other Nationality 1</th>
-                    <th class="display-none">Other Nationality 2</th>
-                    <th class="display-none">Other Nationality 3</th>
-                    <th class="display-none">Website</th>
-                    <th class="display-none">Country Code</th>
-                    <th class="display-none">Tiktok</th>
-                    <th class="display-none">Meta (Facebook)</th>
-                    <th class="display-none">Instagram</th>
-                    <th class="display-none">Thread</th>
-                    <th class="display-none">SnapChat</th>
-                    <th class="display-none">Twitter</th>
-                    <th class="display-none">Weibo</th>
-                    <th class="display-none">SoundCloud</th>
-                    <th class="display-none">Bandcamp</th>
-                    <th class="display-none">Pinterest</th>
-                    <th class="display-none">Twitch</th>
-                    <th class="display-none">Linkedin</th>
-                    <th class="display-none">Youtube</th>
-                    <th class="display-none">Vimeo</th>
-                    <th class="display-none">Question</th>
-                    <th class="display-none">Question</th>
-                    <th class="display-none">Question</th>
-                    <th class="display-none">Question</th>
-                    <th class="display-none">Question</th>
-                    <th class="display-none">Question</th>
-                    <th class="display-none">Are You</th>
-                    <th class="display-none">School Name (Optional)</th>
-                    <th class="display-none">Events</th>
-                    <th>Action</th>
+                    <th>Address</th>
+                    <th>Number</th>
+                    <th>Print</th>
                 </tr>
             </thead>
             <tbody>
 
                 <?php
 
-                $query="select * from forms order by id desc;";
+                $query="select * from questionnaire order by id desc;";
                     $rec=mysqli_query($conn,$query);
                     while($row=mysqli_fetch_array($rec)){
 
@@ -128,45 +129,13 @@ if(isset($_SESSION['veteran_username']) && isset($_SESSION['veteran_admin']))
                 ?>
 
                 <tr>
-                    <td><?php echo $row['status']; ?></td>
+                    <td><?php echo $row['id']; ?></td>
                     <td><?php echo $row['first_name']; ?></td>
                     <td><?php echo $row['last_name']; ?></td>
                     <td><?php echo $row['email']; ?></td>
-                    <td class="display-none"><?php echo $row['address']; ?></td>
-                    <td class="display-none"><?php echo $row['number']; ?></td>
-                    <td><?php echo $row['country']; ?></td>
-                    <td><?php echo $row['nationality']; ?></td>
-                    <td><?php echo $row['dob']; ?></td>
-                    <td class="display-none"><?php echo $row['stage_name']; ?></td>
-                    <td class="display-none"><?php echo $row['other_nationality_1']; ?></td>
-                    <td class="display-none"><?php echo $row['other_nationality_2']; ?></td>
-                    <td class="display-none"><?php echo $row['other_nationality_3']; ?></td>
-                    <td class="display-none"><?php echo $row['website']; ?></td>
-                    <td class="display-none"><?php echo $row['country_code']; ?></td>
-                    <td class="display-none"><?php echo $row['tiktok']; ?></td>
-                    <td class="display-none"><?php echo $row['meta']; ?></td>
-                    <td class="display-none"><?php echo $row['instagram']; ?></td>
-                    <td class="display-none"><?php echo $row['threads']; ?></td>
-                    <td class="display-none"><?php echo $row['snapchat']; ?></td>
-                    <td class="display-none"><?php echo $row['twitter']; ?></td>
-                    <td class="display-none"><?php echo $row['weibo']; ?></td>
-                    <td class="display-none"><?php echo $row['soundcloud']; ?></td>
-                    <td class="display-none"><?php echo $row['bandcamp']; ?></td>
-                    <td class="display-none"><?php echo $row['pinterest']; ?></td>
-                    <td class="display-none"><?php echo $row['twitch']; ?></td>
-                    <td class="display-none"><?php echo $row['linkedin']; ?></td>
-                    <td class="display-none"><?php echo $row['youtube']; ?></td>
-                    <td class="display-none"><?php echo $row['vimeo']; ?></td>
-                    <td class="display-none"><?php echo $row['question_1']; ?></td>
-                    <td class="display-none"><?php echo $row['question_2']; ?></td>
-                    <td class="display-none"><?php echo $row['question_3']; ?></td>
-                    <td class="display-none"><?php echo $row['question_4']; ?></td>
-                    <td class="display-none"><?php echo $row['question_5']; ?></td>
-                    <td class="display-none"><?php echo $row['question_6']; ?></td>
-                    <td class="display-none"><?php echo $row['are_you']; ?></td>
-                    <td class="display-none"><?php echo $row['school']; ?></td>
-                    <td class="display-none"><?php echo $row['events']; ?></td>
-                    <td><a href="details.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Details</a></td>
+                    <td><?php echo $row['address']; ?></td>
+                    <td><?php echo $row['cell_phone']; ?></td>
+                    <td><button type="button" class="print" id="<?php echo $row['id']; ?>">Print</button></td>
                 </tr>
 
                 <?php
@@ -228,22 +197,7 @@ if(isset($_SESSION['veteran_username']) && isset($_SESSION['veteran_admin']))
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    
-
-
-    <script>
-         $(document).ready(function() {
-            $('#formData').DataTable({
-                dom: 'Bfrtip',
-                buttons: [
-                    'copyHtml5',
-                    'excelHtml5',
-                    'csvHtml5'
-                ],
-                order: [[0, 'desc']] 
-            });
-        });
-    </script>
+ 
 
 </body>
 

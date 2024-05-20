@@ -33,6 +33,7 @@ mysqli_close($conn);
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Form</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
 </head>
 
 <body>
@@ -68,11 +69,11 @@ mysqli_close($conn);
                             <label for="dob">Date of Birth:</label>
                             <input type="date" id="dob" class="form-control" name="dob">
                         </div>
-                        <div class="form-group col-md-6">
+                        <!-- <div class="form-group col-md-6">
                             <label for="lastname">Social Security #:</label>
                             <input type="text" id="lastname" class="form-control" name="social_security"
                                 placeholder="Enter Social Security #">
-                        </div>
+                        </div> -->
                     </div>
                     <div class="row">
                     <div class="col-md-6 mt-3 form-group">
@@ -1115,11 +1116,11 @@ feedback through internal and external surveys;</li>
                             <input type="number" id="fullname" name="ev_name" class="form-control"
                                 placeholder="Enter Your Name">
                         </div>
-                        <div class="form-group col-md-6">
+                        <!-- <div class="form-group col-md-6">
                             <label for="lastname">Social Security Number</label>
                             <input type="number" id="lastname" name="ev_ss_number" class="form-control"
                                 placeholder="Enter Social Security Number">
-                        </div>
+                        </div> -->
                         <div class="form-group col-md-6">
                             <label for="lastname">Address</label>
                             <input type="text" id="lastname" name="ev_address" class="form-control"

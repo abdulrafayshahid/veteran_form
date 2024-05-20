@@ -2,7 +2,7 @@
 $hostname     = "localhost";
 $username     = "root";
 $password     = "";
-$databasename = "wideawake_db";
+$databasename = "veteran_db";
 // Create connection
 $conn = mysqli_connect($hostname, $username, $password,$databasename);
 $db=$conn;

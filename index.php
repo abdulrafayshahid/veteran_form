@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Form</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
 </head>
 
 <body>
@@ -283,7 +284,10 @@
                         </div>
                     </div>
                     <div class="text-center w-100">
-                        <button type="submit" id="questionnaire_btn" class="btn btn-outline-dark">SUBMIT</button>
+                        <button type="submit" id="questionnaire_btn" name="questionnaire_submit" class="btn btn-outline-dark">SUBMIT</button>
+                    </div>
+                    <div class="text-center w-100">
+                    <button type="submit" id="form3_btn" name="form_submit" class="btn btn-outline-dark">Submit Application</button>
                     </div>
                 </div>
             </div>

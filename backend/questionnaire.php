@@ -75,7 +75,11 @@ try {
     $mail->Body    = $bodyContent;
  
     $mail->send();
-    header('Location: ../form.php');
+    if (isset($_POST['questionnaire_submit'])) {
+        header('Location: ../index.php');
+    } elseif (isset($_POST['form_submit'])) {
+        header('Location: ../form.php');
+    }
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }

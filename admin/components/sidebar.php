@@ -27,32 +27,10 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
-
             
             <li class="nav-item">
 
-                <a class="nav-link" href="form1.php">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Form 1</span></a>
-            </li>
-
-            <li class="nav-item">
-
-                <a class="nav-link" href="form2.php">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Form 2</span></a>
-            </li>
-
-            <li class="nav-item">
-
-                <a class="nav-link" href="form3.php">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Form 3</span></a>
-            </li>
-            
-            <li class="nav-item">
-
-                <a class="nav-link" href="includes/logout.php">
+                <a class="nav-link" href="../backend/admin/logout.php">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                     <span>Logout</span></a>
             </li>

@@ -7,7 +7,7 @@ session_start();
 
 if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest') {
 
-    $sql = "SELECT * FROM forms";
+    $sql = "SELECT * FROM form1_part1";
     $result = $conn->query($sql);
 
     $data = array();
