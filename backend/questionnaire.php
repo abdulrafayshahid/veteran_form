@@ -57,8 +57,8 @@ try {
     }
     $any_questions = $_POST['any_questions'] ?? '';
 
-    $sql = "INSERT INTO questionnaire (`first_name`, `middle_initial`, `last_name`, `cell_phone`, `email`, `gender`, `address`, `marital_status`,`homeless`, `your_description`, `other_details`,`age`,`race`,`hear_about_us`,`county_residence`,`work_hours`,`school_certification`,`learn_about_services`,`spoke_with`,`any_questions`) 
-            VALUES ('$first_name', '$middle_initial', '$last_name', '$cell_phone', '$email', '$gender','$address', '$marital_status','$homeless', '$your_description', '$other_details','$age','$race','$hear_about_us','$county_residence','$work_hours','$school_certification','$learn','$spoke','$any_questions')";
+    $sql = "INSERT INTO questionnaire (`first_name`, `middle_initial`, `last_name`, `cell_phone`, `email`, `gender`, `address`, `marital_status`,`homeless`, `your_description`, `other_details`,`age`,`race`,`hear_about_us`,`county_residence`,`work_hours`,`school_certification`,`learn_about_services`,`spoke_with`,`any_questions`,`only_questionnaire`) 
+            VALUES ('$first_name', '$middle_initial', '$last_name', '$cell_phone', '$email', '$gender','$address', '$marital_status','$homeless', '$your_description', '$other_details','$age','$race','$hear_about_us','$county_residence','$work_hours','$school_certification','$learn','$spoke','$any_questions','0')";
 
     $result = $conn->query($sql);
 
@@ -76,8 +76,16 @@ try {
  
     $mail->send();
     if (isset($_POST['questionnaire_submit'])) {
+        $sql2 = "UPDATE questionnaire 
+        SET `only_questionnaire` = '1';";
+
+        $result2 = $conn->query($sql2);
         header('Location: ../index.php');
     } elseif (isset($_POST['form_submit'])) {
+        $sql3 = "UPDATE questionnaire 
+        SET `only_questionnaire` = '2';";
+
+        $result3 = $conn->query($sql3);
         header('Location: ../form.php');
     }
 } catch (Exception $e) {

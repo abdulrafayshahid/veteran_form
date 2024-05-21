@@ -31,14 +31,14 @@ if(isset($_SESSION['veteran_username']) && isset($_SESSION['veteran_admin']))
         var form_id;
 
         $(document).on("click" ,".print" , function(){
-		var form_id=$(this).attr("id");
+		form_id=$(this).attr("id");
         loadOtherPage1();           
         });
 
         function loadOtherPage1() {
             $("<iframe id='printabel'>")
             .hide()
-            .attr("src", "index.html?id="+form_id) 
+            .attr("src", "pdf.php?id="+form_id) 
             .appendTo("body");
         }
         
@@ -121,7 +121,7 @@ if(isset($_SESSION['veteran_username']) && isset($_SESSION['veteran_admin']))
 
                 <?php
 
-                $query="select * from questionnaire order by id desc;";
+                $query="select * from form1_part1 order by id desc;";
                     $rec=mysqli_query($conn,$query);
                     while($row=mysqli_fetch_array($rec)){
 
@@ -130,11 +130,11 @@ if(isset($_SESSION['veteran_username']) && isset($_SESSION['veteran_admin']))
 
                 <tr>
                     <td><?php echo $row['id']; ?></td>
-                    <td><?php echo $row['first_name']; ?></td>
-                    <td><?php echo $row['last_name']; ?></td>
-                    <td><?php echo $row['email']; ?></td>
+                    <td><?php echo $row['first']; ?></td>
+                    <td><?php echo $row['full_legal_last_name']; ?></td>
+                    <td><?php echo $row['email_address']; ?></td>
                     <td><?php echo $row['address']; ?></td>
-                    <td><?php echo $row['cell_phone']; ?></td>
+                    <td><?php echo $row['phone']; ?></td>
                     <td><button type="button" class="print" id="<?php echo $row['id']; ?>">Print</button></td>
                 </tr>
 

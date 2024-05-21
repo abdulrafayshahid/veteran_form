@@ -113,8 +113,15 @@ try {
     $iep_short_term_goal = $_POST['iep_short_term_goal'] ?? '';
     $iep_long_term_goal = $_POST['iep_long_term_goal'] ?? '';
     $iep_training = $_POST['iep_training'] ?? '';
-    $iep_desired_industry_arr = $_POST['iep_desired_industry'];
-    $iep_desired_industry=implode(',',$iep_desired_industry_arr);
+
+    if (isset($_POST['iep_desired_industry']) && $_POST['iep_desired_industry'] !== null) {
+
+        $iep_desired_industry_arr = $_POST['iep_desired_industry'];
+        $iep_desired_industry=implode(',',$iep_desired_industry_arr);
+    } else {
+        $iep_desired_industry = ''; 
+    }
+
     // form3
     if (isset($_POST['purchase_request']) && $_POST['purchase_request'] !== null) {
 
@@ -167,8 +174,13 @@ try {
     $ajc_doe = $_POST['ajc_doe'] ?? '';
     $ajc_jobseeker_id = $_POST['ajc_jobseeker_id'] ?? '';
     $extra_data_client_name = $_POST['extra_data_client_name'] ?? '';
-    $extra_data_client_name_arr = $_POST['extra_data_client_enolled'] ?? '';
-    $extra_data_client_enolled=implode(',',$extra_data_client_name_arr);
+    if (isset($_POST['extra_data_client_enolled']) && $_POST['extra_data_client_enolled'] !== null) {
+
+        $extra_data_client_name_arr = $_POST['extra_data_client_enolled'];
+        $extra_data_client_enolled=implode(',',$extra_data_client_name_arr);
+    } else {
+        $extra_data_client_enolled = ''; 
+    }
     $extra_data_date_name = $_POST['extra_data_date_name'] ?? '';
     if (isset($_POST['extra_data_ivtp']) && $_POST['extra_data_ivtp'] !== null) {
 
@@ -218,7 +230,7 @@ try {
         $extra_data_trainings = ''; 
     }
 
-    $sql = "INSERT INTO form1_part1 (`full_legal_last_name`, `mi`, `first`, `dob`, `email_address`, `phone`, `address`, `social_security`, `coc_location`, `continuum_care_code`, `emergency_contact_name`, 'emergency_contact_phone',`referral_source`, `referral_source_phone`,`va_station`, `gender`, `ethnicity`, `primary_race`, `secondary_race`, `copy_dd214`,`branch_service`, `service_date`, `military_mos`, `injury`, `military_status`, `rank`, `combat`, `service_connected_disability`, `discharge`, `theater_operations`, `prepared_by`, `household_status`, `cod_signature`, `cod_printed_name`, `cod_date`, `hfc_veteran`, `hfc_case_manager`, `hfc_enrol_date`, `hvrp_program`, `code_program`, `arthur_blank_program`, `hvrp_program_2`, `code_program_2`, `arthur_blank_program_2`, `cod_program_enrolled`, `cod_verification`, `cod_case_notes`, `file_reviewed_by`, `file_reviewed_date`, `consent_employment`, `consent_national`, `consent_other`, `consent_veteran_signature`, `consent_date`, `consent_blanks_2`, `consent_veteran_signature_2`, `consent_date_2`, `consent_veteran_inc_case_signature`, `consent_date_3`, `hvsv_applicant_name`, `hvsv_checkbox_value`, `hvsv_description`, `hvsv_applicant_signature`, `hvsv_applicant_date`) 
+    $sql = "INSERT INTO form1_part1 (`full_legal_last_name`, `mi`, `first`, `dob`, `email_address`, `phone`, `address`, `social_security`, `coc_location`, `continuum_care_code`, `emergency_contact_name`, `emergency_contact_phone`,`referral_source`, `referral_source_phone`,`va_station`, `gender`, `ethnicity`, `primary_race`, `secondary_race`, `copy_dd214`,`branch_service`, `service_date`, `military_mos`, `injury`, `military_status`, `rank`, `combat`, `service_connected_disability`, `discharge`, `theater_operations`, `prepared_by`, `household_status`, `cod_signature`, `cod_printed_name`, `cod_date`, `hfc_veteran`, `hfc_case_manager`, `hfc_enrol_date`, `hvrp_program`, `code_program`, `arthur_blank_program`, `hvrp_program_2`, `code_program_2`, `arthur_blank_program_2`, `cod_program_enrolled`, `cod_verification`, `cod_case_notes`, `file_reviewed_by`, `file_reviewed_date`, `consent_employment`, `consent_national`, `consent_other`, `consent_veteran_signature`, `consent_date`, `consent_blanks_2`, `consent_veteran_signature_2`, `consent_date_2`, `consent_veteran_inc_case_signature`, `consent_date_3`, `hvsv_applicant_name`, `hvsv_checkbox_value`, `hvsv_description`, `hvsv_applicant_signature`, `hvsv_applicant_date`) 
         VALUES ('$full_legal_last_name', '$mi', '$first', '$dob', '$email_address', '$phone', '$address', '$social_security', '$coc_location', '$continuum_care_code', '$emergency_contact_name', '$emergency_contact_phone','$referral_source', '$referral_source_phone','$va_station', '$gender', '$ethnicity', '$primary_race', '$secondary_race', '$copy_dd214','$branch_service', '$service_date', '$military_mos', '$injury', '$military_status', '$rank', '$combat', '$service_connected_disability', '$discharge', '$theater_operations', '$prepared_by', '$household_status', '$cod_signature', '$cod_printed_name', '$cod_date', '$hfc_veteran', '$hfc_case_manager', '$hfc_enrol_date', '$hvrp_program', '$code_program', '$arthur_blank_program', '$hvrp_program_2', '$code_program_2', '$arthur_blank_program_2', '$cod_program_enrolled', '$cod_verification', '$cod_case_notes', '$file_reviewed_by', '$file_reviewed_date', '$consent_employment', '$consent_national', '$consent_other', '$consent_veteran_signature', '$consent_date', '$consent_blanks_2', '$consent_veteran_signature_2', '$consent_date_2', '$consent_veteran_inc_case_signature', '$consent_date_3', '$hvsv_applicant_name', '$hvsv_checkbox_value', '$hvsv_description', '$hvsv_applicant_signature', '$hvsv_applicant_date')";
     
     $result = $conn->query($sql);

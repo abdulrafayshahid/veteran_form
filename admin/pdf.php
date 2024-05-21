@@ -1,6 +1,74 @@
 <script>
     window.print();
 </script>
+<?php
+include('includes/function.php');
+
+session_regenerate_id(true);
+error_reporting(0);
+if(isset($_SESSION['veteran_username']) && isset($_SESSION['veteran_admin']))
+    {
+
+$form_id = $_GET['id'];
+echo "The ID is: " . $form_id;
+$sql = "SELECT * FROM form1_part1 WHERE `id` = '$form_id'";
+$result = $conn->query($sql); 
+if ($result && mysqli_num_rows($result) > 0) {
+  $row = mysqli_fetch_assoc($result);
+
+  $full_legal_last_name = $row['full_legal_last_name'];
+  $mi = $row['mi'];
+  $first = $row['first'];
+  $dob = $row['dob'];
+  $gender = $row['gender'];
+  $primary_race = $row['primary_race'];
+  $secondary_race = $row['secondary_race'];
+  $ethnicity = $row['ethnicity'];
+  $address = $row['address'];
+  $continuum_care_code = $row['continuum_care_code'];
+  $coc_location = $row['coc_location'];
+  $va_station = $row['va_station'];
+  $email_address = $row['email_address'];
+  $phone = $row['phone'];
+  $emergency_contact_name = $row['emergency_contact_name'];
+  $emergency_contact_phone = $row['emergency_contact_phone'];
+  $referral_source = $row['referral_source'];
+  $referral_source_phone = $row['referral_source_phone'];
+  $copy_dd214 = $row['copy_dd214'];
+  $branch_service = $row['branch_service'];
+  $service_date = $row['service_date'];
+  $military_status = $row['military_status'];
+  $rank = $row['rank'];
+  $military_mos = $row['military_mos'];
+  $discharge = $row['discharge'];
+  $theater_operations = $row['theater_operations'];
+  $combat = $row['combat'];
+  $service_connected_disability = $row['service_connected_disability'];
+  $injury = $row['injury'];
+  $prepared_by = $row['prepared_by'];
+  $household_status = $row['household_status'];
+  $consent_employment = $row['consent_employment'];
+  $consent_national = $row['consent_national'];
+  $consent_other = $row['consent_other'];
+  $consent_veteran_signature = $row['consent_veteran_signature'];
+  $consent_date = $row['consent_date'];
+  $consent_veteran_signature_2 = $row['consent_veteran_signature_2'];
+  $consent_date_2 = $row['consent_date_2'];
+  $consent_veteran_inc_case_signature = $row['consent_veteran_inc_case_signature'];
+  $consent_date_3 = $row['consent_date_3'];
+  $hvsv_applicant_name = $row['hvsv_applicant_name'];
+  $hvsv_applicant_signature = $row['hvsv_applicant_signature'];
+  $pa_name = $row['pa_name'];
+  $pa_signature_1 = $row['pa_signature_1'];
+  $pa_case_manager_name = $row['pa_case_manager_name'];
+  $pa_signature_2 = $row['pa_signature_2'];
+  $pa_date = $row['pa_date'];
+  $hvsv_applicant_date = $row['hvsv_applicant_date'];
+
+}
+mysqli_close($conn);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -222,35 +290,35 @@
         <h3><i>Profile Information</i></h3>
         <div class="rowDiv">
           <label for="lastName" class="label">Full Legal Name - Last:</label>
-          <input type="text" class="lastNameInput" id="lastName">
+          <input type="text" class="lastNameInput" id="lastName" value="<?php echo !empty($full_legal_last_name) ? $full_legal_last_name : ''; ?>">
           <label for="middleInitial" class="label">MI:</label>
-          <input type="text" class="MIInput" id="middleInitial">
+          <input type="text" class="MIInput" id="middleInitial" value="<?php echo !empty($mi) ? $mi : ''; ?>">
           <label for="firstName" class="label">First:</label>
-          <input type="text" class="firstNameInput" id="firstName">
+          <input type="text" class="firstNameInput" id="firstName" value="<?php echo !empty($first ) ? $first  : ''; ?>">
         </div>
         <div class="rowDiv">
           <label for="lastName" class="label">Date of Birth:</label>
-          <input type="text" class="lastNameInput" id="lastName">
+          <input type="text" class="lastNameInput" id="lastName" value="<?php echo !empty($dob ) ? $dob  : ''; ?>">
           <label for="firstName" class="label">Social Security #:</label>
           <input type="text" class="firstNameInput" id="firstName">
         </div>
         <div class="row-check-container">
           <label class="radio-label">Gender:</label>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($gender === 'M') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderM">M</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($gender === 'F') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">F</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderTransM" value="TransM">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderTransM" value="TransM" <?php echo ($gender === 'Trans M/F') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderTransM">Trans M/F</label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" name="gender" id="genderNonConforming"
-              value="NonConforming">
+              value="NonConforming" <?php echo ($gender === 'Non-Conforming') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderNonConforming">Non-Conforming</label>
           </div>
         </div>
@@ -258,46 +326,46 @@
           <div class="formCheck">
             <label class="label">Primary Race :</label>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($primary_race === 'White') ? 'checked' : ''; ?>>
               <label class="label-ckeck" for="genderM">White</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($primary_race === 'Black/African American') ? 'checked' : ''; ?>>
               <label class="label-ckeck" for="genderM">Black/African American</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($primary_race === 'Asian') ? 'checked' : ''; ?>>
               <label class="label-ckeck" for="genderM">Asian</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($primary_race === 'American Indian / Alaskan Islander') ? 'checked' : ''; ?>>
               <label class="label-ckeck" for="genderM">American Indian / Alaskan Islander</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($primary_race === 'Native Hawaiian / Pacific Islander') ? 'checked' : ''; ?>>
               <label class="label-ckeck" for="genderM">Native Hawaiian / Pacific Islander</label>
             </div>
           </div>
           <div class="formCheck">
             <label class="label">Secondary Race:</label>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($secondary_race === 'White') ? 'checked' : ''; ?>>
               <label class="label-ckeck" for="genderM">White</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($secondary_race === 'Black/African American') ? 'checked' : ''; ?>>
               <label class="label-ckeck" for="genderM">Black/African American</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($secondary_race === 'Asian') ? 'checked' : ''; ?>>
               <label class="label-ckeck" for="genderM">Asian</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($secondary_race === 'American Indian / Alaskan Islander') ? 'checked' : ''; ?>>
               <label class="label-ckeck" for="genderM">American Indian / Alaskan Islander</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+              <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($secondary_race === 'Native Hawaiian / Pacific Islander') ? 'checked' : ''; ?>>
               <label class="label-ckeck" for="genderM">Native Hawaiian / Pacific Islander</label>
             </div>
           </div>
@@ -305,60 +373,60 @@
         <div class="row-check-container">
           <label class="radio-label">Ethnicity:</label>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M" <?php echo ($ethnicity === 'Hispanic') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderM">Hispanic</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="radio" name="gender" id="genderF" value="F" <?php echo ($ethnicity === 'Non-Hispanic') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">Non-Hispanic</label>
           </div>
         </div>
         <div class="row-check-container">
           <label for="lastName" class="label">Address (if homeless use ZIP code only):</label>
-          <input type="text" class="address-input" id="lastName">
+          <input type="text" class="address-input" id="lastName" value="<?php echo !empty($address) ? $address : ''; ?>">
         </div>
         <div class="form-select-main-container">
           <div class="formCheck">
             <label class="label">Continuum of Care Code # (HUD-assigned):</label>
-            <input type="text" class="HUD-assigned-input" id="lastName">
+            <input type="text" class="HUD-assigned-input" id="lastName" value="<?php echo !empty($continuum_care_code) ? $continuum_care_code : ''; ?>">
           </div>
           <div class="formCheck">
             <label class="label">CoC Location:</label>
-            <input type="text" class="Location-input" id="lastName">
+            <input type="text" class="Location-input" id="lastName" value="<?php echo !empty($coc_location) ? $coc_location : ''; ?>">
           </div>
         </div>
         <div class="row-check-container">
           <label for="lastName" class="label">VA Medical Center Station # closeset to CM's office</label>
-          <input type="text" class="vz-medical-center-station-input" id="lastName">
+          <input type="text" class="vz-medical-center-station-input" id="lastName" value="<?php echo !empty($va_station) ? $va_station : ''; ?>">
         </div>
         <div class="form-select-main-container">
           <div class="fixed-input-container">
             <label for="lastName" class="label">Email Address:</label>
-            <input type="text" class="fixed-input" id="lastName">
+            <input type="text" class="fixed-input" id="lastName" value="<?php echo !empty($email_address) ? $email_address : ''; ?>">
           </div>
           <div class="fixed-input-container">
             <label for="firstName" class="label">Phone 1:</label>
-            <input type="text" class="fixed-input" id="firstName">
+            <input type="text" class="fixed-input" id="firstName" value="<?php echo !empty($phone) ? $phone : ''; ?>">
           </div>
         </div>
         <div class="form-select-main-container">
           <div class="fixed-input-container">
             <label for="lastName" class="label">Emergency Contact Name</label>
-            <input type="text" class="fixed-input" id="lastName">
+            <input type="text" class="fixed-input" id="lastName" value="<?php echo !empty($emergency_contact_name) ? $emergency_contact_name : ''; ?>">
           </div>
           <div class="fixed-input-container">
             <label for="firstName" class="label">Phone 2:</label>
-            <input type="text" class="fixed-input" id="firstName">
+            <input type="text" class="fixed-input" id="firstName" value="<?php echo !empty($emergency_contact_phone) ? $emergency_contact_phone : ''; ?>">
           </div>
         </div>
         <div class="form-select-main-container">
           <div class="fixed-input-container">
             <label for="lastName" class="label">Referral Source</label>
-            <input type="text" class="fixed-input" id="lastName">
+            <input type="text" class="fixed-input" id="lastName" value="<?php echo !empty($referral_source) ? $referral_source : ''; ?>">
           </div>
           <div class="fixed-input-container">
             <label for="firstName" class="label">Phone 3:</label>
-            <input type="text" class="fixed-input" id="firstName">
+            <input type="text" class="fixed-input" id="firstName" value="<?php echo !empty($referral_source_phone) ? $referral_source_phone : ''; ?>">
           </div>
         </div>
       </div>
@@ -367,52 +435,52 @@
         <div class="row-check-container">
           <label class="radio-label">Do you have a Copy of Your DD214 or VA Medical Card:</label>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($copy_dd214 === 'Yes') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderM">Yes</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($copy_dd214 === 'No') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">No</label>
           </div>
         </div>
         <div class="form-select-main-container">
           <div class="fixed-input-container">
             <label for="lastName" class="label">Branch of Service :</label>
-            <input type="text" class="fixed-input" id="lastName">
+            <input type="text" class="fixed-input" id="lastName" value="<?php echo !empty($branch_service) ? $branch_service : ''; ?>">
           </div>
           <div class="fixed-input-container">
             <label for="firstName" class="label">Service Date From to</label>
-            <input type="text" class="fixed-input" id="firstName">
+            <input type="text" class="fixed-input" id="firstName" value="<?php echo !empty($service_date) ? $service_date : ''; ?>">
           </div>
         </div>
         <div class="row-check-container">
           <label class="radio-label">Military Status :</label>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($military_status === 'Active Duty') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderM">Active Duty</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($military_status === 'Veteran') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">Veteran</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($military_status === 'Reserve Component') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">Reserve Component</label>
           </div>
         </div>
         <div class="form-select-main-container">
           <label class="radio-label">Rank:</label>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M">
+            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M" <?php echo ($rank === 'Enlisted') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderM">Enlisted</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($rank === 'Officer') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">Officer</label>
           </div>
           <div class="fixed-input-container">
             <label for="lastName" class="label">Military MOS :</label>
-            <input type="text" class="fixed-input" id="lastName">
+            <input type="text" class="fixed-input" id="lastName" value="<?php echo !empty($military_mos) ? $military_mos : ''; ?>">
           </div>
         </div>
         <div class="row-check-container">
@@ -1315,3 +1383,12 @@
 </body>
 
 </html>
+
+<?php
+
+}
+    else
+    {
+        header('location:login.php');
+    }
+?>
