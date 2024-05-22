@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2024 at 07:37 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.1.25
+-- Generation Time: May 22, 2024 at 01:42 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,7 +31,7 @@ CREATE TABLE `admins` (
   `id` int(11) NOT NULL,
   `username` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `admins`
@@ -113,7 +113,7 @@ CREATE TABLE `form1_part1` (
   `hvsv_description` longtext DEFAULT NULL,
   `hvsv_applicant_signature` varchar(255) DEFAULT NULL,
   `hvsv_applicant_date` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -144,7 +144,7 @@ CREATE TABLE `form1_part2` (
   `iep_long_term_goal` longtext DEFAULT NULL,
   `iep_training` longtext DEFAULT NULL,
   `iep_desired_industry` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -206,7 +206,7 @@ CREATE TABLE `form2` (
   `extra_data_client_coenrolled` varchar(255) DEFAULT NULL,
   `extra_data_referral` varchar(255) DEFAULT NULL,
   `extra_data_trainings` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -235,24 +235,29 @@ CREATE TABLE `questionnaire` (
   `school_certification` varchar(255) DEFAULT NULL,
   `learn_about_services` longtext DEFAULT NULL,
   `spoke_with` varchar(255) DEFAULT NULL,
-  `any_questions` longtext DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `any_questions` longtext DEFAULT NULL,
+  `only_questionnaire` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `questionnaire`
 --
 
-INSERT INTO `questionnaire` (`id`, `first_name`, `middle_initial`, `last_name`, `cell_phone`, `email`, `address`, `homeless`, `your_description`, `other_details`, `gender`, `marital_status`, `age`, `race`, `hear_about_us`, `county_residence`, `work_hours`, `school_certification`, `learn_about_services`, `spoke_with`, `any_questions`) VALUES
-(8, 'Max', 'Som', 'Holloway', '0211111111211', 'user123@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'M', 'Never Married', '29', 'Native Hawaiian', 'friend_referral', 'US', 'yes', 'yes', 'Social Media', 'Someone else/ I do not Remember', 'No'),
-(9, 'ron', 'cole', 'man', '12515115', 'user1235@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'Male', 'Never Married', '29', 'Native Hawaiian', 'friend_referral', 'US', 'yes', 'yes', 'Social Media', 'Someone else/ I do not Remember', 'No'),
-(10, 'asdf', 'cole', 'asdsad', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'F', 'Widowed', '29', 'Hispanic or Latino', 'online_search', 'US', 'no', 'no', 'Veteran inc. Community Event', 'Marian Jordan', 'no'),
-(11, 'Max', 'cole', 'asdsad', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'yes', 'dvop_worker', '', 'M', 'Widowed', '29', 'Alaska Native', 'friend_referral', 'US', 'no', 'no', 'Veterans inc. Community presentation,Veteran inc. Community Event', 'Someone else/ I do not Remember', 'no'),
-(12, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', ''),
-(13, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', ''),
-(14, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', ''),
-(15, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', ''),
-(16, 'Max', 'Som', 'Holloway', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'no', 'actively_seeking', '', 'M', '', '', '', 'social_media', '', '', '', '', '', ''),
-(17, 'ron', 'cole', 'Hose', '', 'user999@gmail.com', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '');
+INSERT INTO `questionnaire` (`id`, `first_name`, `middle_initial`, `last_name`, `cell_phone`, `email`, `address`, `homeless`, `your_description`, `other_details`, `gender`, `marital_status`, `age`, `race`, `hear_about_us`, `county_residence`, `work_hours`, `school_certification`, `learn_about_services`, `spoke_with`, `any_questions`, `only_questionnaire`) VALUES
+(8, 'Max', 'Som', 'Holloway', '0211111111211', 'user123@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'M', 'Never Married', '29', 'Native Hawaiian', 'friend_referral', 'US', 'yes', 'yes', 'Social Media', 'Someone else/ I do not Remember', 'No', 1),
+(9, 'ron', 'cole', 'man', '12515115', 'user1235@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'Male', 'Never Married', '29', 'Native Hawaiian', 'friend_referral', 'US', 'yes', 'yes', 'Social Media', 'Someone else/ I do not Remember', 'No', 1),
+(10, 'asdf', 'cole', 'asdsad', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'F', 'Widowed', '29', 'Hispanic or Latino', 'online_search', 'US', 'no', 'no', 'Veteran inc. Community Event', 'Marian Jordan', 'no', 1),
+(11, 'Max', 'cole', 'asdsad', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'yes', 'dvop_worker', '', 'M', 'Widowed', '29', 'Alaska Native', 'friend_referral', 'US', 'no', 'no', 'Veterans inc. Community presentation,Veteran inc. Community Event', 'Someone else/ I do not Remember', 'no', 1),
+(12, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 1),
+(13, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 1),
+(14, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 1),
+(15, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 1),
+(16, 'Max', 'Som', 'Holloway', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'no', 'actively_seeking', '', 'M', '', '', '', 'social_media', '', '', '', '', '', '', 1),
+(17, 'ron', 'cole', 'Hose', '', 'user999@gmail.com', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 1),
+(18, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 1),
+(19, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 1),
+(20, 'John', 'Cena', 'Davis', '0442536585212', 'user@mail.com', 'Block 15', 'yes', 'service_provider', '', 'Other', 'Domestic Partner', '23', 'Black or African American', 'online_search', 'dasdasd', 'yes', 'yes', 'Veterans inc. Community presentation,Another Veterans Inc Partner Organization', 'Marian Jordan', 'dasdsa', 1),
+(21, 'john', 'Cena', 'Davis', '0442536585212', 'user@mail.com', 'Block 15', 'yes', 'dvop_worker', '', 'F', 'Widowed', '25', 'Asian', 'friend_referral', 'sdads', 'yes', 'yes', 'Veteran inc. Community Event,Social Media', 'Marian Jordan', 'asdasda', 1);
 
 --
 -- Indexes for dumped tables
@@ -321,7 +326,7 @@ ALTER TABLE `form2`
 -- AUTO_INCREMENT for table `questionnaire`
 --
 ALTER TABLE `questionnaire`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- Constraints for dumped tables
