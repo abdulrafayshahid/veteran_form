@@ -22,7 +22,7 @@ try {
 
     //Recipients
     $mail->setFrom('noreply@progsportsdev.com', 'Mailer');
-    $mail->addAddress('moaziii922@gmail.com', 'Veterans Inc.'); // Add a recipient
+    $mail->addAddress('abdulrafay99910@gmail.com', 'Veterans Inc.'); // Add a recipient
 
     $first_name = $_POST['first_name'] ?? '';
     $middle_initial = $_POST['middle_initial'] ?? '';
