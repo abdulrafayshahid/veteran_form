@@ -80,7 +80,7 @@ try {
         SET `only_questionnaire` = '1';";
 
         $result2 = $conn->query($sql2);
-        header('Location: ../index.php');
+        header('Location: ../thankyou.php');
     } elseif (isset($_POST['form_submit'])) {
         $sql3 = "UPDATE questionnaire 
         SET `only_questionnaire` = '2';";

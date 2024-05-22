@@ -284,7 +284,7 @@
                         </div>
                     </div>
                     <div class="text-center w-100">
-                        <button type="submit" id="questionnaire_btn" name="questionnaire_submit" class="btn btn-outline-dark">SUBMIT</button>
+                        <button type="submit" id="questionnaire_btn" name="questionnaire_submit" class="btn btn-outline-dark">SUBMIT INQUIRY</button>
                     </div>
                     <div class="text-center w-100">
                     <button type="submit" id="form3_btn" name="form_submit" class="btn btn-outline-dark">Submit Application</button>
