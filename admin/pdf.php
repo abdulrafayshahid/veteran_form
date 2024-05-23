@@ -1,5 +1,5 @@
 <script>
-    // window.print();
+    window.print();
 </script>
 <?php
 include('includes/function.php');
