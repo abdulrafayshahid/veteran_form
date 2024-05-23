@@ -1,5 +1,5 @@
 <script>
-    window.print();
+    // window.print();
 </script>
 <?php
 include('includes/function.php');
@@ -12,7 +12,14 @@ if(isset($_SESSION['veteran_username']) && isset($_SESSION['veteran_admin']))
 $form_id = $_GET['id'];
 echo "The ID is: " . $form_id;
 $sql = "SELECT * FROM form1_part1 WHERE `id` = '$form_id'";
+$sql2 = "SELECT * FROM form1_part2 WHERE `form1_part1_id` = '$form_id'";
+$sql3 = "SELECT * FROM form2 WHERE `form1_part1_id` = '$form_id'";
 $result = $conn->query($sql); 
+$result2 = $conn->query($sql2); 
+$result3 = $conn->query($sql3); 
+
+
+
 if ($result && mysqli_num_rows($result) > 0) {
   $row = mysqli_fetch_assoc($result);
 
@@ -58,13 +65,63 @@ if ($result && mysqli_num_rows($result) > 0) {
   $consent_date_3 = $row['consent_date_3'];
   $hvsv_applicant_name = $row['hvsv_applicant_name'];
   $hvsv_applicant_signature = $row['hvsv_applicant_signature'];
-  $pa_name = $row['pa_name'];
   $pa_signature_1 = $row['pa_signature_1'];
-  $pa_case_manager_name = $row['pa_case_manager_name'];
   $pa_signature_2 = $row['pa_signature_2'];
-  $pa_date = $row['pa_date'];
   $hvsv_applicant_date = $row['hvsv_applicant_date'];
+  $hvsv_checkbox_value = $row['hvsv_checkbox_value'];
+  $hvsv_description = $row['hvsv_description'];
 
+}
+
+if ($result2 && mysqli_num_rows($result2) > 0) {
+  $row = mysqli_fetch_assoc($result2);
+  $pa_name = $row['pa_name'];
+  $pa_case_manager_name = $row['pa_case_manager_name'];
+  $pa_date = $row['pa_date'];
+  $iep_client_name = $row['iep_client_name'];
+  $iep_registered_cc = $row['iep_registered@cc'];
+  $iep_dvop = $row['iep_dvop'];
+  $iep_job_seeker = $row['iep_job_seeker'];
+  $iep_transportation = $row['iep_transportation'];
+  $iep_licenses = $row['iep_licenses'];
+  $iep_looking_for = $row['iep_looking_for'];
+  $iep_resume = $row['iep_resume'];
+  $iep_restrictions = $row['iep_restrictions'];
+  $iep_job_titles = $row['iep_job_titles'];
+  $iep_skills = $row['iep_skills'];
+  $iep_short_term_goal = $row['iep_short_term_goal'];
+  $iep_long_term_goal = $row['iep_long_term_goal'];
+  $iep_training = $row['iep_training'];
+  
+  $consent_blanks = $row2['consent_blanks'];
+  // $consent_employment = $row2['consent_employment'];
+  $mi = $row2['mi'];
+  
+}
+
+
+if ($result3 && mysqli_num_rows($result3) > 0) {
+  $row3 = mysqli_fetch_assoc($result3);
+  $ev_name = $row3['ev_name'];
+  $ev_address = $row3['ev_address'];
+  $ev_phone_number = $row3['ev_phone_number'];
+  $ev_employer_name = $row3['ev_employer_name'];
+  $ev_start_date = $row3['ev_start_date'];
+  $ev_date = $row3['ev_date'];
+
+  // Second set of variables
+  $ev_phone_number_2 = $row3['ev_phone_number_2'];
+  $ev_contact_person = $row3['ev_contact_person'];
+  $ev_title = $row3['ev_title'];
+  $ev_clients_job_title = $row3['ev_clients_job_title'];
+  $ev_hrs_week = $row3['ev_hrs_week'];
+  $ev_wage = $row3['ev_wage'];
+  $ev_veterans_provided = $row3['ev_veterans_provided'];
+  $ev_date_placement = $row3['ev_date_placement'];
+  $ev_submitted_by = $row3['ev_submitted_by'];
+  $cod_printed_name = $row3['cod_printed_name'];
+  $cod_date = $row3['cod_date'];
+    
 }
 mysqli_close($conn);
 
@@ -373,12 +430,12 @@ mysqli_close($conn);
         <div class="row-check-container">
           <label class="radio-label">Ethnicity:</label>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="gender" id="genderM" value="M" <?php echo ($ethnicity === 'Hispanic') ? 'checked' : ''; ?>>
-            <label class="label-ckeck" for="genderM">Hispanic</label>
+            <input class="form-check-input" type="radio" name="ethnicity" id="" value="" <?php echo ($ethnicity === 'Hispanic') ? 'checked' : ''; ?>>
+            <label class="label-ckeck" for="">Hispanic</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="gender" id="genderF" value="F" <?php echo ($ethnicity === 'Non-Hispanic') ? 'checked' : ''; ?>>
-            <label class="label-ckeck" for="genderF">Non-Hispanic</label>
+          <input class="form-check-input" type="radio" name="ethnicity" id="" value="" <?php echo ($ethnicity === 'Non-Hispanic') ? 'checked' : ''; ?>>
+            <label class="label-ckeck" for="">Non-Hispanic</label>
           </div>
         </div>
         <div class="row-check-container">
@@ -486,117 +543,117 @@ mysqli_close($conn);
         <div class="row-check-container">
           <label class="radio-label">Discharge:</label>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($discharge === 'Honorable') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderM">Honorable</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($discharge === 'General') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">General</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($discharge === 'OTH') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">OTH</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($discharge === 'Bad Conduct') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">Bad Conduct</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($discharge === 'Dishonorable') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">Dishonorable</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($discharge === 'Other') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">Other</label>
           </div>
         </div>
         <div class="row-check-container">
           <label class="radio-label">Theater of Operations:</label>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($theater_operations === 'Iraq (Operation New Dawn)') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderM">Iraq (Operation New Dawn)</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($theater_operations === 'Iraq (Op. Iraqi Freedom)') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">Iraq (Op. Iraqi Freedom)</label>
           </div>
         </div>
         <div class="row-check-container">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($theater_operations === 'Iraq (Operation New Dawn)') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">Iraq (Op. Iraqi Freedom)</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($theater_operations === 'Persian Gulf (Op. Desert Storm)') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">Persian Gulf (Op. Desert Storm)</label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" name="TheaterofOperations" id="TheaterofOperationsF"
-              value="VietnamF">
+              value="VietnamF"  <?php echo ($theater_operations === 'Vietnam') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="Vietnam">Vietnam</label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" name="TheaterofOperations" id="TheaterofOperationsF"
-              value="KoreaF">
+              value="KoreaF"  <?php echo ($theater_operations === 'Korea') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="Korea">Korea</label>
           </div>
         </div>
         <div class="row-check-container">
           <label class="label-ckeck">
-            <input type="checkbox" name="wwii">
+            <input type="checkbox" name="wwii"  <?php echo ($theater_operations === 'WWII') ? 'checked' : ''; ?>>
             WWII
           </label>
           <label class="label-ckeck">
-            <input type="checkbox" name="other-operations">
+            <input type="checkbox" name="other-operations" <?php echo ($theater_operations === 'Other Peace Keeping Operations') ? 'checked' : ''; ?>>
             Other Peace Keeping Operations
-            <input type="text" name="operations-details" class="no-to-all-input">
+            <input type="text" name="operations-details" class="no-to-all-input" >
           </label>
           <label class="label-ckeck">
-            <input class="form-check-input" type="checkbox" name="no-to-all">
+            <input class="form-check-input" type="checkbox" name="no-to-all" <?php echo ($theater_operations === 'No to all') ? 'checked' : ''; ?>>
             No to all
           </label>
         </div>
         <div class="row-check-container">
           <label class="radio-label">Combat:</label>
           <label class="label-ckeck">
-            <input type="checkbox" name="wwii">
+            <input type="checkbox" name="wwii" <?php echo ($combat === 'Yes') ? 'checked' : ''; ?>>
             Yes
           </label>
           <label class="label-ckeck">
-            <input type="checkbox" name="other-operations">
+            <input type="checkbox" name="other-operations" <?php echo ($combat === 'No') ? 'checked' : ''; ?>>
             No
           </label>
           <label class="radio-label">Servcie connected Disability:</label>
           <label class="label-ckeck">
-            <input type="checkbox" name="wwii">
+            <input type="checkbox" name="wwii" <?php echo ($service_connected_disability === 'Yes') ? 'checked' : ''; ?>>
             Yes
             <input type="text" name="operations-details" class="no-to-all-input">%
           </label>
           <label class="label-ckeck">
-            <input type="checkbox" name="other-operations">
+            <input type="checkbox" name="other-operations" <?php echo ($service_connected_disability === 'No') ? 'checked' : ''; ?>>
             No
           </label>
         </div>
         <div class="row-check-container">
           <label for="lastName" class="label">Type of Injury (If any):</label>
-          <input type="text" class="vz-medical-center-station-input" id="lastName">
+          <input type="text" class="vz-medical-center-station-input" id="lastName" value='<?php echo !empty($injury) ? $injury : ''; ?>'>
         </div>
       </div>
       <div style="width: 100%; border: 2px solid; padding: 10px; border-color: rgb(0, 0, 0);">
         <div class="row-check-container">
           <label class="radio-label">Household Status:</label>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderM" value="M" <?php echo ($household_status === 'Client-Only') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderM">Client-Only</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F">
+            <input class="form-check-input" type="checkbox" name="gender" id="genderF" value="F" <?php echo ($household_status === 'Client with Others in Household') ? 'checked' : ''; ?>>
             <label class="label-ckeck" for="genderF">Client with Others in Household</label>
           </div>
         </div>
         <div class="row-check-container">
           <label for="lastName" class="prepared-by-label">Prepared by:</label>
-          <input type="text" class="vz-medical-center-station-input" id="lastName">
+          <input type="text" class="vz-medical-center-station-input" id="lastName" value='<?php echo !empty($prepared_by) ? $prepared_by : ''; ?>'>
         </div>
       </div>
       <div style="width: 100%; padding: 10px; margin-top: 700px;"></div>
@@ -634,7 +691,7 @@ mysqli_close($conn);
         <div style="width: 100%; padding: 10px; margin-top: 30px;"></div>
         <div class="row-check-container">
           <label for="lastName" class="label">1,</label>
-          <input type="text" class="page3-input" id="lastName">
+          <input type="text" class="page3-input" id="lastName" value='<?php echo !empty($consent_blanks) ? $consent_blanks : ''; ?>'>
           <label for="dob" class="label">with a date of birth</label>
           <input type="text" class="page3-input" id="dob">
           <label for="ssn" class="label">and a Social Security Number of:</label>
@@ -660,15 +717,15 @@ mysqli_close($conn);
         <div
           style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-left: 50px; margin-right: 50px;">
           <label for="employment" style="font-size: 18px; font-weight: 500;">
-            <input type="checkbox" id="employment">
+            <input type="checkbox" id="employment" value='' <?php echo ($consent_employment === 'Employment') ? 'checked' : ''; ?>>
             Employment
           </label>
           <label for="nationalArchives" style="font-size: 18px; font-weight: 500;">
-            <input type="checkbox" id="nationalArchives">
+            <input type="checkbox" id="nationalArchives" value='' <?php echo ($consent_national === 'National Archives/DD214 Recovery') ? 'checked' : ''; ?>>
             National Archives/DD214 Recovery
           </label>
           <label for="other" style="font-size: 18px; font-weight: 500;">
-            <input type="checkbox" id="other">
+            <input type="checkbox" id="other" value='' <?php echo ($consent_other === 'Other') ? 'checked' : ''; ?>>
             Other
           </label>
           <input type="text" class="page3-input" id="otherInput">
@@ -696,9 +753,9 @@ mysqli_close($conn);
       <div style="width: 100%; padding: 10px; margin-top: 30px;"></div>
       <div class="row-check-container">
         <label for="lastName" class="label" style="width: 200px;">Veteran's Signature </label>
-        <input type="text" class="signature-input" id="lastName">
+        <input type="text" class="signature-input" id="lastName" >
         <label for="dob" class="label">Date</label>
-        <input type="text" class="signature-input" id="dob">
+        <input type="text" class="signature-input" id="dob" value='<?php echo !empty($consent_date) ? $consent_date : ''; ?>'>
       </div>
       <div style="width: 100%; padding: 10px; margin-top: 600px;"></div>
       <div style="width: 100%; padding: 20px;">
@@ -730,7 +787,7 @@ mysqli_close($conn);
         <div style="width: 100%; padding: 10px; margin-top: 50px;"></div>
         <div class="rowDiv">
           <input type="text" class="lastNameInput" id="lastName">
-          <input type="text" class="firstNameInput" id="firstName">
+          <input type="text" class="firstNameInput" id="firstName" value='<?php echo !empty($consent_date_2) ? $consent_date_2 : ''; ?>'>
         </div>
         <div class="rowDiv">
           <label for="lastName" class="label">Signature of Veteran</label>
@@ -738,8 +795,8 @@ mysqli_close($conn);
         </div>
         <div style="width: 100%; padding: 10px; margin-top: 10px;"></div>
         <div class="rowDiv">
-          <input type="text" class="lastNameInput" id="lastName">
-          <input type="text" class="firstNameInput" id="firstName">
+          <input type="text" class="lastNameInput" id="lastName" >
+          <input type="text" class="firstNameInput" id="firstName" value='<?php echo !empty($consent_date_3) ? $consent_date_3 : ''; ?>'>
         </div>
         <div class="rowDiv">
           <label for="lastName" class="label">Veterans Inc. Case Manager</label>
@@ -939,7 +996,7 @@ mysqli_close($conn);
           </div>
           <input style=" width: 70%;
            border: 1px solid;
-           " type="text" id="nationalArchives">
+           " type="text" id="nationalArchives" value='<?php echo !empty($hvsv_applicant_name) ? $hvsv_applicant_name : ''; ?>'>
         </div>
         <p style="font-weight: 500; text-align: justify;"><b> Instructions: </b>This form is to certify, via a third
           party, that the above named applicant is currently “literally homeless” as defined
@@ -958,7 +1015,7 @@ mysqli_close($conn);
         <h5>
           <b><i>I certify that (check only one): </i></b>
         </h5>
-        <p style="font-weight: 500; text-align: justify;"><input type="checkbox" id="nationalArchives"> A person who
+        <p style="font-weight: 500; text-align: justify;"><input type="checkbox" id="nationalArchives" <?php echo ($hvsv_checkbox_value === 'certify4') ? 'checked' : ''; ?>> A person who
           lacks a fixed, regular, and adequate nighttime residence; an individual who will
           imminently lose his or her housing, has no subsequent residence identified, and/or who lacks the
           resources or support network needed to obtain other permanent housing, or victim of domestic violence. <br>
@@ -966,7 +1023,7 @@ mysqli_close($conn);
         </p>
         <div class="container2">
           <p class="header">
-            Description of Veteran Situation:
+            Description of Veteran Situation: <?php echo !empty($hvsv_description) ? $hvsv_description : ''; ?>
           </p>
           <div class="content"></div>
           <div class="content"></div>
@@ -1147,19 +1204,19 @@ mysqli_close($conn);
         </p>
         <div class="row-check-container" style="margin-top: 20px;">
           <label for="lastName" class="label" style="width: 300px;">Participant Name (Print) </label>
-          <input type="text" class="signature-input" id="lastName">
+          <input type="text" class="signature-input" id="lastName" value='<?php echo !empty($pa_name) ? $pa_name : ''; ?>'>
           <label for="dob" class="label">(Signature)</label>
           <input type="text" class="signature-input" id="dob">
         </div>
         <div class="row-check-container" style="margin-top: 20px;">
           <label for="lastName" class="label" style="width: 300px;">Case Manager Name (Print)</label>
-          <input type="text" class="signature-input" id="lastName">
+          <input type="text" class="signature-input" id="lastName" value='<?php echo !empty($pa_case_manager_name) ? $pa_case_manager_name : ''; ?>'>
           <label for="dob" class="label">(Signature)</label>
           <input type="text" class="signature-input" id="dob">
         </div>
         <div class="row-check-container" style="margin-top: 20px;">
           <label for="lastName" class="label">Date: </label>
-          <input type="text" class="signature-input" id="lastName">
+          <input type="text" class="signature-input" id="lastName" value='<?php echo !empty($pa_date) ? $pa_date : ''; ?>'>
         </div>
       </div>
       <div style="width: 100%;">
@@ -1174,34 +1231,34 @@ mysqli_close($conn);
       ">
         <div class="row-check-container" style="margin-top: 20px;">
           <label for="lastName" class="label">Client Name</label>
-          <input type="text" class="signature-input" style="width: 90%;" id="lastName">
+          <input type="text" class="signature-input" style="width: 90%;" id="lastName" value='<?php echo !empty($iep_client_name) ? $iep_client_name : ''; ?>' >
         </div>
         <div class="row-check-container" style="margin-top: 20px;">
           <p style="font-weight: 500;">Registered @ CC</p>
-          <input type="text" class="signature-input" style="width: 20%;" id="lastName">
+          <input type="text" class="signature-input" style="width: 20%;" id="lastName" value='<?php echo !empty($iep_registered_cc) ? $iep_registered_cc : ''; ?>'>
           <p style="font-weight: 500;">/ DVOP</p>
-          <input type="text" class="signature-input" style="width: 20%;" id="lastName">
+          <input type="text" class="signature-input" style="width: 20%;" id="lastName" value='<?php echo !empty($iep_dvop) ? $iep_dvop : ''; ?>'>
           <p style="font-weight: 500;">/ JOB Seeker #</p>
-          <input type="text" class="signature-input" style="width: 25%;" id="lastName">
+          <input type="text" class="signature-input" style="width: 25%;" id="lastName" value='<?php echo !empty($iep_job_seeker) ? $iep_job_seeker : ''; ?>'>
         </div>
         <div class="row-check-container" style="margin-top: 20px;">
           <p style="font-weight: 500;">Transportation?: </p>
-          <input type="text" class="signature-input" style="width: 30%;" id="lastName" value="Car/ Bus/ Walk">
-          <p style="font-weight: 500;">value="Car/ Bus/ Walk"</p>
+          <input type="text" class="signature-input" style="width: 30%;" id="lastName"  value='<?php echo !empty($iep_transportation) ? $iep_transportation : ''; ?>'>
+          <p style="font-weight: 500;">Licenses: Drivers Lic.?</p>
           <input type="text" class="signature-input" style="width: 30%;" id="lastName"
-            value="Class D / CDL A,B, / 7D (School Van)">
+          value='<?php echo !empty($iep_licenses) ? $iep_licenses : ''; ?>' >
         </div>
         <div class="row-check-container" style="margin-top: 20px;">
           <p style="font-weight: bold;">Looking For: </p>
-          <input type="text" class="signature-input" style="width: 30%;" id="lastName" value="FT/PT Hrs">
+          <input type="text" class="signature-input" style="width: 30%;" id="lastName" value='<?php echo !empty($iep_looking_for) ? $iep_looking_for : ''; ?>'>
           <p style="font-weight: bold;">Do You Have a Resume?</p>
-          <input type="text" class="signature-input" style="width: 30%;" id="lastName" value=" Yes / No / Sort of">
+          <input type="text" class="signature-input" style="width: 30%;" id="lastName" value='<?php echo !empty($iep_resume) ? $iep_resume : ''; ?>'>
         </div>
         <p style="font-weight: 500; margin-top: 10px;"><b>Restrictions </b>(i.e. No overnights/ On bus route/ No heavy
           lifting)
         </p>
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value='<?php echo !empty($iep_restrictions) ? $iep_restrictions : ''; ?>'>
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName" >
         <p style="font-weight: 500; margin-top: 20px;"><b>Desired Industry</b>(Select From List)
         </p>
         <p style="font-weight: 500; margin-top: 20px;"><i> Administration (Office Work) / Construction / Defense /
@@ -1214,24 +1271,24 @@ mysqli_close($conn);
             B2B Sales
             person / Diesel Mechanic / Executive Chef)</i>
         </p>
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName"  value='<?php echo !empty($iep_job_titles) ? $iep_job_titles : ''; ?>'>
         <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
         <p style="font-weight: 500; margin-top: 20px;"><i><b> Desired Industry</b> (Select From List)</i>
         </p>
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName"  value='<?php echo !empty($iep_skills) ? $iep_skills : ''; ?>'>
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName" >
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName" >
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName" >
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName" >
         <p style="font-weight: 500; margin-top: 20px;"><b> Short Term Goal:</p>
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName"  value='<?php echo !empty($iep_short_term_goal) ? $iep_short_term_goal : ''; ?>'>
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName" >
         <p style="font-weight: 500; margin-top: 20px;"><b> Long Term Goal:</p>
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName"  value='<?php echo !empty($iep_long_term_goal) ? $iep_long_term_goal : ''; ?>'>
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName" >
         <p style="font-weight: 500; margin-top: 20px;"><b> Any Training Required</p>
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
-        <input type="text" class="signature-input" style="width: 100%;" id="lastName" value="">
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName"  value='<?php echo !empty($iep_training) ? $iep_training : ''; ?>'>
+        <input type="text" class="signature-input" style="width: 100%;" id="lastName" >
       </div>
 
       <div style="width: 100%;">
@@ -1243,61 +1300,61 @@ mysqli_close($conn);
         </h4>
         <div class="row-check-container" style="margin-top: 20px;">
           <p style="font-weight: 500; margin-top: 20px;">Name</p>
-          <input type="text" class="signature-input" style="width: 40%;" id="lastName">
+          <input type="text" class="signature-input" style="width: 40%;" id="lastName" value='<?php echo !empty($ev_name) ? $ev_name : ''; ?>'>
           <p style="font-weight: 500; margin-top: 20px;">Social Security Number</p>
-          <input type="text" class="signature-input" style="width: 40%;" id="lastName">
+          <input type="text" class="signature-input" style="width: 40%;" id="lastName" >
         </div>
         <div class="row-check-container" style="margin-top: 20px;">
           <p style="font-weight: 500;">Address</p>
-          <input type="text" class="signature-input" style="width: 80%;" id="lastName">
+          <input type="text" class="signature-input" style="width: 80%;" id="lastName" value='<?php echo !empty($ev_address) ? $ev_address : ''; ?>'>
         </div>
         <div class="row-check-container" style="margin-top: 20px;">
           <p style="font-weight: 500;">Phone Number</p>
-          <input type="text" class="signature-input" style="width: 30%;" id="lastName" value="">
+          <input type="text" class="signature-input" style="width: 30%;" id="lastName" value='<?php echo !empty($ev_phone_number) ? $ev_phone_number : ''; ?>'>
         </div>
         <h4 style="text-align: center; margin: 50px; color: rgb(23, 23, 51);">
           <b>Employment Information</b>
         </h4>
         <div class="row-check-container" style="margin-top: 20px;">
           <p style="font-weight: 500;">Name of Employer</p>
-          <input type="text" class="signature-input" style="width: 35%;" id="lastName" value="">
+          <input type="text" class="signature-input" style="width: 35%;" id="lastName" value='<?php echo !empty($ev_employer_name) ? $ev_employer_name : ''; ?>'>
           <p style="font-weight: 500;">Start Date</p>
-          <input type="text" class="signature-input" style="width: 35%;" id="lastName" value=" ">
+          <input type="text" class="signature-input" style="width: 35%;" id="lastName" value='<?php echo !empty($ev_start_date) ? $ev_start_date : ''; ?>'>
         </div>
         <p style="font-weight: 500; margin-top: 10px;">Address<input type="text" class="signature-input"
-            style="width: 90%;" id="lastName" value="">
+            style="width: 90%;" id="lastName" value='<?php echo !empty($ev_date) ? $ev_date : ''; ?>'>
         </p>
         <div class="row-check-container" style="margin-top: 20px;">
           <p style="font-weight: 500;">Phone Number</p>
-          <input type="text" class="signature-input" style="width: 30%;" id="lastName" value="">
+          <input type="text" class="signature-input" style="width: 30%;" id="lastName" value='<?php echo !empty($ev_phone_number_2) ? $ev_phone_number_2 : ''; ?>'>
         </div>
         <div class="row-check-container" style="margin-top: 20px;">
           <p style="font-weight: 500;">Contact Person</p>
-          <input type="text" class="signature-input" style="width: 35%;" id="lastName" value="">
+          <input type="text" class="signature-input" style="width: 35%;" id="lastName" value='<?php echo !empty($ev_contact_person) ? $ev_contact_person : ''; ?>'>
           <p style="font-weight: 500;">Title</p>
-          <input type="text" class="signature-input" style="width: 45%;" id="lastName" value=" ">
+          <input type="text" class="signature-input" style="width: 45%;" id="lastName" value='<?php echo !empty($ev_title) ? $ev_title : ''; ?>'>
         </div>
         <div class="row-check-container" style="margin-top: 20px;">
           <p style="font-weight: 500;">Client's Job Title</p>
-          <input type="text" class="signature-input" style="width: 30%;" id="lastName" value="">
+          <input type="text" class="signature-input" style="width: 30%;" id="lastName" value='<?php echo !empty($ev_clients_job_title) ? $ev_clients_job_title : ''; ?>'>
           <p style="font-weight: 500;">HRS per week</p>
-          <input type="text" class="signature-input" style="width: 18%;" id="lastName" value=" ">
+          <input type="text" class="signature-input" style="width: 18%;" id="lastName" value='<?php echo !empty($ev_hrs_week) ? $ev_hrs_week : ''; ?>'>
           <p style="font-weight: 500;">Wage</p>
-          <input type="text" class="signature-input" style="width: 22%;" id="lastName" value=" ">
+          <input type="text" class="signature-input" style="width: 22%;" id="lastName" value='<?php echo !empty($ev_wage) ? $ev_wage : ''; ?>'>
         </div>
         <div class="row-check-container" style="margin-top: 20px;">
           <p style="font-weight: 500; ">Veterans Inc. Provided: Tools, Uniform, Supplies</p>
-          <input type="text" class="signature-input" style="width: 60%;" id="lastName" value="">
+          <input type="text" class="signature-input" style="width: 60%;" id="lastName" value='<?php echo !empty($ev_veterans_provided) ? $ev_veterans_provided : ''; ?>'>
         </div>
         <div class="row-check-container" style="margin-top: 20px;">
           <p style="font-weight: 500;">Date Placement Confirmed</p>
-          <input type="text" class="signature-input" style="width: 35%;" id="lastName" value="">
+          <input type="text" class="signature-input" style="width: 35%;" id="lastName" value='<?php echo !empty($ev_date_placement) ? $ev_date_placement : ''; ?>'>
           <p style="font-weight: 500;">Confirmed by Phone, Offer Letter or in Person
             (circle one)</p>
         </div>
         <div class="row-check-container" style="margin-top: 20px;">
           <p style="font-weight: 500;">Submitted By:</p>
-          <input type="text" class="signature-input" style="width: 80%;" id="lastName" value="">
+          <input type="text" class="signature-input" style="width: 80%;" id="lastName" value='<?php echo !empty($ev_submitted_by) ? $ev_submitted_by : ''; ?>'>
 
         </div>
       </div>
@@ -1318,10 +1375,10 @@ mysqli_close($conn);
         <input type="text" class="signature-input" id="lastName">
         <h6><b>Signature :</b></h6>
         <div style="width: 100%; padding: 10px; margin-top: 20px;"></div>
-        <input type="text" class="signature-input" id="lastName">
+        <input type="text" class="signature-input" id="lastName" value='<?php echo !empty($cod_printed_name) ? $cod_printed_name : ''; ?>'>
         <h6><b>Printed Name :</b></h6>
         <div style="width: 100%; padding: 10px; margin-top: 20px;"></div>
-        <input type="text" class="signature-input" id="lastName">
+        <input type="text" class="signature-input" id="lastName" value='<?php echo !empty($cod_date) ? $cod_date : ''; ?>' >
         <h6><b>Date :</b></h6>
       </div>
       <div style="width: 100%; padding: 10px; margin-top: 1000px;"></div>
@@ -1345,10 +1402,10 @@ mysqli_close($conn);
         <input type="text" class="signature-input" id="lastName">
         <h6><b>Signature :</b></h6>
         <div style="width: 100%; padding: 10px; margin-top: 20px;"></div>
-        <input type="text" class="signature-input" id="lastName">
+        <input type="text" class="signature-input" id="lastName" value='<?php echo !empty($ev_submitted_by) ? $ev_submitted_by : ''; ?>'>
         <h6><b>Printed Name :</b></h6>
         <div style="width: 100%; padding: 10px; margin-top: 20px;"></div>
-        <input type="text" class="signature-input" id="lastName">
+        <input type="text" class="signature-input" id="lastName" value='<?php echo !empty($ev_submitted_by) ? $ev_submitted_by : ''; ?>'>
         <h6><b>Date :</b></h6>
       </div>
       <div style="width: 100%; padding: 10px; margin-top: 1000px;"></div>

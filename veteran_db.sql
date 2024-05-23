@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2024 at 01:42 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.0
+-- Generation Time: May 23, 2024 at 04:49 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.1.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,14 +31,14 @@ CREATE TABLE `admins` (
   `id` int(11) NOT NULL,
   `username` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `admins`
 --
 
 INSERT INTO `admins` (`id`, `username`, `password`) VALUES
-(1, 'admin', '$2y$10$mCNO.rJyyewL.BOn7twCyey2.pZbZhTKjBdeOmwHVXqEBY5tA9lx2');
+(1, 'admin', '$2y$10$FYxX5blYTIpYPo3Dn6G3ze4CT/1lTyewGH.2wXTNJ4M8ZT5.xbpVG');
 
 -- --------------------------------------------------------
 
@@ -113,7 +113,19 @@ CREATE TABLE `form1_part1` (
   `hvsv_description` longtext DEFAULT NULL,
   `hvsv_applicant_signature` varchar(255) DEFAULT NULL,
   `hvsv_applicant_date` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `form1_part1`
+--
+
+INSERT INTO `form1_part1` (`id`, `full_legal_last_name`, `mi`, `first`, `dob`, `email_address`, `phone`, `address`, `social_security`, `coc_location`, `continuum_care_code`, `emergency_contact_name`, `emergency_contact_phone`, `referral_source`, `referral_source_phone`, `va_station`, `gender`, `ethnicity`, `primary_race`, `secondary_race`, `copy_dd214`, `branch_service`, `service_date`, `military_mos`, `injury`, `military_status`, `rank`, `combat`, `service_connected_disability`, `discharge`, `theater_operations`, `prepared_by`, `household_status`, `cod_signature`, `cod_printed_name`, `cod_date`, `hfc_veteran`, `hfc_case_manager`, `hfc_enrol_date`, `hvrp_program`, `code_program`, `arthur_blank_program`, `hvrp_program_2`, `code_program_2`, `arthur_blank_program_2`, `cod_program_enrolled`, `cod_verification`, `cod_case_notes`, `file_reviewed_by`, `file_reviewed_date`, `consent_blanks`, `consent_employment`, `consent_national`, `consent_other`, `consent_veteran_signature`, `consent_date`, `consent_blanks_2`, `consent_veteran_signature_2`, `consent_date_2`, `consent_veteran_inc_case_signature`, `consent_date_3`, `hvsv_applicant_name`, `hvsv_checkbox_value`, `hvsv_description`, `hvsv_applicant_signature`, `hvsv_applicant_date`) VALUES
+(6, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(7, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(8, 'fdfsd', 'fsdfsd', 'fdsfsad', '2024-05-16', 'mail@mail.com', '+5141151171', '', '', '12', 'adfsdf', 'sdasd', '4555', 'dsdas', '894910', 'loko', 'Trans M/F', 'Hispanic', 'White', 'Asian', 'Yes', '123', '1', 'lo', 'jeop', 'Veteran', 'Enlisted', 'Yes', 'Yes', 'Honorable', 'Korea', 'sing', 'Client-Only', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(9, 'fdsfsdfsd', 'fsdafas', 'fdfsafdf', '2024-05-09', 'mail@mail.com', '123-484-1685', 'sd', '', 'sffffffffff', 'fdfs', 'fsefsdfsd', '444645', 'dsfafdf', '945282589', '45', 'F', 'Non-Hispanic', 'Black/African American', 'Black/African American', 'No', '45', '-1', 'ok', '12', 'Active Duty', 'Officer', '', 'Yes', 'OTH', 'Afghanistan (Op. Enduring Freedom)', '54515', 'Client-Only', 'gfsdgdf', 'gsdgds', '2', 'dsafdfads', 'fdaffdsfas', '1', 'DD214', 'trans-female-male', 'Universal Services Application', 'Individualized Employment Plan (IEP)', ' Amazon Approval w/ items', 'Misc. Purchases', 'CODE', '', 'HVRP CN Current', 'hbgbj', '44615616', NULL, 'Employment', '', '', 'lokkkk', '12-12-21', 'Participant Rights', 'fsdfsdaf', '12/12/12', 'fdsafdsf', '12/12/12', 'gfadsgsdgfsd', 'certify4', '2024-05-11', 'fdsgfsgfd', '151/151/1511'),
+(10, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(11, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', '', '', '', '', '', 'certify4', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -144,7 +156,19 @@ CREATE TABLE `form1_part2` (
   `iep_long_term_goal` longtext DEFAULT NULL,
   `iep_training` longtext DEFAULT NULL,
   `iep_desired_industry` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `form1_part2`
+--
+
+INSERT INTO `form1_part2` (`id`, `form1_part1_id`, `pa_name`, `pa_signature_1`, `pa_case_manager_name`, `pa_signature_2`, `pa_date`, `iep_client_name`, `iep_registered@cc`, `iep_dvop`, `iep_job_seeker`, `iep_transportation`, `iep_licenses`, `iep_looking_for`, `iep_resume`, `iep_restrictions`, `iep_job_titles`, `iep_skills`, `iep_short_term_goal`, `iep_long_term_goal`, `iep_training`, `iep_desired_industry`) VALUES
+(5, NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(6, NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(7, NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(8, 9, 'gdfdgfdgfds', 'fdsafasdf', 'dsfasfsd', 'fsdafsdfasd', '12/125/12121', 'fdsfasdf', 'dsfasf', 'dasfasdf', 'dfasdf', 'dasfds', 'fdsafsda', '1', 'no', 'dsfsdf', 'sfdafsdfsd', 'fsdafds', 'fasdfasdf', 'fdsfa', 'fsdfasd', 'female,female'),
+(9, NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(10, NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -154,6 +178,7 @@ CREATE TABLE `form1_part2` (
 
 CREATE TABLE `form2` (
   `id` int(11) NOT NULL,
+  `form1_part1_id` int(11) DEFAULT NULL,
   `purchase_request` varchar(255) DEFAULT NULL,
   `amount` int(11) DEFAULT NULL,
   `vendor_name` varchar(255) DEFAULT NULL,
@@ -206,7 +231,19 @@ CREATE TABLE `form2` (
   `extra_data_client_coenrolled` varchar(255) DEFAULT NULL,
   `extra_data_referral` varchar(255) DEFAULT NULL,
   `extra_data_trainings` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `form2`
+--
+
+INSERT INTO `form2` (`id`, `form1_part1_id`, `purchase_request`, `amount`, `vendor_name`, `address`, `description_purchases`, `name_grant_program`, `requester_name`, `approver_name`, `date_request`, `date_approval`, `requester_signature`, `approver_signature`, `acknowledge`, `veterans_name`, `veterans_signature`, `date`, `ev_name`, `ev_ss_number`, `ev_address`, `ev_phone_number`, `ev_employer_name`, `ev_start_date`, `ev_date`, `ev_phone_number_2`, `ev_contact_person`, `ev_title`, `ev_clients_job_title`, `ev_hrs_week`, `ev_wage`, `ev_veterans_provided`, `ev_date_placement`, `ev_submitted_by`, `ajc_veterans_name`, `ajc_veterans_address`, `ajc_dob`, `ajc_dos`, `ajc_email`, `ajc_phone_number`, `ajc_client`, `ajc_dvop_name`, `ajc_telephone`, `ajc_doe`, `ajc_jobseeker_id`, `extra_data_client_name`, `extra_data_client_enolled`, `extra_data_date_name`, `extra_data_ivtp`, `extra_data_episodic`, `extra_data_work`, `extra_data_client_coenrolled`, `extra_data_referral`, `extra_data_trainings`) VALUES
+(4, NULL, '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(5, NULL, '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(6, NULL, '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(7, 9, 'URGENT* Needed within 24 Hours', 1, 'dsgdfgsdfg', 'sd', 'dsgfd', 'sdggsfdg', 'sdgdsfg', 'sgsdg', '1', '1', 'gsdgsfd', 'sdgfdsg', 'sdgdfgsdgsfd', 'sgfddgsfdg', 'dfsgsdgdfg', '1', '2', '', 'asdasfasdf', '151811', 'fsdaff', '1', 'fdfff', '156191613', '1', 'fsdfsdaf', 'fsafsdfa', 'dfaaf', 'fdsafad', 'ffunhdn', '1', '1', 'fdgdfsg', 'fdsgsdfg', '2024-05-08', '2024-05-20', 'mail@ail.com', '1981613', 'fasdfsd', 'gdfgsd', '5116', '2024-05-24', '1', 'fsfsadf', 'Yes?', 'safsdfsdf', 'Yes?', 'Yes?', '', 'GPD,HPRP', 'GPD,HPRP', 'On the job,Technical,Enterpreneurial'),
+(8, NULL, '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(9, NULL, '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -236,28 +273,34 @@ CREATE TABLE `questionnaire` (
   `learn_about_services` longtext DEFAULT NULL,
   `spoke_with` varchar(255) DEFAULT NULL,
   `any_questions` longtext DEFAULT NULL,
-  `only_questionnaire` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `only_questionnaire` int(3) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `questionnaire`
 --
 
 INSERT INTO `questionnaire` (`id`, `first_name`, `middle_initial`, `last_name`, `cell_phone`, `email`, `address`, `homeless`, `your_description`, `other_details`, `gender`, `marital_status`, `age`, `race`, `hear_about_us`, `county_residence`, `work_hours`, `school_certification`, `learn_about_services`, `spoke_with`, `any_questions`, `only_questionnaire`) VALUES
-(8, 'Max', 'Som', 'Holloway', '0211111111211', 'user123@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'M', 'Never Married', '29', 'Native Hawaiian', 'friend_referral', 'US', 'yes', 'yes', 'Social Media', 'Someone else/ I do not Remember', 'No', 1),
-(9, 'ron', 'cole', 'man', '12515115', 'user1235@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'Male', 'Never Married', '29', 'Native Hawaiian', 'friend_referral', 'US', 'yes', 'yes', 'Social Media', 'Someone else/ I do not Remember', 'No', 1),
-(10, 'asdf', 'cole', 'asdsad', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'F', 'Widowed', '29', 'Hispanic or Latino', 'online_search', 'US', 'no', 'no', 'Veteran inc. Community Event', 'Marian Jordan', 'no', 1),
-(11, 'Max', 'cole', 'asdsad', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'yes', 'dvop_worker', '', 'M', 'Widowed', '29', 'Alaska Native', 'friend_referral', 'US', 'no', 'no', 'Veterans inc. Community presentation,Veteran inc. Community Event', 'Someone else/ I do not Remember', 'no', 1),
-(12, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 1),
-(13, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 1),
-(14, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 1),
-(15, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 1),
-(16, 'Max', 'Som', 'Holloway', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'no', 'actively_seeking', '', 'M', '', '', '', 'social_media', '', '', '', '', '', '', 1),
-(17, 'ron', 'cole', 'Hose', '', 'user999@gmail.com', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 1),
-(18, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 1),
-(19, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 1),
-(20, 'John', 'Cena', 'Davis', '0442536585212', 'user@mail.com', 'Block 15', 'yes', 'service_provider', '', 'Other', 'Domestic Partner', '23', 'Black or African American', 'online_search', 'dasdasd', 'yes', 'yes', 'Veterans inc. Community presentation,Another Veterans Inc Partner Organization', 'Marian Jordan', 'dasdsa', 1),
-(21, 'john', 'Cena', 'Davis', '0442536585212', 'user@mail.com', 'Block 15', 'yes', 'dvop_worker', '', 'F', 'Widowed', '25', 'Asian', 'friend_referral', 'sdads', 'yes', 'yes', 'Veteran inc. Community Event,Social Media', 'Marian Jordan', 'asdasda', 1);
+(8, 'Max', 'Som', 'Holloway', '0211111111211', 'user123@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'M', 'Never Married', '29', 'Native Hawaiian', 'friend_referral', 'US', 'yes', 'yes', 'Social Media', 'Someone else/ I do not Remember', 'No', 2),
+(9, 'ron', 'cole', 'man', '12515115', 'user1235@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'Male', 'Never Married', '29', 'Native Hawaiian', 'friend_referral', 'US', 'yes', 'yes', 'Social Media', 'Someone else/ I do not Remember', 'No', 2),
+(10, 'asdf', 'cole', 'asdsad', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'yes', 'service_provider', '', 'F', 'Widowed', '29', 'Hispanic or Latino', 'online_search', 'US', 'no', 'no', 'Veteran inc. Community Event', 'Marian Jordan', 'no', 2),
+(11, 'Max', 'cole', 'asdsad', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'yes', 'dvop_worker', '', 'M', 'Widowed', '29', 'Alaska Native', 'friend_referral', 'US', 'no', 'no', 'Veterans inc. Community presentation,Veteran inc. Community Event', 'Someone else/ I do not Remember', 'no', 2),
+(12, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(13, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(14, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(15, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(16, 'Max', 'Som', 'Holloway', '12515115', 'user@gmail.com', 'asdastreet, bakery road', 'no', 'actively_seeking', '', 'M', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(17, 'ron', 'cole', 'Hose', '', 'user999@gmail.com', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(18, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(19, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(20, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(21, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(22, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(23, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(24, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(25, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(26, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2),
+(27, '', '', '', '', '', '', 'no', 'actively_seeking', '', '', '', '', '', 'social_media', '', '', '', '', '', '', 2);
 
 --
 -- Indexes for dumped tables
@@ -286,7 +329,8 @@ ALTER TABLE `form1_part2`
 -- Indexes for table `form2`
 --
 ALTER TABLE `form2`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `form1_part1_id` (`form1_part1_id`);
 
 --
 -- Indexes for table `questionnaire`
@@ -308,25 +352,25 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `form1_part1`
 --
 ALTER TABLE `form1_part1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `form1_part2`
 --
 ALTER TABLE `form1_part2`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `form2`
 --
 ALTER TABLE `form2`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `questionnaire`
 --
 ALTER TABLE `questionnaire`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- Constraints for dumped tables
@@ -337,6 +381,12 @@ ALTER TABLE `questionnaire`
 --
 ALTER TABLE `form1_part2`
   ADD CONSTRAINT `form1_part1_foreign_key` FOREIGN KEY (`form1_part1_id`) REFERENCES `form1_part1` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `form2`
+--
+ALTER TABLE `form2`
+  ADD CONSTRAINT `form2_ibfk_1` FOREIGN KEY (`form1_part1_id`) REFERENCES `form1_part1` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
