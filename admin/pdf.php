@@ -1,5 +1,5 @@
 <script>
-//  window.print();
+  window.print();
 </script>
 <?php
 include ('includes/function.php');
@@ -1358,8 +1358,8 @@ if (isset($_SESSION['veteran_username']) && isset($_SESSION['veteran_admin'])) {
             <p style="font-weight: 500; margin-top: 20px;">Name</p>
             <input type="text" class="signature-input" style="width: 40%;" id="lastName"
               value='<?php echo !empty($ev_name) ? $ev_name : ''; ?>'>
-            <p style="font-weight: 500; margin-top: 20px;">Social Security Number</p>
-            <input type="text" class="signature-input" style="width: 40%;" id="lastName">
+            <!-- <p style="font-weight: 500; margin-top: 20px;">Social Security Number</p>
+            <input type="text" class="signature-input" style="width: 40%;" id="lastName"> -->
           </div>
           <div class="row-check-container" style="margin-top: 20px;">
             <p style="font-weight: 500;">Address</p>
