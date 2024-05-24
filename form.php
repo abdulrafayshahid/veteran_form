@@ -254,7 +254,7 @@ mysqli_close($conn);
                         </div>
                         <div class="form-group col-md-6">
                             <label for="fullname">Service Date From to </label>
-                            <input type="number" id="fullname" class="form-control" name="service_date"
+                            <input type="date" id="fullname" class="form-control" name="service_date"
                                 placeholder="Enter Your Service Date From dd/mm/yyyy to dd/mm/yyyy">
                         </div>
                         <div class="col-md-9 mt-3 form-group ">
@@ -432,7 +432,7 @@ mysqli_close($conn);
                     <h1 class="head_info text-center">Confidential Information</h1>
                     <h1 class="consent_info text-center">Consent for the Release of Confidential Information</h1>
                     <p class="consent_para1">I,<input type="text" id="date" name="consent_blanks[]">with a date of birth
-                        <input type="text" id="social" name="consent_blanks[]">and
+                        <input type="date" id="social" name="consent_blanks[]">and
                         a Social Security Number of:<input type="text" id="authorization" name="consent_blanks[]">give
                         authorization to any necessary
                         persona/organiztions to give my information to Veterans Inc.so that they can better understand
@@ -930,7 +930,7 @@ mysqli_close($conn);
                         </div>
                         <div class="form-group col-md-4">
                             <label for="fullname mt-5">Date:</label>
-                            <input type="text" id="date" class="form-control custom-input" placeholder=""
+                            <input type="date" id="date" class="form-control custom-input" placeholder=""
                                 name="pa_date">
                         </div>
                     </div>
@@ -1257,7 +1257,7 @@ mysqli_close($conn);
                     <label for="fullname mt-5">Printed Name :</label>
                 </div>
                 <div class="form-group col-md-4">
-                    <input type="number" id="fullname" class="form-control custom-input" name="cod_date" placeholder="">
+                    <input type="date" id="fullname" class="form-control custom-input" name="cod_date" placeholder="">
                     <label for="fullname mt-5"> Date:</label>
                 </div>
             </div>
@@ -1295,7 +1295,7 @@ mysqli_close($conn);
                     <label for="fullname mt-5">Printed Name :</label>
                 </div>
                 <div class="form-group col-md-4">
-                    <input type="number" id="fullname" class="form-control custom-input" name="cod_date" placeholder="">
+                    <input type="date" id="fullname" class="form-control custom-input" name="cod_date" placeholder="">
                     <label for="fullname mt-5"> Date:</label>
                 </div>
             </div>
